@@ -1,0 +1,21 @@
+<div class="screens-container">
+    <div class="loading-wrapper" delayed-display="hide" delay="1200">
+        <style> .mobileButtonContainer.dual-button { display: none; } </style>
+        <div class="row reviewSpinner">
+            <div class="col-xs-12">
+                <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="success-wrapper" delayed-display="show" delay="1201">
+        <h3>Your application was approved!</h3>
+        <div class="check-mark">
+            <i class="fa fa-check fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="form-field col">
+            <p class="app-text">Application details and instructions for accessing your new account will be emailed shortly.</p>
+            <p class="app-text">App ID: {{ vm.appState.currentScenario.appId }}</p>
+        </div>
+    </div>
+</div>

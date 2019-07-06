@@ -1,0 +1,289 @@
+/**
+ * CSS File to manage the different Scripted Scenarios
+ */
+
+ /**
+ * App Globals/Utils
+ */
+.welcomeText {
+    margin-top: 15px;
+}
+
+.scenarios {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0;
+    width: 80%;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.app-text {
+    font-size: 18px;
+}
+
+.headerMobileBanner img {
+    cursor: pointer;
+}
+
+.screens-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.result-passport img { 
+    width: 100%; 
+}
+
+.scenario-selector {
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 16px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+    display: flex;
+    color: #fff;
+    background: #6DBB17;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all linear;
+
+    /** Temp Overides **/
+    color: rgb(45,72,136);
+    border: 1px solid rgb(45,72,136);
+    background: #fff;
+}
+
+.scenario-selector h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.scenario-selector a {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+/**
+ * Form Field / Input Styling
+ */
+.form-field {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-field.col {
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-field.centerfy {
+    align-items: center;
+}
+
+.form-field > label {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.form-field .toggle-label {
+    width: 150px;
+    text-align: right;
+}
+
+.crosscore-toggles {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw auto 0;
+    width: 100%;
+}
+
+input {
+    border: 1px solid grey; 
+    width: 100%;
+    outline: 0;
+    padding: 8px;
+    /* text-transform: uppercase; */
+}
+
+input:focus {
+    border: 1px solid #6DBB17; 
+}
+
+.lead-in {
+    display: flex;
+    border: 1px solid rgb(45,72,136);
+    border-radius: 5px;
+    flex-direction: column;
+    color: rgb(45,72,136);
+    text-align: center;
+    margin: 10px auto 20px;
+    width: 90%;
+    padding: 10px 0;
+}
+
+.lead-in span {
+    font-size: 20px;
+}
+
+.loading-wrapper {
+    margin-top: 50%;
+}
+.success-wrapper {
+    display: none;
+    flex-direction: column;    
+}
+
+
+/**
+ * Footer Buttons
+ * 1 - Continue
+ * 2 - Review | Continue
+ */
+
+.mobileButtonContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.check-mark {
+    color: #6DBB17;
+    font-size: 22px;
+    margin: 10px auto 20px;
+    text-align: center;
+}
+
+.mobileButtonContainer.dual-button {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobileButtonContainer.dual-button button, 
+.mobileButtonContainer.dual-button a {
+    max-width: 45%;
+    font-size: 20px;
+}
+
+.mitek-flow {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: -54px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.mitek-flow img {
+    margin-top: 54px;
+    width: 100%;
+}
+
+/**
+ * Animation
+ *
+ */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 100;
+    /* 
+    -webkit-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
+    -moz-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);     
+    box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27); 
+    */
+}
+.main-content.ng-enter {
+    transform: translate3d(100%, 0, 0);
+}
+
+.main-content.ng-enter-active {
+    transform: translate3d(0, 0, 0);
+}
+
+.main-content.ng-leave-active {    
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+}
+.main-content.ng-leave {
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+    z-index: 1;
+}
+
+.footer-content {
+    /* transition: all 10ms ease-in; */
+    opacity: 1;
+}
+
+.anchor-container {
+    display: flex;
+    width: 60%;
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.mobile-button {
+    color: rgb(45,72,136);
+    cursor: pointer;
+    border: 1px solid rgb(45,72,136);
+    background: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding: 6px 14px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 46px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.mobile-button:hover {
+    text-decoration: none;
+}
+
+
+/**
+ * For the non-flex responsive work
+ * 
+ */
+@media screen and (min-width: 899px) {
+    /* .scenario-selector {
+        width: 60%;
+    } */
+    .screens-container {
+        width: 60%;        
+    }
+    .mobileButtonContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .scenarios {
+        width: 50%;
+    }
+}

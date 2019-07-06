@@ -1,0 +1,7 @@
+<div class="scenarios">
+    <style>.mobileButtonContainer {display: none;}</style>
+    <div class="scenario-selector" ng-repeat="scenario in vm.appState.scenarios">
+        <a ng-click="vm.selectFlow(scenario)"> </a>
+        <h2 class="scenario-title">{{ scenario.label }}</h2>
+    </div>
+</div>

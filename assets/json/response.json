@@ -1,0 +1,1179 @@
+{
+   "responseHeader":    {
+      "requestType": "EM-PID-FN",
+      "clientReferenceId": "client001",
+      "expRequestId": "RB000033499032",
+      "messageTime": "2019-04-29T11:49:28Z",
+      "overallResponse":       {
+         "decision": "ACCEPT",
+         "decisionText": "Continue",
+         "decisionReasons": ["CONTINUE - Emailage-PreciseId-FraudNet"],
+         "recommendedNextActions": [],
+         "spareObjects": []
+      },
+      "responseCode": "R0201",
+      "responseType": "INFO",
+      "responseMessage": "Workflow Complete.",
+      "tenantID": "TIFNRUN1"
+   },
+   "clientResponsePayload":    {
+      "orchestrationDecisions":       [
+                  {
+            "sequenceId": "1",
+            "decisionSource": "Emailage",
+            "decision": "CONTINUE",
+            "decisionReasons": ["Continue"],
+            "score": 500,
+            "decisionText": "Continue",
+            "nextAction": "Continue",
+            "decisionTime": "2019-04-29T22:53:40Z"
+         },
+                  {
+            "sequenceId": "2",
+            "decisionSource": "PreciseId",
+            "decision": "ACCEPT",
+            "decisionReasons": ["ACCEPT - PreciseID"],
+            "score": 760,
+            "decisionText": "ACCEPT",
+            "nextAction": "Continue",
+            "appReference": "58976394",
+            "decisionTime": "2019-04-29T22:53:42Z"
+         },
+                  {
+            "sequenceId": "3",
+            "decisionSource": "FraudNet",
+            "decision": "APPROVE",
+            "decisionReasons": ["No device concerns"],
+            "score": 400,
+            "decisionText": "No Fraud Detected",
+            "nextAction": "Continue",
+            "appReference": "client001",
+            "decisionTime": "2019-04-29T22:53:42Z"
+         }
+      ],
+      "decisionElements":       [
+                  {
+            "serviceName": "Emailage",
+            "applicantId": "EMAIL123",
+            "otherData": {"response":             {
+               "query":                {
+                  "email": "accept@experian.com",
+                  "queryType": "EmailAgeVerification",
+                  "count": 1,
+                  "created": "2019-04-29T22:53:40Z",
+                  "lang": "en-US",
+                  "responseCount": 1,
+                  "billaddress": "PO BOX 239",
+                  "billcity": "CHESTER",
+                  "billcountry": "US",
+                  "billregion": "PA",
+                  "billpostal": "190160239",
+                  "devicesource": "experian",
+                  "firstname": "JOSEPH",
+                  "lastname": "JORDAN",
+                  "phone": "+1 5713429981",
+                  "shipaddress": "PO BOX 239",
+                  "shipcity": "CHESTER",
+                  "shippostal": "190160239",
+                  "shipregion": "PA",
+                  "shipcountry": "US",
+                  "results": [                  {
+                     "userdefinedrecordid": "client001",
+                     "email": "accept@experian.com",
+                     "eName": "",
+                     "emailAge": "",
+                     "email_creation_days": "",
+                     "domainAge": "",
+                     "domain_creation_days": "",
+                     "firstVerificationDate": "2019-04-29T22:48:56Z",
+                     "first_seen_days": "0",
+                     "lastVerificationDate": "2019-04-29T22:51:40Z",
+                     "status": "ValidDomain",
+                     "country": "",
+                     "fraudRisk": "500 Moderate",
+                     "EAScore": "500",
+                     "EAReason": "Valid Domain",
+                     "EAStatusID": "4",
+                     "EAReasonID": "68",
+                     "EAAdviceID": "4",
+                     "EAAdvice": "Moderate Fraud Risk",
+                     "EARiskBandID": "3",
+                     "EARiskBand": "Fraud Score 301 to 600",
+                     "source_industry": "",
+                     "fraud_type": "",
+                     "lastflaggedon": "",
+                     "dob": "",
+                     "gender": "",
+                     "location": "",
+                     "smfriends": "",
+                     "totalhits": "3",
+                     "uniquehits": "1",
+                     "imageurl": "",
+                     "emailExists": "Not Sure",
+                     "domainExists": "Yes",
+                     "company": "",
+                     "title": "",
+                     "domainname": "experian.com",
+                     "domaincompany": "",
+                     "domaincountryname": "",
+                     "domaincategory": "",
+                     "domaincorporate": "",
+                     "domainrisklevel": "Moderate",
+                     "domainrelevantinfo": "Valid Domain",
+                     "domainrisklevelID": "3",
+                     "domainrelevantinfoID": "509",
+                     "domaincountrymatch": "No",
+                     "domainriskcountry": "No",
+                     "smlinks": [],
+                     "phone_status": "Valid",
+                     "shipforward": "",
+                     "billriskcountry": "No",
+                     "namematch": "U"
+                  }]
+               },
+               "responseStatus":                {
+                  "status": "success",
+                  "errorCode": "0",
+                  "description": ""
+               }
+            }},
+            "decisions":             [
+                              {
+                  "element": "EAStatusID",
+                  "value": "4"
+               },
+                              {
+                  "element": "EAReasonID",
+                  "value": "68",
+                  "reason": "Valid Domain"
+               },
+                              {
+                  "element": "EAAdviceID",
+                  "value": "4",
+                  "reason": "Moderate Fraud Risk"
+               },
+                              {
+                  "element": "EARiskBand",
+                  "value": "3",
+                  "reason": "Fraud Score 301 to 600"
+               },
+                              {
+                  "element": "domaincorporate",
+                  "value": ""
+               },
+                              {
+                  "element": "domainrisklevel",
+                  "value": "3",
+                  "reason": "Moderate"
+               },
+                              {
+                  "element": "domainrelevantinfoID",
+                  "value": "509",
+                  "reason": "Valid Domain"
+               },
+                              {
+                  "element": "shipforward",
+                  "value": ""
+               },
+                              {
+                  "element": "fraud_type",
+                  "value": ""
+               },
+                              {
+                  "element": "emailExists",
+                  "value": "Not Sure"
+               },
+                              {
+                  "element": "domainExists",
+                  "value": "Yes"
+               }
+            ],
+            "matches": [            {
+               "name": "fraudRisk",
+               "value": "500 Moderate"
+            }],
+            "dataCounts":             [
+                              {
+                  "name": "email.count",
+                  "value": 1
+               },
+                              {
+                  "name": "responseCount",
+                  "value": 1
+               },
+                              {
+                  "name": "totalhits",
+                  "value": 3
+               },
+                              {
+                  "name": "uniquehits",
+                  "value": 1
+               }
+            ],
+            "scores": [            {
+               "name": "EAScore",
+               "score": 500
+            }]
+         },
+                  {
+            "serviceName": "PreciseId",
+            "applicantId": "client001-MAINCONTACT",
+            "decision": "ACC",
+            "score": 760,
+            "decisionText": "Accept",
+            "appReference": "58976394",
+            "rules":             [
+                              {
+                  "ruleId": "3201",
+                  "ruleName": "glbRule01"
+               },
+                              {
+                  "ruleId": "3405",
+                  "ruleName": "glbRule02"
+               }
+            ],
+            "otherData": {"json": {"fraudSolutions": {"response": {"products": {"preciseIDServer":             {
+               "sessionID": "YIUXVP3FV3OTMDJ0UD6ZJECU.pidd1v-190429175341279708019",
+               "header":                {
+                  "reportDate": "04292019",
+                  "reportTime": "175341",
+                  "productOption": "06",
+                  "subcode": "2892360",
+                  "referenceNumber": "client001"
+               },
+               "messages":                {
+                  "message":                   [
+                                          {
+                        "number": "57",
+                        "text": "015000    0500",
+                        "addrMismatch": "N"
+                     },
+                                          {
+                        "number": "57",
+                        "text": "0335 TC76THE NUMBER OF INQUIRIES WAS ALSO A FACTOR, BUT EFFECT WAS NOT SIGNIFICANT"
+                     }
+                  ],
+                  "consumerStatement": []
+               },
+               "summary":                {
+                  "transactionID": "58976394",
+                  "initialDecision": "ACC",
+                  "finalDecision": "ACC",
+                  "scores":                   {
+                     "preciseIDScore": "760",
+                     "preciseIDScorecard": "AC OPEN V2",
+                     "validationScore": "000627",
+                     "validationScorecard": "AC OPEN VAL V2",
+                     "verificationScore": "000775",
+                     "verificationScorecard": "AC OPEN ID THEFT V2",
+                     "complianceDescription": "No Compliance Code",
+                     "reasons": {"reason":                      [
+                                                {
+                           "value": "",
+                           "code": "B111"
+                        },
+                                                {
+                           "value": "",
+                           "code": "B108"
+                        },
+                                                {
+                           "value": "",
+                           "code": "B105"
+                        },
+                                                {
+                           "value": "",
+                           "code": "B110"
+                        },
+                                                {
+                           "value": "",
+                           "code": "B405"
+                        }
+                     ]},
+                     "fpdscore": "000701",
+                     "fpdscorecard": "AC OPEN FPD V2"
+                  }
+               },
+               "preciseMatch":                {
+                  "version": "04.00",
+                  "responseStatusCode":                   {
+                     "value": "",
+                     "code": "00"
+                  },
+                  "preciseMatchTransactionID": "CP-CPTF-3G864H23",
+                  "preciseMatchScore": "756",
+                  "preciseMatchDecision":                   {
+                     "value": "",
+                     "code": " "
+                  },
+                  "addresses": {"address": [                  {
+                     "summary":                      {
+                        "verificationResult":                         {
+                           "value": "",
+                           "code": "A1"
+                        },
+                        "type":                         {
+                           "value": "",
+                           "code": "P "
+                        },
+                        "unitMismatchResult":                         {
+                           "value": "",
+                           "code": "  "
+                        },
+                        "highRiskResult":                         {
+                           "value": "",
+                           "code": "N "
+                        },
+                        "counts":                         {
+                           "standardizedAddressReturnCount": 1,
+                           "residentialAddressMatchCount": 2,
+                           "residentialAddressReturnCount": 2,
+                           "highRiskAddressReturnCount": 0,
+                           "businessAddressMatchCount": 0,
+                           "businessAddressReturnCount": 0
+                        }
+                     },
+                     "detail":                      {
+                        "standardizedAddressRcd":                         {
+                           "surname": "JORDAN",
+                           "firstName": "JOSEPH",
+                           "middle": "C",
+                           "address": "PO BOX 239",
+                           "city": "CHESTER",
+                           "state": "PA",
+                           "zipCode": "19016",
+                           "zipPlus4": "0239"
+                        },
+                        "residentialAddressRcd":                         [
+                                                      {
+                              "surname": "JORDAN",
+                              "firstName": "JOSEPH",
+                              "middle": "C",
+                              "aliasName": [],
+                              "address": "239 PO BOX",
+                              "city": "CHESTER",
+                              "state": "PA",
+                              "zipCode": "19016",
+                              "zipPlus4": "0239",
+                              "areaCode": "310",
+                              "phone": "5073295"
+                           },
+                                                      {
+                              "surname": "JORDAN",
+                              "firstName": "JOSEPH",
+                              "middle": "C",
+                              "aliasName": [],
+                              "address": "239",
+                              "city": "CHESTER",
+                              "state": "PA",
+                              "zipCode": "19016",
+                              "areaCode": "717",
+                              "phone": "2833256"
+                           }
+                        ],
+                        "highRiskAddressRcd": [],
+                        "highRiskAddressDescription": [{"highRiskDescription": "No high risk business at address/phone"}],
+                        "businessAddressRcd": []
+                     }
+                  }]},
+                  "phones": {"phone": [                  {
+                     "summary":                      {
+                        "verificationResult":                         {
+                           "value": "",
+                           "code": "EA"
+                        },
+                        "classification":                         {
+                           "value": "",
+                           "code": "X"
+                        },
+                        "highRiskResult":                         {
+                           "value": "",
+                           "code": "N"
+                        },
+                        "counts":                         {
+                           "residentialPhoneMatchCount": 1,
+                           "residentialPhoneReturnCount": 1,
+                           "highRiskPhoneReturnCount": 0,
+                           "businessPhoneMatchCount": 0,
+                           "businessPhoneReturnCount": 0
+                        }
+                     },
+                     "detail":                      {
+                        "residentialPhoneRcd": [                        {
+                           "surname": "JORDAN",
+                           "firstName": "JOSEPH",
+                           "middle": "C",
+                           "aliasName": [],
+                           "address": "239 PO BOX",
+                           "city": "CHESTER",
+                           "state": "PA",
+                           "zipCode": "19016",
+                           "zipPlus4": "0239",
+                           "areaCode": "571",
+                           "phone": "3429981"
+                        }],
+                        "phoneHighRiskRcd": [],
+                        "highRiskPhoneDescription": [{"highRiskDescription": "No high risk business at address/phone"}],
+                        "businessPhoneRcd": []
+                     }
+                  }]},
+                  "consumerID":                   {
+                     "summary":                      {
+                        "verificationResult":                         {
+                           "value": "",
+                           "code": "EA"
+                        },
+                        "deceasedResult":                         {
+                           "value": "",
+                           "code": "N"
+                        },
+                        "formatResult":                         {
+                           "value": "",
+                           "code": "V"
+                        },
+                        "issueResult":                         {
+                           "value": "",
+                           "code": "P"
+                        },
+                        "issueState": "VT",
+                        "issueStartRange": "1972",
+                        "issueEndRange": "1984",
+                        "counts": {"consumerIDReturnCount": 1}
+                     },
+                     "detail": {"consumerIDRcd": [                     {
+                        "surname": "JORDAN",
+                        "firstName": "JOSEPH",
+                        "middle": "C",
+                        "aliasName": [],
+                        "address": "239 PO BOX",
+                        "city": "CHESTER",
+                        "state": "PA",
+                        "zipCode": "19016",
+                        "zipPlus4": "0239",
+                        "areaCode": "310",
+                        "phone": "5073295"
+                     }]}
+                  },
+                  "dateOfBirth": {"summary": {"matchResult":                   {
+                     "value": "",
+                     "code": "6"
+                  }}},
+                  "driverLicense": {"summary":                   {
+                     "verificationResult":                      {
+                        "value": "",
+                        "code": "YB"
+                     },
+                     "formatValidation":                      {
+                        "value": "",
+                        "code": " "
+                     }
+                  }},
+                  "changeOfAddresses": {"changeOfAddress": [{"summary":                   {
+                     "verificationResult":                      {
+                        "value": "",
+                        "code": "N "
+                     },
+                     "counts": {"changeOfAddressReturnCount": 0}
+                  }}]},
+                  "ofac": {"summary":                   {
+                     "verificationResult":                      {
+                        "value": "",
+                        "code": "1 "
+                     },
+                     "counts": {"ofacReturnCount": 0}
+                  }},
+                  "previousAddresses": {"previousAddress": [                  {
+                     "summary": {"counts": {"previousAddressReturnCount": 2}},
+                     "detail": {"previousAddressRcd":                      [
+                                                {
+                           "address": "215 BISHOP DR",
+                           "city": "ASTON",
+                           "state": "PA",
+                           "zipCode": "19014",
+                           "zipPlus4": "1324",
+                           "reportedDate": "19940201",
+                           "lastUpdatedDate": "20051012"
+                        },
+                                                {
+                           "address": "106 JACKSON AVE",
+                           "city": "COLLINGDALE",
+                           "state": "PA",
+                           "zipCode": "19023",
+                           "zipPlus4": "3302",
+                           "reportedDate": "20000619",
+                           "lastUpdatedDate": "20000619"
+                        }
+                     ]}
+                  }]},
+                  "ssnfinder": {"summary": {"counts": {"ssnfinderReturnCount": 0}}}
+               },
+               "pidxmlversion": "06.00",
+               "fcraDetail":                {
+                  "fraudShield": {"indicator":                   [
+                                          {
+                        "value": "N",
+                        "code": "07"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "08"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "09"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "19"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "20"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "22"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "27"
+                     }
+                  ]},
+                  "adverseActions": {"adverseAction":                   [
+                                          {
+                        "value": "",
+                        "code": " "
+                     },
+                                          {
+                        "value": "",
+                        "code": " "
+                     },
+                                          {
+                        "value": "",
+                        "code": " "
+                     },
+                                          {
+                        "value": "",
+                        "code": " "
+                     }
+                  ]},
+                  "fcrarules": {"fcrarule":                   [
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     }
+                  ]}
+               },
+               "glbDetail":                {
+                  "fraudShield": {"indicator":                   [
+                                          {
+                        "value": "N",
+                        "code": "01"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "02"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "03"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "04"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "05"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "06"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "10"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "11"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "13"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "14"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "15"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "16"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "17"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "18"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "21"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "25"
+                     },
+                                          {
+                        "value": "N",
+                        "code": "26"
+                     }
+                  ]},
+                  "glbRules": {"glbRule":                   [
+                                          {
+                        "value": "",
+                        "code": "3201"
+                     },
+                                          {
+                        "value": "",
+                        "code": "3405"
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     },
+                                          {
+                        "value": "",
+                        "code": "    "
+                     }
+                  ]}
+               }
+            }}}}}},
+            "decisions":             [
+                              {
+                  "element": "messageNumber",
+                  "value": "57",
+                  "reason": "015000    0500"
+               },
+                              {
+                  "element": "initialDecision",
+                  "value": "ACC"
+               },
+                              {
+                  "element": "finalDecision",
+                  "value": "ACC"
+               },
+                              {
+                  "element": "pidScoreReason1",
+                  "value": "B111"
+               },
+                              {
+                  "element": "pidScoreReason2",
+                  "value": "B108"
+               },
+                              {
+                  "element": "pidScoreReason3",
+                  "value": "B105"
+               },
+                              {
+                  "element": "pidScoreReason4",
+                  "value": "B110"
+               },
+                              {
+                  "element": "pidScoreReason5",
+                  "value": "B405"
+               },
+                              {
+                  "element": "kbaStatus",
+                  "value": "N"
+               }
+            ],
+            "matches":             [
+                              {
+                  "name": "pmAddressVerificationResult1",
+                  "value": "A1"
+               },
+                              {
+                  "name": "pmPhoneVerificationResult1",
+                  "value": "EA"
+               },
+                              {
+                  "name": "pmConsumerIDVerificationResult",
+                  "value": "EA"
+               },
+                              {
+                  "name": "pmDateOfBirthMatchResult",
+                  "value": "6"
+               },
+                              {
+                  "name": "pmDriverLicenseVerificationResult",
+                  "value": "YB"
+               },
+                              {
+                  "name": "pmChangeOfAddressVerificationResult1",
+                  "value": "N"
+               },
+                              {
+                  "name": "pmOFACVerificationResult",
+                  "value": "1"
+               },
+                              {
+                  "name": "fcraFSIndicator07",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator08",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator09",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator19",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator20",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator22",
+                  "value": "N"
+               },
+                              {
+                  "name": "fcraFSIndicator27",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator01",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator02",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator03",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator04",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator05",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator06",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator10",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator11",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator13",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator14",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator15",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator16",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator17",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator18",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator21",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator25",
+                  "value": "N"
+               },
+                              {
+                  "name": "glbFSIndicator26",
+                  "value": "N"
+               }
+            ],
+            "scores":             [
+                              {
+                  "name": "preciseIDScore",
+                  "score": 760,
+                  "type": "score"
+               },
+                              {
+                  "name": "validationScore",
+                  "score": 627,
+                  "type": "score"
+               },
+                              {
+                  "name": "verificationScore",
+                  "score": 775,
+                  "type": "score"
+               },
+                              {
+                  "name": "fpdScore",
+                  "score": 701,
+                  "type": "score"
+               },
+                              {
+                  "name": "preciseMatchScore",
+                  "score": 756,
+                  "type": "score"
+               }
+            ]
+         },
+                  {
+            "serviceName": "FraudNet",
+            "decision": "APPROVE",
+            "score": 400,
+            "decisionText": "APPROVE",
+            "appReference": "client001",
+            "rules": [            {
+               "ruleId": "VXCAZ4",
+               "ruleScore": 400,
+               "ruleText": "SUSPECT"
+            }],
+            "warningsErrors": [            {
+               "responseType": "WARNING",
+               "responseMessage": "event.userAccount.username may not be null"
+            }],
+            "otherData": {"response":             {
+               "response":                {
+                  "id": "client001",
+                  "modelCode": "AO",
+                  "modelVersion": 100016,
+                  "orgCode": "PSFE",
+                  "time": "2019-04-29T11:49:28.000Z",
+                  "score": 400,
+                  "systemResponse": "APPROVE",
+                  "fulfillmentAction": "APPROVE",
+                  "auditTrail": [                  {
+                     "code": "VXCAZ4",
+                     "ruleScore": 400,
+                     "ruleAction": "SUSPECT"
+                  }],
+                  "riskLevel": "LOW"
+               },
+               "warnings": [               {
+                  "path": "event.userAccount.username",
+                  "message": "may not be null"
+               }]
+            }}
+         }
+      ]
+   },
+   "originalRequestData":    {
+      "application": {"applicants": [      {
+         "applicantType": "APPLICANT",
+         "contactId": "client001-MAINCONTACT",
+         "id": "EMAIL123"
+      }]},
+      "contacts": [      {
+         "addresses": [         {
+            "addressType": "CURRENT",
+            "countryCode": "USA",
+            "postTown": "CHESTER",
+            "postal": "190160239",
+            "stateProvinceCode": "PA",
+            "street": "PO BOX 239"
+         }],
+         "emails": [         {
+            "email": "accept@experian.com",
+            "type": "WORK"
+         }],
+         "id": "client001-MAINCONTACT",
+         "identityDocuments": [         {
+            "documentNumber": "666988145",
+            "documentType": "SSN",
+            "hashedDocumentNumber": "DA306C50D265B3B42468AFA581BE002CCDE64BD500447771EB2AF257D5918421"
+         }],
+         "person":          {
+            "names": [            {
+               "firstName": "JOSEPH",
+               "id": "EXP-LN-AO-001_MAINPERSONNAME",
+               "middleNames": "CHESTER",
+               "surName": "JORDAN",
+               "type": "CURRENT"
+            }],
+            "typeOfPerson": "APPLICANT"
+         },
+         "telephones": [         {
+            "id": "EXP-LN-AO-001_MAINAPPLICANTTELEPHONE",
+            "number": "+1 5713429981",
+            "type": "OTHER"
+         }]
+      }],
+      "control":       [
+                  {
+            "option": "PIDXML_VERSION",
+            "value": "06.00"
+         },
+                  {
+            "option": "SUBSCRIBER_PREAMBLE",
+            "value": "TBD2"
+         },
+                  {
+            "option": "SUBSCRIBER_OPERATOR_INITIAL",
+            "value": "CC"
+         },
+                  {
+            "option": "SUBSCRIBER_SUB_CODE",
+            "value": "2892360"
+         },
+                  {
+            "option": "PID_USERNAME",
+            "value": "xxx"
+         },
+                  {
+            "option": "PID_PASSWORD",
+            "value": "xxx"
+         },
+                  {
+            "option": "PRODUCT_OPTION",
+            "value": "06"
+         },
+                  {
+            "option": "ACCOUNT_TYPE",
+            "value": ""
+         },
+                  {
+            "option": "DETAIL_REQUEST",
+            "value": "D"
+         },
+                  {
+            "option": "ORG_CODE",
+            "value": "PSFE"
+         },
+                  {
+            "option": "MODEL_CODE",
+            "value": "AO"
+         },
+                  {
+            "option": "EVENT_ID",
+            "value": "client001"
+         }
+      ],
+      "session": {},
+      "source": "WEB",
+      "userAccount":       {
+         "accountHolder": {"contactId": "client001-MAINCONTACT"},
+         "id": "EXP-LN-AO-001_USERACCOUNTID"
+      },
+      "userDefinedFields": [      {
+         "userDefinedElements":          [
+                        {
+               "fieldName": "customerType",
+               "fieldValue": "RESIDENTIAL"
+            },
+                        {
+               "fieldName": "billingStreetAddress1",
+               "fieldValue": "PO BOX 239"
+            },
+            {"fieldName": "billingStreetAddress2"},
+                        {
+               "fieldName": "billingCity",
+               "fieldValue": "CHESTER"
+            },
+                        {
+               "fieldName": "billingState",
+               "fieldValue": "PA"
+            },
+                        {
+               "fieldName": "billingCountry",
+               "fieldValue": "USA"
+            },
+                        {
+               "fieldName": "billingZipcode",
+               "fieldValue": "190160239"
+            },
+                        {
+               "fieldName": "shippingStreetAddress1",
+               "fieldValue": "PO BOX 239"
+            },
+            {"fieldName": "shippingStreetAddress2"},
+                        {
+               "fieldName": "shippingCity",
+               "fieldValue": "CHESTER"
+            },
+                        {
+               "fieldName": "shippingState",
+               "fieldValue": "PA"
+            },
+                        {
+               "fieldName": "shippingCountry",
+               "fieldValue": "USA"
+            },
+                        {
+               "fieldName": "shippingZipcode",
+               "fieldValue": "190160239"
+            }
+         ],
+         "userDefinedTableName": "demoCustom"
+      }]
+   }
+}

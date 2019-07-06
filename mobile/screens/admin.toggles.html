@@ -1,0 +1,12 @@
+<h3>Strategy Admin</h3>
+
+<div class="crosscore-toggles">
+    <div class="form-field centerfy" ng-repeat="strategy in vm.appState.crossCoreStrategies">
+        <span class="toggle-label">{{strategy.label}}</span>
+        <label class="switch">
+            <input type="checkbox" ng-if="!strategy.toggle">
+            <input type="checkbox" ng-if="strategy.toggle" checked>
+            <span class="slider round"></span>
+        </label>              
+    </div>
+</div>
