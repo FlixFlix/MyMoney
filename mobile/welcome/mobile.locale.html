@@ -1,0 +1,8 @@
+<div class="scenarios">
+    <style>.mobileButtonContainer {display: none;}</style>
+    <h1>Select Locale</h1>
+    <div class="scenario-selector" title="{{ locale.description }}" ng-repeat="locale in vm.locales">
+        <a ng-click="vm.selectFlow(locale)"> </a>
+        <h2 class="scenario-title">{{ locale.label }}</h2>
+    </div>
+</div>

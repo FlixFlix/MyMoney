@@ -38,6 +38,18 @@
           }
         }
       })
+      // Locale selection *******************************************
+      .state('app.mobile.locale', {
+        url: '/locale',
+        views: {
+          'content@': {
+            templateUrl: 'mobile/welcome/mobile.locale.html',
+            controller: 'AppController',
+            controllerAs: 'vm'
+          }          
+        }
+      })
+      // *************************************************************
       .state('app.mobile.welcome', {
         url: '/welcome',
         views: {
@@ -45,7 +57,7 @@
             templateUrl: 'mobile/welcome/mobile.welcome.html',
             controller: 'AppController',
             controllerAs: 'vm'
-          }          
+          }
         }
       })
       .state('app.mobile.review', {

@@ -20,7 +20,8 @@
         vm.appState = AppStateFactory;
         $rootScope.pageClass = 'something-new'
         vm.pageClass = 'something-new'
-
+        vm.currentLocale = AppStateFactory.currentLocale;
+        vm.locales = AppStateFactory.locales;
         /**
          * Template Methods
          */

@@ -10,6 +10,16 @@
   /* @ngInject */
   function AppStateFactory ($http) {
     var vm = this;
+    // List of locales
+    vm.locales = [
+      {
+        label: 'USA English',
+        description: 'USA English Variant 1',
+        code: 'US'
+      }
+    ];
+    vm.currentLocale = vm.locales[0];
+
     vm.currentScenario = {
       form: {},
       states: [],
