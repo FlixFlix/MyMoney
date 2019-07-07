@@ -361,8 +361,8 @@ h4 {
 
 .mobileButtonContainer {
 	display: table;
-	width: 88%;
-	margin: 15% 6%;
+	width: 100%;
+	margin: 10% auto;
 	/* background-color: #6DBB17; */
 	border-radius: 5px;
 
