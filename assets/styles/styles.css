@@ -1,177 +1,193 @@
+.c-header__locale {
+	display: inline-block;
+	margin-right: 2em;
+	margin-left: auto;
+	cursor: pointer;
+}
+html {
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: scroll;
+}
+
 /** @global Desktop and Mobile Styles */
-body {  
-    background-color: #fff;
-    background-size: contain;
-    font-family: 'arial';
-    padding-top: 54px;
-    padding-bottom: 25px;
-    position: relative;    
-    z-index: 1;
-    font-size: 16px;
+body {
+	background-color: #fff;
+	background-size: contain;
+	font-family: 'Roboto', sans-serif;;
+	padding-top: 54px;
+	padding-bottom: 25px;
+	position: relative;
+	z-index: 1;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 1em;
 }
 
 .panel-bg {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.5);
-    text-align: left;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: left;
 }
 
 .graphik-regular {
-    color: #444;
-    line-height: 30px;
-    font-size: 28px;
+	color: #444;
+	line-height: 30px;
+	font-size: 28px;
 }
 
 .graphik-light {
-    color: #444;
-    line-height: 24px;
-    font-size: 20px;
+	color: #444;
+	line-height: 24px;
+	font-size: 20px;
 }
 
 .btn-default {
-    background: transparent;
+	background: transparent;
 }
 
 /*Desktop CSS*/
 .headerBanner {
-    background: #fff;
-    text-align: center;
-    height: 60px;
-    padding: 6px 0;
+	background: #fff;
+	text-align: center;
+	height: 60px;
+	padding: 6px 0;
 }
 
 .headerBanner img {
-    height: 48px;
-    width: 142px;
+	height: 48px;
+	width: 142px;
 }
 
 .header-divider {
-    background: url('../images/desktop_header_stripe.png');
-    height: 30px;
-    width: 100%;
+	background: url('../images/desktop_header_stripe.png');
+	height: 30px;
+	width: 100%;
 }
 
 .headerText {
-    padding-top: 10px;
-    text-align: center;
+	padding-top: 10px;
+	text-align: center;
 }
 
 .headerText h3 {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .headerText h4:last-child {
-    margin: 35px 0 20px;
+	margin: 35px 0 20px;
 }
 
 
 .inputArea {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 
 .contentBox {
-    width: 300px;
+	width: 300px;
 }
 
 .contentBox:nth-child(1),
 .contentBox:nth-child(2) {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 @media (max-width: 1023px) {
-    .inputArea {
-        flex-direction: column;
-        align-items: center;
-    }
+	.inputArea {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media (max-width: 767px) {
-    .contentBox:nth-child(1),
-    .contentBox:nth-child(2) {
-        margin-right: 0px;
-    }    
+	.contentBox:nth-child(1),
+	.contentBox:nth-child(2) {
+		margin-right: 0px;
+	}
 }
 
 .contentBox h3 {
-    text-align: center;
-    margin-bottom: 25px;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
 .contentForm {
-    height: 300px;
-    padding: 10px;
+	height: 300px;
+	padding: 10px;
 }
 
 .insetMargin {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .inputBox {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 /*.mobile-number */
 .inputBox input {
-    border: 1px solid #A7AAAC;
-    border-radius: 5px;    
-    color: #2370B8;
-    font-size: 18px;
-    height: 46px;
-    padding: 5px;
+	border: 1px solid #a7aaac;
+	border-radius: 5px;
+	color: #2370b8;
+	font-size: 18px;
+	height: 46px;
+	padding: 5px;
 }
 
 .inputEmail {
-    width: 235px;
+	width: 235px;
 }
 
 .inputCode {
-    width: 200px;
-    margin-left: 20px;
-    pointer-events:none;
+	width: 200px;
+	margin-left: 20px;
+	pointer-events: none;
 
 }
 
 .glyphiconBox {
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    text-align: center;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .submitArea {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    display: inline-flex;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	display: inline-flex;
 }
 
 .submitArea button {
-    background: #fff;
-    border: 0;
-    margin-left: 1%;
-    line-height: 12px;
-    font-size: 14px;
-    width: 197px;
-    text-align: left;
+	background: #fff;
+	border: 0;
+	margin-left: 1%;
+	line-height: 12px;
+	font-size: 14px;
+	width: 197px;
+	text-align: left;
 }
 
 .codeContent {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .directionSteps {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
 }
 
 .directionSteps p:first-child {
-    width: 80px;
-    margin: 0 auto;
+	width: 80px;
+	margin: 0 auto;
 }
 
 /* Mobile CSS*/
@@ -179,323 +195,346 @@ body {
 /*Global Mobile Rendering Classes*/
 /** Mobile **/
 .headerMobileBanner {
-    background: #fff;    
-    display: flex;
-    height: 54px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 1;
-    z-index: 900;
-    border-bottom: solid 1px #6DBB17;
-    align-items: center;
+	background: #fff;
+	display: flex;
+	height: 54px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 1;
+	z-index: 900;
+	border-bottom: solid 1px #6dbb17;
+	align-items: center;
 }
 
 .headerMobileBanner img {
-    /* margin: auto 0; */
-    width: 188px;
-    height: 50%;
+	/* margin: auto 0; */
+	width: 188px;
+	height: 50%;
 }
-
 
 
 /** Consent Page **/
 .consentContent .panel-bg {
-    padding: 20px 10px 0;
+	padding: 20px 10px 0;
 }
 
 h3,
 .consent-title {
-    color: #444;
-    line-height: 30px;
-    font-size: 28px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: center;
+	color: #444;
+	line-height: 30px;
+	font-size: 28px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: normal;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 .consentContent .col-xs-10 {
-    padding-left: 0;
+	padding-left: 0;
 }
 
 .consentContent .row {
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .consentHeader,
 .welcomeHeader,
 .successHeader,
 .failureHeader {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .welcomeHeader h3 {
-    color:#6DBB17;
+	color: #6dbb17;
 }
 
 .welcomeText h3 {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .consentHeader,
 .consentText {
-    margin-left: 6%;
-    margin-right: 6%;
+	margin-left: 6%;
+	margin-right: 6%;
 }
 
 .consentHeader h3,
 .failureHeader h3 {
-    text-align: left;
-    font-weight: 600;
+	text-align: left;
+	font-weight: 600;
 }
 
 .consentText h4 {
-    font-size: 20px;
-    text-align: left;
+	font-size: 20px;
+	text-align: left;
 }
 
 .successContent h4 {
-    text-align: center;
+	text-align: center;
 }
 
 .successCheck {
-    text-align: center;
-    color: #6DBB17;
+	text-align: center;
+	color: #6dbb17;
 }
 
 .failureContent {
-    text-align: left;
+	text-align: left;
 }
 
 .failureContent h4 {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .failureHeader,
 .failureContent {
-    margin-left: 6%;
-    margin-right: 6%;
+	margin-left: 6%;
+	margin-right: 6%;
 }
 
 .failureHeader a {
-    font-size: 28px;
+	font-size: 28px;
 }
 
 .failureHeader a:link {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .number-list-icon {
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30px;
-    width: 30px;
-    text-indent: -99999px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 30px;
+	width: 30px;
+	text-indent: -99999px;
 }
 
 .number-list-icon.one {
-     background: url('../images/icons/icon_bullet_1.svg');
+	background: url('../images/icons/icon_bullet_1.svg');
 }
+
 .number-list-icon.two {
-     background: url('../images/icons/icon_bullet_2.svg');
+	background: url('../images/icons/icon_bullet_2.svg');
 }
+
 .number-list-icon.three {
-     background: url('../images/icons/icon_bullet_3.svg');
+	background: url('../images/icons/icon_bullet_3.svg');
 }
+
 .number-list-icon.four {
-     background: url('../images/icons/icon_bullet_4.svg');
+	background: url('../images/icons/icon_bullet_4.svg');
 }
+
 .number-list-icon.five {
-     background: url('../images/icons/icon_bullet_5.svg');
+	background: url('../images/icons/icon_bullet_5.svg');
 }
+
 .number-list-icon.six {
-     background: url('../images/icons/icon_bullet_6.svg');
+	background: url('../images/icons/icon_bullet_6.svg');
 }
 
 .consent-options {
-    margin-top: 15px;
-    padding-bottom: 0px !important;
+	margin-top: 15px;
+	padding-bottom: 0px !important;
 }
 
 
 .mitekMobileTitle {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -10%);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -10%);
 }
 
 .mobileButtonContainer {
-    display: table;
-    width: 88%;
-    margin: 15% 6%;
-    /* background-color: #6DBB17; */
-    border-radius: 5px;
+	display: table;
+	width: 88%;
+	margin: 15% 6%;
+	/* background-color: #6DBB17; */
+	border-radius: 5px;
 
-    /** updates **/
-    /*background-color: rgba(255, 255, 255, 0.7);*/
+	/** updates **/
+	/*background-color: rgba(255, 255, 255, 0.7);*/
 }
 
 .mobileButtonContainer button,
 .mobileButtonContainer a {
-    border: 1px solid black;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    border-radius: 5px;
-    line-height: 46px;
+	border: 1px solid black;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 46px;
 
-    /** updates **/
-    /* border: 0; */
-    /* background-color: #6DBB17!important; */
-    /* color: #fff!important; */
-    font-size: 28px;
-    padding: 6px 14px;
+	/** updates **/
+	/* border: 0; */
+	/* background-color: #6DBB17!important; */
+	/* color: #fff!important; */
+	font-size: 28px;
+	padding: 6px 14px;
 
-    /** TEMP **/
-    border-color: rgb(45, 72, 136) !important;
-    background-color: #fff !important;
-    color: rgb(45, 72, 136) !important;
-    
+	/** TEMP **/
+	border-color: rgb(45, 72, 136) !important;
+	background-color: #fff !important;
+	color: rgb(45, 72, 136) !important;
+
 }
 
 .mobileButtonContainer button:hover,
 .mobileButtonContainer button:focus {
-    color: #fff;
-    background-color: #6DBB17
+	color: #fff;
+	background-color: #6dbb17
 }
 
 .mobileButtonContainer:nth-child(2) {
-    margin-top: 2%;
+	margin-top: 2%;
 }
 
-.glyphiconMobileBox {    
-    width: 60px;
-    height: 60px;
-    text-align: right;
-    display: table-cell;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    background-color: #6DBB17;
-    border-radius: 5px 0 0 5px;
-    color: #fff;
+.glyphiconMobileBox {
+	width: 60px;
+	height: 60px;
+	text-align: right;
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	background-color: #6dbb17;
+	border-radius: 5px 0 0 5px;
+	color: #fff;
 }
 
 .mobileButtonContainer .glyphiconButton {
-    text-align: left;
-    padding-left: 20px;
+	text-align: left;
+	padding-left: 20px;
 }
 
 .mit-icon,
 .mit-steps-icons,
 .mit-icons-small {
-    background-size: 30px 42px;
-    background-repeat: no-repeat;
-    height: 42px;
-    width: 30px;
+	background-size: 30px 42px;
+	background-repeat: no-repeat;
+	height: 42px;
+	width: 30px;
 }
+
 .mit-steps-icons {
-    background-size: inherit;
-    height: 25px;
-    width: 100%;
+	background-size: inherit;
+	height: 25px;
+	width: 100%;
 }
+
 .mit-icons-small {
-    height: 30px;
-    width: 30px;
-    margin: 0 auto;
+	height: 30px;
+	width: 30px;
+	margin: 0 auto;
 }
 
 .glyphiconMobileBox .fa-check-circle {
-    color: #0071ce;
+	color: #0071ce;
 }
 
 .glyphiconMobileBox .fa-times-circle {
-    color: #f7323f;
+	color: #f7323f;
 }
 
 .glyphiconMobileBox .fa-chevron-right,
 .mit-camera-icon,
 .need-help {
-    color: #fff;
+	color: #fff;
 }
 
 .mit-home-icon {
-    background-image: url('../images/icons/icon_cta_home.svg');
-    color: #0071ce;
-}
-.mit-error-icon {
-    background-image: url('../images/icons/icon_progress_error.svg');
-    color: #f7323f;
-}
-.mit-dl-icon {
-    background-image: url('../images/icons/icon_cta_doc_dl.svg');    
-}
-.mit-passport-icon {
-    background-image: url('../images/icons/icon_cta_doc_passport.svg');
-}
-.mit-progress-empty-icon {
-    background-image: url('../images/icons/icon_progress_empty.svg');
-}
-.mit-progress-success-icon {
-    background-image: url('../images/icons/icon_progress_success.svg');
-}
-.mit-progress-error-icon {
-    background-image: url('../images/icons/icon_progress_error.svg');
-}
-.mit-flash-icon {
-    background-image: url('../images/icons/icon_tutorial_flash.svg');   
-    height: 36px;
-}
-.mit-noglare-icon {
-    background-image: url('../images/icons/icon_tutorial_focus.svg');   
-    height: 36px;
-}
-.mit-tutorial-icon {
-    background-image: url('../images/icons/icon_tutorial_light.svg');   
-    height: 36px;
-}
-.mit-camera-icon {
-    background-image: url('../images/icons/icon_cta_take_photo.svg');    
-}
-.mit-retry-icon {
-    background-image: url('../images/icons/icon_cta_retry.svg');    
-}
-.mit-thumbs-up-icon {
-    background-image: url('../images/icons/icon_cta_confirm_photos.svg');    
-}
-.mit-step-one-icon {
-    background-image: url('../images/icons/icon_bullet_step1.svg');    
-}
-.mit-step-two-icon {
-    background-image: url('../images/icons/icon_bullet_step2.svg');        
-}
-.mit-step-three-icon {
-    background-image: url('../images/icons/icon_bullet_step3.svg');    
-}
-.mit-step-four-icon {
-    background-image: url('../images/icons/icon_bullet_step4.svg');    
-}
-.mit-sms-icon {
-    background-image: url('../images/icons/icon_cta_text_message.svg');    
-}
-.mit-email-icon {
-    background-image: url('../images/icons/icon_cta_email.svg');
+	background-image: url('../images/icons/icon_cta_home.svg');
+	color: #0071ce;
 }
 
+.mit-error-icon {
+	background-image: url('../images/icons/icon_progress_error.svg');
+	color: #f7323f;
+}
+
+.mit-dl-icon {
+	background-image: url('../images/icons/icon_cta_doc_dl.svg');
+}
+
+.mit-passport-icon {
+	background-image: url('../images/icons/icon_cta_doc_passport.svg');
+}
+
+.mit-progress-empty-icon {
+	background-image: url('../images/icons/icon_progress_empty.svg');
+}
+
+.mit-progress-success-icon {
+	background-image: url('../images/icons/icon_progress_success.svg');
+}
+
+.mit-progress-error-icon {
+	background-image: url('../images/icons/icon_progress_error.svg');
+}
+
+.mit-flash-icon {
+	background-image: url('../images/icons/icon_tutorial_flash.svg');
+	height: 36px;
+}
+
+.mit-noglare-icon {
+	background-image: url('../images/icons/icon_tutorial_focus.svg');
+	height: 36px;
+}
+
+.mit-tutorial-icon {
+	background-image: url('../images/icons/icon_tutorial_light.svg');
+	height: 36px;
+}
+
+.mit-camera-icon {
+	background-image: url('../images/icons/icon_cta_take_photo.svg');
+}
+
+.mit-retry-icon {
+	background-image: url('../images/icons/icon_cta_retry.svg');
+}
+
+.mit-thumbs-up-icon {
+	background-image: url('../images/icons/icon_cta_confirm_photos.svg');
+}
+
+.mit-step-one-icon {
+	background-image: url('../images/icons/icon_bullet_step1.svg');
+}
+
+.mit-step-two-icon {
+	background-image: url('../images/icons/icon_bullet_step2.svg');
+}
+
+.mit-step-three-icon {
+	background-image: url('../images/icons/icon_bullet_step3.svg');
+}
+
+.mit-step-four-icon {
+	background-image: url('../images/icons/icon_bullet_step4.svg');
+}
+
+.mit-sms-icon {
+	background-image: url('../images/icons/icon_cta_text_message.svg');
+}
+
+.mit-email-icon {
+	background-image: url('../images/icons/icon_cta_email.svg');
+}
 
 
 .mobileButton {
-    display: table-cell;
+	display: table-cell;
 }
 
 .secondBtnGrpMargin {
-    margin-top: 2%;
+	margin-top: 2%;
 }
 
 /*input:focus,
@@ -505,296 +544,298 @@ input.btn:focus {
 
 /*Mobile "Enter Code" View Rendering*/
 .mobileInputCode input[type=email] {
-    border: 1px solid #A7AAAC;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    color: #0071ce;
-    width: 100%;
-    font-size: 24px;
-    height: 64px;
-    /* margin: 50% 0 2% 0; */
-    padding: 0 10px;
-    text-align: center;    
+	border: 1px solid #a7aaac;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #0071ce;
+	width: 100%;
+	font-size: 24px;
+	height: 64px;
+	/* margin: 50% 0 2% 0; */
+	padding: 0 10px;
+	text-align: center;
 }
 
 .mobileEmailDiv {
-    margin: 15% 6% 2% 6%;
+	margin: 15% 6% 2% 6%;
 }
 
 .mobileEmailDiv label {
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 5%;
+	font-size: 27px;
+	font-weight: 600;
+	margin-bottom: 5%;
 }
 
 .mobileInputCode input::placeholder {
-    color: #A7AAAC;
-    font-size: 18px;
-    font-style: 'Graphik Medium';
-    text-transform: none;
+	color: #a7aaac;
+	font-size: 18px;
+	font-style: 'Graphik Medium';
+	text-transform: none;
 }
 
 .mobileEmailText {
-    margin: 5% 6% 0 6%;
+	margin: 5% 6% 0 6%;
 }
 
 .mobileEmailText p {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 /*.mobileInputCode div {*/
-    /*display: flex;*/
+/*display: flex;*/
 /*}*/
 
 /*Mobile "Consent" View Rendering*/
 .declineConsent {
-    margin-top: 15%;
+	margin-top: 15%;
 }
 
 .declineConsent .row {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .declineConsent p {
-    font-size: 18px;
-    padding: 10px 5px;
+	font-size: 18px;
+	padding: 10px 5px;
 }
 
 .decline-text {
-    padding-top: 5px;
+	padding-top: 5px;
 }
 
 
 /*Mobile "Identity" View Rendering*/
 .identityPage {
-    text-align: center;
+	text-align: center;
 }
 
 .identityHeader {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .identityPage .row:nth-child(2) {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .identityPage .row:nth-child(3) {
-    margin-top: 20%;
+	margin-top: 20%;
 }
 
 .identityFooter {
-    height: auto;
-    position: relative;
-    bottom: -20px;
-    text-align: center;
-    width: 100%;
+	height: auto;
+	position: relative;
+	bottom: -20px;
+	text-align: center;
+	width: 100%;
 }
 
 /*Mobile "Picture" View Rendering*/
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 22px;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
 }
+
 .overlay .progress-indicator {
-    position: relative;
-    top: 40%;
+	position: relative;
+	top: 40%;
 }
 
 .processFlow {
-    border-radius: 5px;
-    display: flex;
-    width: 100%;
-    margin-top: 10%;
+	border-radius: 5px;
+	display: flex;
+	width: 100%;
+	margin-top: 10%;
 }
+
 .processStep {
-    display: flex;    
-    width: 100%;
-    align-items: center;
+	display: flex;
+	width: 100%;
+	align-items: center;
 }
 
 .processStep p,
 .processStep div {
-    width: 50%;
+	width: 50%;
 }
 
 .id-image img {
-    width: 100%;
+	width: 100%;
 }
 
 .processStep div {
-    text-align: center;
+	text-align: center;
 }
 
 .processStep p {
-    margin: 0 0 0px;
-    line-height: 1;
-    padding: 5px 0;
+	margin: 0 0 0px;
+	line-height: 1;
+	padding: 5px 0;
 }
 
 .step-inactive {
-    opacity: .5;
+	opacity: .5;
 }
 
 .picturePage .mobileButtonContainer {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .pictureViewText {
-    text-align: center;
-    margin-top: 10%;
+	text-align: center;
+	margin-top: 10%;
 }
 
 .pictureInstructions {
-    display: table;
-    text-align: center;
-    /*margin-top: 10%;*/
-    width: 100%;
-    padding: 10px 0 0;
+	display: table;
+	text-align: center;
+	/*margin-top: 10%;*/
+	width: 100%;
+	padding: 10px 0 0;
 }
 
 .pictureInstructions div {
-    display: table-cell;
+	display: table-cell;
 }
 
 .errorDesc {
-    display: table;
-    margin-top: 2%;
-    padding-left: 5px;
-    width: 100%;
+	display: table;
+	margin-top: 2%;
+	padding-left: 5px;
+	width: 100%;
 }
 
 .errorDesc i,
 .errorDesc p {
-    display: table-cell;
+	display: table-cell;
 }
 
 .errorDesc i {
-    width: 10%;
+	width: 10%;
 }
 
 .errorDesc p {
-    margin-left: 5%;
+	margin-left: 5%;
 }
 
 .errorDesc span {
-    display: table-cell;
-    padding-top: 10px;
-    padding-left: 15px;
+	display: table-cell;
+	padding-top: 10px;
+	padding-left: 15px;
 }
 
 .pictureErrorText {
-    font-size: 20px;
-    margin: 5% 3%;
+	font-size: 20px;
+	margin: 5% 3%;
 }
 
 
 /*Mobile "Review" View Rendering*/
 .reviewHeader {
-    margin-top: 10%;
-    margin-bottom: 20px;
+	margin-top: 10%;
+	margin-bottom: 20px;
 }
 
 .reviewSpinner {
-    color: #6DBB17;
-    text-align: center;
+	color: #6dbb17;
+	text-align: center;
 }
 
 .reviewPic {
-    border-bottom: 1px dotted #999;
-    display: flex;
-    flex-wrap: wrap;
+	border-bottom: 1px dotted #999;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 div.reviewPic:nth-child(4) {
-    border: 0;
+	border: 0;
 }
 
 .reviewPic a img {
-    height: 100%;
-    max-height: 100px !important;
-    max-width: 140px !important;
-    margin: 10px auto;
+	height: 100%;
+	max-height: 100px !important;
+	max-width: 140px !important;
+	margin: 10px auto;
 }
 
 .retakeContainer {
-    display: table;
-    height: 100%;
-    background: transparent;
-    border: 0;
+	display: table;
+	height: 100%;
+	background: transparent;
+	border: 0;
 }
 
 .retakeGlyph {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .retakeText {
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10%;
-    font-size: 18px; 
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10%;
+	font-size: 18px;
 }
 
 .retakeText p {
-    margin: 0 0 0 7%;
-    text-align: left;
+	margin: 0 0 0 7%;
+	text-align: left;
 }
 
 .reviewButton {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .retry-col {
-    margin-top: 23.5px;
-    width: 45%;
+	margin-top: 23.5px;
+	width: 45%;
 }
 
 /*Mobile "Success" View Rendering*/
 .succesPage {
-    text-align: center;
+	text-align: center;
 }
 
 .succesPage .dosier-overview {
-    padding: 10px;
+	padding: 10px;
 }
 
 .succesPage .final-message h4 {
-    margin-top: 15%;
+	margin-top: 15%;
 }
 
 .succesPage .address-row p {
-    margin-bottom: 3px;
+	margin-bottom: 3px;
 }
 
 .nav-tabs p {
-    font-size: 12px;
-    line-height: 0.7px;
+	font-size: 12px;
+	line-height: 0.7px;
 }
 
 .nav-tabs li a {
-    padding: 10px 9px;
+	padding: 10px 9px;
 }
 
 .tab-pane.active {
-    background: #fff;
-    min-height: 100px;
+	background: #fff;
+	min-height: 100px;
 }
 
 .dossier-heading {
-    font-weight: bold;
-    text-decoration: underline;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .verifications {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .capture-metrics {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
