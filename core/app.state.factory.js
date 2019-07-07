@@ -29,8 +29,8 @@
     // List of locales
     vm.locales = {
       US: {
-        label: 'USA English',
-        description: 'USA English Variant 1',
+        label: 'US (English)',
+        description: 'United States',
         code: 'US',
         text: {
           chooseScenario: 'Select scenario',
@@ -70,20 +70,87 @@
           }
         }
       },
-      AU: {
-        label: 'Australia',
-        description: 'Australian Version',
-        code: 'AU',
+      UK: {
+        label: 'UK (English)',
+        description: 'United Kingdom',
+        code: 'UK',
         text: {
-          chooseScenario: 'Select scenario, mate',
+          chooseScenario: 'Select scenario',
           approved: 'Your application was approved!',
           approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
         },
         scenarios: {
           typical: {
             title: 'Typical applicant: multiple services but no friction',
-            label: 'Typical Applicashun',
+            label: 'Typical Applicant',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            person: 1,
+          },
+          mismatched: {
+            title: 'Step-up for consumer with mismatched identity data',
+            label: 'Mismatched Identities',
+            description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
+            person: 2,
+          },
+          machine: {
+            title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
+            label: 'Machine Learning',
+            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            person: 2,
+          },
+          fraud: {
+            title: 'Step-up for identity fraud attempt',
+            label: 'Identity Fraud Attempt',
+            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            person: 3,
+          },
+          thin: {
+            title: 'Passive step-up for thin-file applicant',
+            label: 'Thin-file Applicant',
+            description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
+            person: 4,
+          }
+        }
+      },
+      AU: {
+        label: 'Australia (English)',
+        description: 'Australia',
+        code: 'AU',
+        text: {
+          chooseScenario: 'Select scenario',
+          approved: 'Your application was approved!',
+          approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
+        },
+        scenarios: {
+          typical: {
+            title: 'Typical applicant: multiple services but no friction',
+            label: 'Typical Applicant',
+            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            person: 1,
+          },
+          mismatched: {
+            title: 'Step-up for consumer with mismatched identity data',
+            label: 'Mismatched Identities',
+            description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
+            person: 2,
+          },
+          machine: {
+            title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
+            label: 'Machine Learning',
+            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            person: 2,
+          },
+          fraud: {
+            title: 'Step-up for identity fraud attempt',
+            label: 'Identity Fraud Attempt',
+            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            person: 3,
+          },
+          thin: {
+            title: 'Passive step-up for thin-file applicant',
+            label: 'Thin-file Applicant',
+            description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
+            person: 4,
           }
         }
       }
@@ -95,6 +162,7 @@
     } else {
       vm.locale = vm.locales.US;
     }
+    document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
 
     vm.currentScenario = {
       form: {},
@@ -374,8 +442,9 @@
         title: vm.locale.scenarios.typical.title,
         label: vm.locale.scenarios.typical.label,
         description: vm.locale.scenarios.typical.description,
-        form: vm.contactFormPerson1,
-        // form: vm['contactFormPerson' + vm.locale.scenarios.typical.person],
+        form: vm['contactFormPerson' + vm.locale.scenarios.typical.person],
+        // Person 1 does not have assets; do not use in scenarios other than "typical"
+        assets: '' + vm.locale.scenarios.typical.person,
         states: [
           'app.mobile.input',
           'app.mobile.approved'
@@ -384,11 +453,11 @@
       {
         name: 'mismatched',
         appId: 'CC_DEMO_AO_80' + '_' + vm.locale.code,
-        title: 'Step-up for consumer with mismatched identity data',
-        label: 'Mismatched Identities',
-        description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
-        form: vm.contactFormPerson2,
-        assets: 'lizzy',
+        title: vm.locale.scenarios.mismatched.title,
+        label: vm.locale.scenarios.mismatched.label,
+        description: vm.locale.scenarios.mismatched.description,
+        form: vm['contactFormPerson' + vm.locale.scenarios.mismatched.person],
+        assets: 'person' + vm.locale.scenarios.mismatched.person,
         states: [
           'app.mobile.input',
           'app.mobile.input.needmore',
@@ -402,11 +471,11 @@
       {
         name: 'machine',
         appId: 'CC_DEMO_AO_81' + '_' + vm.locale.code,
-        title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-        label: 'Machine Learning',
-        description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
-        form: vm.contactFormPerson2,
-        assets: 'lizzy',
+        title: vm.locale.scenarios.machine.title,
+        label: vm.locale.scenarios.machine.label,
+        description: vm.locale.scenarios.machine.description,
+        form: vm['contactFormPerson' + vm.locale.scenarios.machine.person],
+        assets: 'person' + vm.locale.scenarios.machine.person,
         states: [           
           'app.mobile.toggles',
           'app.mobile.input',
@@ -416,11 +485,11 @@
       {
         name: 'fraud',
         appId: 'CC_DEMO_AO_76' + '_' + vm.locale.code,
-        title: 'Step-up for identity fraud attempt',
-        label: 'Identity Fraud Attempt',
-        description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
-        form: vm.contactFormPerson3,
-        assets: 'elizabeth',
+        title: vm.locale.scenarios.fraud.title,
+        label: vm.locale.scenarios.fraud.label,
+        description: vm.locale.scenarios.fraud.description,
+        form: vm['contactFormPerson' + vm.locale.scenarios.fraud.person],
+        assets: 'person' + vm.locale.scenarios.fraud.person,
         states: [
           'app.mobile.input',
           'app.mobile.input.needmore',
@@ -433,11 +502,11 @@
       {
         name: 'thin',
         appId: 'CC_DEMO_AO_82' + '_' + vm.locale.code,
-        title: 'Passive step-up for thin-file applicant',
-        label: 'Thin-file Applicant',
-        description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
-        form: vm.contactFormPerson4,
-        assets: 'jeremy',
+        title: vm.locale.scenarios.thin.title,
+        label: vm.locale.scenarios.thin.label,
+        description: vm.locale.scenarios.thin.description,
+        form: vm['contactFormPerson' + vm.locale.scenarios.thin.person],
+        assets: 'person' + vm.locale.scenarios.thin.person,
         states: [
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
@@ -447,17 +516,6 @@
           'app.mobile.approved'
         ]
       }
-      // ,
-      // {
-      //   name: 'flow6',
-      //   appId: '12345',
-      //   title: 'JSON Request',
-      //   label: 'JSON Request/Response',
-      //   description: 'JSON Request/Response Data',
-      //   states: [
-      //     'app.mobile.json'
-      //   ]
-      // }
     ]
     
     
