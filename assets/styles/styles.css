@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Roboto:400,500,700&display=swap&subset=japanese');
+body {
+	font-family: 'Roboto', sans-serif;
+}
+body.locale-JP {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+
 .c-header__locale {
 	display: inline-block;
 	margin-right: 2em;
@@ -13,7 +22,6 @@ html {
 body {
 	background-color: #fff;
 	background-size: contain;
-	font-family: 'Roboto', sans-serif;;
 	padding-top: 54px;
 	padding-bottom: 25px;
 	position: relative;
@@ -569,7 +577,6 @@ input.btn:focus {
 .mobileInputCode input::placeholder {
 	color: #a7aaac;
 	font-size: 18px;
-	font-style: 'Graphik Medium';
 	text-transform: none;
 }
 
