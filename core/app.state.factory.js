@@ -26,12 +26,32 @@
   /* @ngInject */
   function AppStateFactory ($http) {
     var vm = this;
+
+    function generateContactForm( localeCode, person ) {
+      var form = [];
+      vm.locales[localeCode].fields.forEach( function( field, index ) {
+        form.push( {
+          name: field.name,
+          placeholder: field.placeholder,
+          value: vm.locales[localeCode].persons[person][index],
+        } );
+      } );
+      return form;
+    }
+
     // List of locales
     vm.locales = {
       US: {
         label: 'US (English)',
         description: 'United States',
         code: 'US',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
+          ['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '312-567-8500', 'lizzy_grant@gmail.com'],
+          ['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '312-567-8500', 'elizabethgrant83@yahoo.com'],
+          ['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '512-474-5171', 'jeremyv_007@gmail.com'],
+        ],
         text: {
           chooseScenario: 'Select scenario',
           approved: 'Your application was approved!',
@@ -39,83 +59,176 @@
         },
         scenarios: {
           typical: {
-            title: 'Typical applicant: multiple services but no friction',
-            label: 'Typical Applicant',
+            label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
-          mismatched: {
-            title: 'Step-up for consumer with mismatched identity data',
-            label: 'Mismatched Identities',
+          mismatch: {
+            label: 'Mismatched Identities', title: 'Step-up for consumer with mismatched identity data',
             description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
             person: 2,
           },
           machine: {
-            title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            label: 'Machine Learning',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
             description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
-            title: 'Step-up for identity fraud attempt',
-            label: 'Identity Fraud Attempt',
+            label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
-            title: 'Passive step-up for thin-file applicant',
-            label: 'Thin-file Applicant',
+            label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
           }
-        }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'First Name'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Last Name'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - MM/DD/YYYY'
+          },
+          {
+            name: 'ssn',
+            placeholder: 'SSN'
+          },
+          {
+            name: 'address',
+            placeholder: '123 Streetname Ave'
+          },
+          {
+            name: 'city',
+            placeholder: 'City'
+          },
+          {
+            name: 'state',
+            placeholder: 'State'
+          },
+          {
+            name: 'zip',
+            placeholder: 'ZIP Code'
+          },
+          {
+            name: 'phone',
+            placeholder: 'Phone Number'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
       },
+
+      /**********************/
+      /*   UNITED KINGDOM   */
+      /**********************/
+
       UK: {
         label: 'UK (English)',
         description: 'United Kingdom',
         code: 'UK',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Sarah', 'Jamison', '02/01/1976', 'AO 12 34 56', '17123 Peachtree Court', 'Edinburgh', 'Scotland', 'EH10 4BF', '+44 7911 123456', 'sarahlynnjamison0276@yahoo.com'],
+          ['Lizzy', 'Grant', '04/04/1983', 'MB 56 65 54 C', '25301 3rd Avenue APT 184', 'London', 'England', 'W1T 1JY', '+44 7911 123456', 'lizzy_grant@gmail.com'],
+          ['Elizabeth', 'Grant', '07/04/1983', 'MB 56 65 54 C', '7146 S Apostle Avenue #8160', 'Bath', 'England', 'BA1 2FJ', '+44 7911 123456', 'elizabethgrant83@yahoo.com'],
+          ['Jeremy', 'Vasquez', '09/18/1999', 'XL 55 33 45 C', '9715 Rock Maple Street', 'Brighton', 'East Sussex, England', 'BN1 2NW', '+44 7911 123456', 'jeremyv_007@gmail.com'],
+        ],
         text: {
-          chooseScenario: 'Select scenario',
+          chooseScenario: 'Choose scenario',
           approved: 'Your application was approved!',
           approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
         },
         scenarios: {
           typical: {
-            title: 'Typical applicant: multiple services but no friction',
-            label: 'Typical Applicant',
+            label: 'Ordinary Applicant', title: 'Typical applicant: multiple services but no friction',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
-          mismatched: {
-            title: 'Step-up for consumer with mismatched identity data',
-            label: 'Mismatched Identities',
+          mismatch: {
+            label: 'Identity Discrepancies', title: 'Step-up for consumer with mismatched identity data',
             description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
             person: 2,
           },
           machine: {
-            title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            label: 'Machine Learning',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
             description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
-            title: 'Step-up for identity fraud attempt',
-            label: 'Identity Fraud Attempt',
+            label: 'A Crack At Identity Fraud', title: 'Step-up for identity fraud attempt',
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
-            title: 'Passive step-up for thin-file applicant',
-            label: 'Thin-file Applicant',
+            label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
           }
-        }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'First Name'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Last Name'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - MM/DD/YYYY'
+          },
+          {
+            name: 'NINO',
+            placeholder: 'National Insurance Number'
+          },
+          {
+            name: 'address',
+            placeholder: '123 Streetname Ave'
+          },
+          {
+            name: 'city',
+            placeholder: 'City'
+          },
+          {
+            name: 'country',
+            placeholder: 'Country'
+          },
+          {
+            name: 'postcode',
+            placeholder: 'Postal Code'
+          },
+          {
+            name: 'phone',
+            placeholder: 'Phone Number'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
       },
       AU: {
-        label: 'Australia (English)',
+        label: 'AUS (English)',
         description: 'Australia',
         code: 'AU',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
+          ['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '312-567-8500', 'lizzy_grant@gmail.com'],
+          ['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '312-567-8500', 'elizabethgrant83@yahoo.com'],
+          ['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '512-474-5171', 'jeremyv_007@gmail.com'],
+        ],
         text: {
           chooseScenario: 'Select scenario',
           approved: 'Your application was approved!',
@@ -123,38 +236,76 @@
         },
         scenarios: {
           typical: {
-            title: 'Typical applicant: multiple services but no friction',
-            label: 'Typical Applicant',
+            label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
-          mismatched: {
-            title: 'Step-up for consumer with mismatched identity data',
-            label: 'Mismatched Identities',
+          mismatch: {
+            label: 'Mismatched Identities', title: 'Step-up for consumer with mismatched identity data',
             description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
             person: 2,
           },
           machine: {
-            title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            label: 'Machine Learning',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
             description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
-            title: 'Step-up for identity fraud attempt',
-            label: 'Identity Fraud Attempt',
+            label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
-            title: 'Passive step-up for thin-file applicant',
-            label: 'Thin-file Applicant',
+            label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
           }
-        }
-      }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'First Name'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Last Name'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - MM/DD/YYYY'
+          },
+          {
+            name: 'ssn',
+            placeholder: 'SSN'
+          },
+          {
+            name: 'address',
+            placeholder: '123 Streetname Ave'
+          },
+          {
+            name: 'city',
+            placeholder: 'City'
+          },
+          {
+            name: 'state',
+            placeholder: 'State'
+          },
+          {
+            name: 'zip',
+            placeholder: 'ZIP Code'
+          },
+          {
+            name: 'phone',
+            placeholder: 'Phone Number'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
+      },
     };
+
 
     var cookieLocale = getCookie( 'mm_locale' );
     if ( cookieLocale !== "" ) {
@@ -203,234 +354,15 @@
     /**
      * Init
      */
-    function getJson(mockData) { 
+
+    /*
+    function getJson(mockData) {
       $http.get('./assets/json/' + mockData + '.json').then(function(data) {
         vm.json[mockData] = JSON.stringify(data, null, 3);
       })
     }
-
     ['request', 'response'].forEach(getJson);
-
-
-    /**
-     * Contact Form Data
-     */
-    vm.contactFormPerson1 = [
-      {
-        label: 'firstName',
-        placeholder: 'First Name',
-        value: 'Sarah'
-      },
-      {
-        label: 'lastName',
-        placeholder: 'Last Name',
-        value: 'Jamison'
-      },
-      {
-        label: 'dob',
-        placeholder: 'DOB - MM/DD/YYYY',
-        value: '02/01/1976'
-      },
-      {
-        label: 'SSN',
-        placeholder: 'SSN',
-        value: '165-23-9877'
-      },
-      {
-        label: 'address',
-        placeholder: '123 Street Name Ave.',
-        value: '17123 Peachtree Court'
-      },
-      {
-        label: 'city',
-        placeholder: 'City',
-        value: 'Boston'
-      },
-      {
-        label: 'state',
-        placeholder: 'TX',
-        value: 'MA'
-      },
-      {
-        label: 'zip',
-        placeholder: 'Zip Code',
-        value: '02196'
-      },
-      {
-        label: 'phone',
-        placeholder: 'Phone: +1 ###-###-####',
-        value: '+1 617-536-4100'
-      },
-      {
-        label: 'email',
-        placeholder: 'email@address.com',
-        value: 'sarahlynnjamison0276@yahoo.com'
-      }
-    ]
-
-    vm.contactFormPerson2 = [
-      {
-        label: 'firstName',
-        placeholder: 'First Name',
-        value: 'Lizzy'
-      },
-      {
-        label: 'lastName',
-        placeholder: 'Last Name',
-        value: 'Grant'
-      },
-      {
-        label: 'dob',
-        placeholder: 'DOB - MM/DD/YYYY',
-        value: '07/04/1983'
-      },
-      {
-        label: 'SSN',
-        placeholder: 'SSN',
-        value: '512-43-8888'
-      },
-      {
-        label: 'address',
-        placeholder: '123 Street Name Ave.',
-        value: '25301 3rd Street #184'
-      },
-      {
-        label: 'city',
-        placeholder: 'City',
-        value: 'San Francisco'
-      },
-      {
-        label: 'state',
-        placeholder: 'TX',
-        value: 'CA'
-      },
-      {
-        label: 'zip',
-        placeholder: 'Zip Code',
-        value: '94107'
-      },
-      {
-        label: 'phone',
-        placeholder: 'Phone: +1 ###-###-####',
-        value: '+1 312-567-8500'
-      },
-      {
-        label: 'email',
-        placeholder: 'email@address.com',
-        value: 'lizzy_grant@gmail.com'
-      }
-    ]
-
-    vm.contactFormPerson3 = [
-      {
-        label: 'firstName',
-        placeholder: 'First Name',
-        value: 'Elizabeth'
-      },
-      {
-        label: 'lastName',
-        placeholder: 'Last name',
-        value: 'Grant'
-      },
-      {
-        label: 'dob',
-        placeholder: 'DOB - MM/DD/YYYY',
-        value: '07/04/1983'
-      },
-      {
-        label: 'SSN',
-        placeholder: 'SSN',
-        value: '512-43-8888'
-      },
-      {
-        label: 'address',
-        placeholder: '123 Street Name Ave.',
-        value: '7146 S. Apostle Avenue #8160'
-      },
-      {
-        label: 'city',
-        placeholder: 'City',
-        value: 'Chicago'
-      },
-      {
-        label: 'state',
-        placeholder: 'TX',
-        value: 'IL'
-      },
-      {
-        label: 'zip',
-        placeholder: 'Zip Code',
-        value: '60652'
-      },
-      {
-        label: 'phone',
-        placeholder: 'Phone: +1 ###-###-####',
-        value: '+1 312-567-8500'
-      },
-      {
-        label: 'email',
-        placeholder: 'email@address.com',
-        value: 'elizabethgrant83@yahoo.com'
-      }
-    ]
-
-    vm.contactFormPerson4 = [
-      {
-        label: 'firstName',
-        placeholder: 'First Name',
-        value: 'Jeremy',
-        delay: 0
-      },
-      {
-        label: 'lastName',
-        placeholder: 'Last Name',
-        value: 'Vasquez',
-        delay: 0
-      },
-      {
-        label: 'dob',
-        placeholder: 'DOB - MM/DD/YYYY',
-        value: '09/18/1999',
-        delay: 0
-      },
-      {
-        label: 'SSN',
-        placeholder: 'SSN',
-        value: '754-63-2199'
-      },
-      {
-        label: 'address',
-        placeholder: '123 Street Name Ave.',
-        value: '9715 Rock Maple Street'
-      },
-      {
-        label: 'city',
-        placeholder: 'City',
-        value: 'Austin',
-        delay: 0
-      },
-      {
-        label: 'state',
-        placeholder: 'TX',
-        value: 'TX',
-        delay: 0
-      },
-      {
-        label: 'zip',
-        placeholder: 'Zip Code',
-        value: '78759'
-      },
-      {
-        label: 'phone',
-        placeholder: 'Phone: +1 ###-###-####',
-        value: '+1 512-474-5171'
-      },
-      {
-        label: 'email',
-        placeholder: 'email@address.com',
-        value: 'jeremyv_007@gmail.com'
-      }
-    ]
+    */
 
     /**
      * Scripted Events
@@ -442,7 +374,8 @@
         title: vm.locale.scenarios.typical.title,
         label: vm.locale.scenarios.typical.label,
         description: vm.locale.scenarios.typical.description,
-        form: vm['contactFormPerson' + vm.locale.scenarios.typical.person],
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.typical.person ),
+
         // Person 1 does not have assets; do not use in scenarios other than "typical"
         assets: '' + vm.locale.scenarios.typical.person,
         states: [
@@ -451,13 +384,13 @@
         ]
       },
       {
-        name: 'mismatched',
+        name: 'mismatch',
         appId: 'CC_DEMO_AO_80' + '_' + vm.locale.code,
-        title: vm.locale.scenarios.mismatched.title,
-        label: vm.locale.scenarios.mismatched.label,
-        description: vm.locale.scenarios.mismatched.description,
-        form: vm['contactFormPerson' + vm.locale.scenarios.mismatched.person],
-        assets: 'person' + vm.locale.scenarios.mismatched.person,
+        title: vm.locale.scenarios.mismatch.title,
+        label: vm.locale.scenarios.mismatch.label,
+        description: vm.locale.scenarios.mismatch.description,
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.mismatch.person ),
+        assets: vm.locale.code + '/person' + vm.locale.scenarios.mismatch.person,
         states: [
           'app.mobile.input',
           'app.mobile.input.needmore',
@@ -474,7 +407,7 @@
         title: vm.locale.scenarios.machine.title,
         label: vm.locale.scenarios.machine.label,
         description: vm.locale.scenarios.machine.description,
-        form: vm['contactFormPerson' + vm.locale.scenarios.machine.person],
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.machine.person ),
         assets: 'person' + vm.locale.scenarios.machine.person,
         states: [           
           'app.mobile.toggles',
@@ -488,7 +421,7 @@
         title: vm.locale.scenarios.fraud.title,
         label: vm.locale.scenarios.fraud.label,
         description: vm.locale.scenarios.fraud.description,
-        form: vm['contactFormPerson' + vm.locale.scenarios.fraud.person],
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.fraud.person ),
         assets: 'person' + vm.locale.scenarios.fraud.person,
         states: [
           'app.mobile.input',
@@ -505,7 +438,7 @@
         title: vm.locale.scenarios.thin.title,
         label: vm.locale.scenarios.thin.label,
         description: vm.locale.scenarios.thin.description,
-        form: vm['contactFormPerson' + vm.locale.scenarios.thin.person],
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
         assets: 'person' + vm.locale.scenarios.thin.person,
         states: [
           'app.mobile.input.needmore',
@@ -517,8 +450,7 @@
         ]
       }
     ]
-    
-    
+
     return vm;
   }  
 })();

@@ -214,14 +214,17 @@ h1 {
 	z-index: 900;
 	border-bottom: solid 1px #6dbb17;
 	align-items: center;
+	justify-content: flex-start;
 }
 
 .headerMobileBanner img {
 	/* margin: auto 0; */
 	width: 188px;
 	height: 50%;
+	flex: 0 1 50px;
 }
-
+.c-header__logotext {
+}
 
 /** Consent Page **/
 .consentContent .panel-bg {

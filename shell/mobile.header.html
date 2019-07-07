@@ -1,4 +1,5 @@
 <div class="headerMobileBanner">
-    <img src="assets/images/logo.svg" alt="" ng-click="vm.go('app.mobile.welcome')">
+    <img  class="c-header__logo" src="assets/images/logo.svg" alt="" ng-click="vm.go('app.mobile.welcome')">
+    <span class="c-header__logotext" title="Main page" ng-click="vm.go('app.mobile.locale')">MyMoney</span>
     <a class="c-header__locale" title="Click to change" ng-click="vm.go('app.mobile.locale')">Current Locale: <span>{{ vm.locale.label }}</span></a>
 </div>
