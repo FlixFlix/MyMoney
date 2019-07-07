@@ -22,7 +22,7 @@
       var myTiming = setTimeout(function() {
         el.val(attrs.val);
         clearTimeout(myTiming);
-      }, attrs.delay || 1500);
+      }, attrs.delay || 2000);
     }
   }
 
@@ -44,7 +44,7 @@
         }
 
         clearTimeout(myTiming);
-      }, attrs.delay || 1500);
+      }, attrs.delay || 2000);
     }
   }
 
