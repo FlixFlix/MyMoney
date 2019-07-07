@@ -1,6 +1,22 @@
 (function () {
   'use strict';
 
+  function getCookie( cname ) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent( document.cookie );
+    var ca = decodedCookie.split( ';' );
+    for ( var i = 0; i < ca.length; i++ ) {
+      var c = ca[i];
+      while ( c.charAt( 0 ) == ' ' ) {
+        c = c.substring( 1 );
+      }
+      if ( c.indexOf( name ) == 0 ) {
+        return c.substring( name.length, c.length );
+      }
+    }
+    return "";
+  }
+
   angular
     .module('webApp')
     .factory('AppStateFactory', AppStateFactory);
@@ -11,14 +27,31 @@
   function AppStateFactory ($http) {
     var vm = this;
     // List of locales
-    vm.locales = [
-      {
+    vm.locales = {
+      US: {
         label: 'USA English',
         description: 'USA English Variant 1',
-        code: 'US'
+        code: 'US',
+        text: {
+          chooseScenario: 'Select scenario'
+        }
+      },
+      AU: {
+        label: 'Australia',
+        description: 'Australian Version',
+        code: 'AU',
+        text: {
+          chooseScenario: 'Select scenario, mate'
+        }
       }
-    ];
-    vm.currentLocale = vm.locales[0];
+    };
+
+    var cookieLocale = getCookie( 'mm_locale' );
+    if ( cookieLocale !== "" ) {
+      vm.locale = vm.locales[cookieLocale];
+    } else {
+      vm.locale = vm.locales.US;
+    }
 
     vm.currentScenario = {
       form: {},

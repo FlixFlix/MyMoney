@@ -20,15 +20,22 @@
         vm.appState = AppStateFactory;
         $rootScope.pageClass = 'something-new'
         vm.pageClass = 'something-new'
-        vm.currentLocale = AppStateFactory.currentLocale;
+        vm.locale = AppStateFactory.locale;
         vm.locales = AppStateFactory.locales;
+
         /**
          * Template Methods
          */
         vm.go = function(path) {
             $state.go(path);
         }
-        
+
+        vm.selectLocale = function(locale) {
+            document.cookie = "mm_locale=" + locale.code + ";max-age=" + 180 * 24 * 3600 * 1000 + ";";
+            setTimeout( function() {
+                location.reload();
+            }, 250 )
+        }
         vm.selectFlow = function(flow) {
             vm.appState.currentScenario.states = angular.copy(flow.states);
             vm.appState.currentScenario.form = angular.copy(flow.form);
