@@ -50,6 +50,7 @@
         label: 'US (English)',
         description: 'United States',
         code: 'US',
+        ISOCode: 'US',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
           ['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -142,6 +143,7 @@
         label: 'UK (English)',
         description: 'United Kingdom',
         code: 'UK',
+        ISOCode: 'GB',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
           ['Sarah', 'Jamison', '02/01/1976', 'AO 12 34 56', '17123 Peachtree Court', 'Edinburgh', 'Scotland', 'EH10 4BF', '+44 7911 123456', 'sarahlynnjamison0276@yahoo.com'],
@@ -231,9 +233,10 @@
 
       AU: {
         appName: 'MyDollary-doos',
-        label: 'AUS (English)',
+        label: 'Australia (English)',
         description: 'Australia',
         code: 'AU',
+        ISOCode: 'AU',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
           ['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -326,6 +329,7 @@
         label: 'India (Hindu)',
         description: 'India',
         code: 'IND',
+        ISOCode: 'IN',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
           ['Singh', 'Patel', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -419,7 +423,11 @@
     }
     document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
     document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
-
+    if ( vm.locale.ISOCode ) {
+      let flag = document.querySelector( '.c-header__locale' ).appendChild( document.createElement( 'img' ) );
+      flag.classList.add('c-header__flag');
+      flag.setAttribute( 'src', 'https://www.countryflags.io/' + vm.locale.ISOCode + '/flat/32.png' );
+    }
     vm.currentScenario = {
       form: {},
       states: [],
