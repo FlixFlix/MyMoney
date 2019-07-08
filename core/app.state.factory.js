@@ -41,7 +41,12 @@
 
     // List of locales
     vm.locales = {
+
+      /*********************/
+      /*   UNITED STATES   */
+      /*********************/
       US: {
+        appName: 'MyMoney',
         label: 'US (English)',
         description: 'United States',
         code: 'US',
@@ -133,6 +138,7 @@
       /**********************/
 
       UK: {
+        appName: 'MySmackers',
         label: 'UK (English)',
         description: 'United Kingdom',
         code: 'UK',
@@ -218,7 +224,13 @@
           },
         ]
       },
+
+      /****************/
+      /*   AUSTRALIA  */
+      /****************/
+
       AU: {
+        appName: 'MyDollary-doos',
         label: 'AUS (English)',
         description: 'Australia',
         code: 'AU',
@@ -236,7 +248,99 @@
         },
         scenarios: {
           typical: {
-            label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
+            label: 'Regular Bloke', title: 'Typical applicant: multiple services but no friction',
+            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            person: 1,
+          },
+          mismatch: {
+            label: 'Mismatched Identities', title: 'Step-up for consumer with mismatched identity data',
+            description: 'Many applicants have slight identity discrepancies that require costly manual review and application delays.',
+            person: 2,
+          },
+          machine: {
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
+            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            person: 2,
+          },
+          fraud: {
+            label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
+            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            person: 3,
+          },
+          thin: {
+            label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
+            description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
+            person: 4,
+          }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'First Name'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Last Name'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - MM/DD/YYYY'
+          },
+          {
+            name: 'ssn',
+            placeholder: 'SSN'
+          },
+          {
+            name: 'address',
+            placeholder: '123 Streetname Ave'
+          },
+          {
+            name: 'city',
+            placeholder: 'City'
+          },
+          {
+            name: 'state',
+            placeholder: 'State'
+          },
+          {
+            name: 'zip',
+            placeholder: 'ZIP Code'
+          },
+          {
+            name: 'phone',
+            placeholder: 'Phone Number'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
+      },
+
+      /****************/
+      /*   INDIA      */
+      /****************/
+
+      IND: {
+        appName: 'MyCurry',
+        label: 'India (Hindu)',
+        description: 'India',
+        code: 'IND',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Singh', 'Patel', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
+          ['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '312-567-8500', 'lizzy_grant@gmail.com'],
+          ['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '312-567-8500', 'elizabethgrant83@yahoo.com'],
+          ['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '512-474-5171', 'jeremyv_007@gmail.com'],
+        ],
+        text: {
+          chooseScenario: 'Select scenario',
+          approved: 'Your application was approved!',
+          approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
+        },
+        scenarios: {
+          typical: {
+            label: 'Regular Bloke', title: 'Typical applicant: multiple services but no friction',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
@@ -314,6 +418,7 @@
       vm.locale = vm.locales.US;
     }
     document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
+    document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
 
     vm.currentScenario = {
       form: {},
@@ -400,7 +505,7 @@
           'app.mobile.approved'
         ]
       },
-      // Charlie changed "CrossCore Decision Analytics" to "Machine Learning" 5/20/19 
+
       {
         name: 'machine',
         appId: 'CC_DEMO_AO_81' + '_' + vm.locale.code,
@@ -422,7 +527,7 @@
         label: vm.locale.scenarios.fraud.label,
         description: vm.locale.scenarios.fraud.description,
         form: generateContactForm( vm.locale.code, vm.locale.scenarios.fraud.person ),
-        assets: 'person' + vm.locale.scenarios.fraud.person,
+        assets: vm.locale.code + '/person' + vm.locale.scenarios.fraud.person,
         states: [
           'app.mobile.input',
           'app.mobile.input.needmore',
@@ -439,7 +544,7 @@
         label: vm.locale.scenarios.thin.label,
         description: vm.locale.scenarios.thin.description,
         form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
-        assets: 'person' + vm.locale.scenarios.thin.person,
+        assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
         states: [
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
