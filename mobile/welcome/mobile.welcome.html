@@ -1,11 +1,17 @@
 <div class="scenarios">
     <style>.mobileButtonContainer {display: none;}</style>
     <h1>{{ vm.locale.text.chooseScenario }}</h1>
+    <div>
+        <label class="c-toggle" for="c-toggle">
+            <input ng-show = "vm.isDescriptionsEnabled()" ng-click="vm.toggleDescriptions()" id="c-toggle" name="c-toggle" type="checkbox">
+            Show Descriptions
+        </label>
+    </div>
     <div ng-repeat="scenario in vm.appState.scenarios">
         <div class="scenario-selector" title="{{ scenario.title }}">
             <a ng-click="vm.selectFlow(scenario)"> </a>
             <h2 class="scenario-title">{{ scenario.label }}</h2>
-            <div class="description">{{scenario.description}}</div>
+            <div ng-if="vm.showDescriptions" class="description">{{scenario.description}}</div>
         </div>
     </div>
 </div>

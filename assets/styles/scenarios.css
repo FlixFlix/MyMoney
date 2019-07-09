@@ -67,7 +67,13 @@ h3 {
 .scenario-selector .description {
     max-width: 500px;
     margin: 15px auto 0;
-    display: none;
+    /*display: none;*/
+}
+.c-toggle {
+    font-weight: 500;
+    padding: 10px;
+    margin-left: -10px;
+    cursor: pointer;
 }
 
 .scenario-selector h2 {
