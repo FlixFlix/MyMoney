@@ -35,8 +35,10 @@ h3 {
     justify-content: center;
 }
 
-.result-passport img { 
-    width: 100%; 
+.result-passport img {
+    display: block;
+    max-width: 600px;
+    margin: 10px auto;
 }
 
 .scenario-selector {

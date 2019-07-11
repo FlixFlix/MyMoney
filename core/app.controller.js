@@ -40,7 +40,7 @@
             vm.appState.currentScenario.states = angular.copy(flow.states);
             vm.appState.currentScenario.form = angular.copy(flow.form);
             vm.appState.currentScenario.assets = 'assets/images/' + flow.assets + '/';
-            vm.appState.currentScenario.showPassport = (flow.assets === 'person4');
+            vm.appState.currentScenario.showPassport = (flow.assets === vm.locale.code + '/person4');
             vm.appState.currentScenario.review = flow.name;
             vm.appState.currentScenario.appId = flow.appId;
             vm.next();
