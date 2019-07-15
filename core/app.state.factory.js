@@ -327,12 +327,12 @@
       /*   INDIA      */
       /****************/
 
-      IND: {
-        appName: 'MyMoney-IND',
+      IN: {
+        appName: 'MyMoney-IN',
         label: 'India (Hindu)',
         description: 'India',
         Region: 'APAC', 
-		code: 'IND',
+		code: 'IN',
         ISOCode: 'IN',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
@@ -421,12 +421,12 @@
       /*   INDONESIA     */
       /*******************/
 
-      IDN: {
-        appName: 'MyMoney-IDN',
+      ID: {
+        appName: 'MyMoney-ID',
         label: 'Indonesia',
         description: 'Indonesia',
         Region: 'APAC',
-		code: 'IDN',
+		code: 'ID',
         ISOCode: 'ID',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
@@ -519,7 +519,7 @@
     if ( cookieLocale !== "" ) {
       vm.locale = vm.locales[cookieLocale];
     } else {
-      vm.locale = vm.locales.US;
+      vm.locale = vm.locales.ID;
     }
     document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
     document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
