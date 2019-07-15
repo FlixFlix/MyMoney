@@ -49,7 +49,7 @@
         appName: 'MyMoney-US',
         label: 'US (English)',
         description: 'United States',
-		Region: 'NA"
+		Region: 'NA',
         code: 'US',
         ISOCode: 'US',
         persons: [
@@ -143,7 +143,7 @@
         appName: 'MyMoney-UK',
         label: 'UK (English)',
         description: 'United Kingdom',
-		Region: 'UK"
+		Region: 'UK',
         code: 'UK',
         ISOCode: 'GB',
         persons: [
@@ -179,7 +179,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin-no-back: {
+          thin: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -237,7 +237,7 @@
         appName: 'MyMoney-AU',
         label: 'Australia (English)',
         description: 'Australia',
-		Region: 'APAC"        
+		Region: 'APAC',       
 		code: 'AU',
         ISOCode: 'AU',
         persons: [
@@ -273,7 +273,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin-no-back: {
+          thin: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -331,15 +331,15 @@
         appName: 'MyMoney-IND',
         label: 'India (Hindu)',
         description: 'India',
-        Region: 'APAC" 
+        Region: 'APAC', 
 		code: 'IND',
         ISOCode: 'IN',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
-		  ['Nikitha','Mody','02-01-1976','9423 3484 9843','65, Shop, Sv Lane, Mamulpet','Bangalore','Karnataka', '560053','+91 80 76822814','NikithaMody0276@yahoo.com'],
-		  ['Pooh','Parikh','09-04-1973','9454 2354 9765','Raj Chamber Bldg, Manchubhai Road, Malad (east)', 'Mumbai','Maharashtra','400097','+91 22 28887246','Pooh_Parikh@gmail.com'],
-		  ['Pooja','Parikh','09-04-1973','9454 2354 9765','83, Qutab View Apartments, Katwaria Sarai','New Delhi','Delhi', '110016','+91 11 23436788','PoojaParikh83@yahoo.com'],
-		  ['Arun','Pillai','09-18-1999','9453 3221 9542','46, Himalaya House, Palton Road','Mumbai','Maharashtra','400001','+91 22 27892639','ArunPillai_007@gmail.com'],
+		  ['Nikitha','Mody','02-01-1976','9423 3484 9843','65, Shop, Sv Lane, Mamulpet','Bangalore','Karnataka', '560053','+91 9008 822814','NikithaMody0276@yahoo.com'],
+		  ['Pooh','Parikh','09-04-1973','9454 2354 9765','Raj Chamber Bldg, Manchubhai Road, Malad (east)', 'Mumbai','Maharashtra','400097','+91 9405 887246','Pooh_Parikh@gmail.com'],
+		  ['Pooja','Parikh','09-04-1973','9454 2354 9765','83, Qutab View Apartments, Katwaria Sarai','New Delhi','Delhi', '110016','+91 9716 436788','PoojaParikh83@yahoo.com'],
+		  ['Arun','Pillai','09-18-1999','9453 3221 9542','46, Himalaya House, Palton Road','Mumbai','Maharashtra','400001','+91 9421 892639','ArunPillai_007@gmail.com'],
         ],
         text: {
           chooseScenario: 'Select scenario',
@@ -367,7 +367,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin-no-back: {
+          thin: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -425,7 +425,7 @@
         appName: 'MyMoney-IDN',
         label: 'Indonesia',
         description: 'Indonesia',
-        Region: 'APAC" 
+        Region: 'APAC',
 		code: 'IDN',
         ISOCode: 'ID',
         persons: [
@@ -461,7 +461,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin-no-back: {
+          thin: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -656,23 +656,6 @@
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
           'app.mobile.mitek.back',
-          'app.mobile.mitek.selfie',
-          'app.mobile.input',
-          'app.mobile.approved'
-        ]
-      }
-      {
-        // Same as thin, but only takes the front picture of ID and not the back" 
-		name: 'thin-no-back',
-        appId: 'CC_DEMO_AO_82' + '_' + vm.locale.code,
-        title: vm.locale.scenarios.thin.title,
-        label: vm.locale.scenarios.thin.label,
-        description: vm.locale.scenarios.thin.description,
-        form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
-        assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-        states: [
-          'app.mobile.input.needmore',
-          'app.mobile.mitek.front',
           'app.mobile.mitek.selfie',
           'app.mobile.input',
           'app.mobile.approved'
