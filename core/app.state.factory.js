@@ -519,7 +519,7 @@
     if ( cookieLocale !== "" ) {
       vm.locale = vm.locales[cookieLocale];
     } else {
-      vm.locale = vm.locales.ID;
+      vm.locale = vm.locales.US;
     }
     document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
     document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
