@@ -49,6 +49,7 @@
         appName: 'MyMoney-US',
         label: 'US (English)',
         description: 'United States',
+		Region: 'NA"
         code: 'US',
         ISOCode: 'US',
         persons: [
@@ -142,6 +143,7 @@
         appName: 'MyMoney-UK',
         label: 'UK (English)',
         description: 'United Kingdom',
+		Region: 'UK"
         code: 'UK',
         ISOCode: 'GB',
         persons: [
@@ -177,7 +179,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin: {
+          thin-no-back: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -235,7 +237,8 @@
         appName: 'MyMoney-AU',
         label: 'Australia (English)',
         description: 'Australia',
-        code: 'AU',
+		Region: 'APAC"        
+		code: 'AU',
         ISOCode: 'AU',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
@@ -270,7 +273,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin: {
+          thin-no-back: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -328,7 +331,8 @@
         appName: 'MyMoney-IND',
         label: 'India (Hindu)',
         description: 'India',
-        code: 'IND',
+        Region: 'APAC" 
+		code: 'IND',
         ISOCode: 'IN',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
@@ -363,7 +367,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin: {
+          thin-no-back: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -421,7 +425,8 @@
         appName: 'MyMoney-IDN',
         label: 'Indonesia',
         description: 'Indonesia',
-        code: 'IDN',
+        Region: 'APAC" 
+		code: 'IDN',
         ISOCode: 'ID',
         persons: [
           ['', '', '', '', '', '', '', '', '', ''],
@@ -437,7 +442,7 @@
         },
         scenarios: {
           typical: {
-            label: 'Regular Bloke', title: 'Typical applicant: multiple services but no friction',
+            label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
             description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
@@ -456,7 +461,7 @@
             description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
-          thin: {
+          thin-no-back: {
             label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
             description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
             person: 4,
@@ -651,6 +656,23 @@
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
           'app.mobile.mitek.back',
+          'app.mobile.mitek.selfie',
+          'app.mobile.input',
+          'app.mobile.approved'
+        ]
+      }
+      {
+        // Same as thin, but only takes the front picture of ID and not the back" 
+		name: 'thin-no-back',
+        appId: 'CC_DEMO_AO_82' + '_' + vm.locale.code,
+        title: vm.locale.scenarios.thin.title,
+        label: vm.locale.scenarios.thin.label,
+        description: vm.locale.scenarios.thin.description,
+        form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
+        assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
+        states: [
+          'app.mobile.input.needmore',
+          'app.mobile.mitek.front',
           'app.mobile.mitek.selfie',
           'app.mobile.input',
           'app.mobile.approved'
