@@ -22,7 +22,7 @@
 			window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
 		}
 
-		window.appHome = window.location.href.split('#')[0];
+		window.appHome = window.location.href.split('#')[0].split('?')[0];
 		function getUrlVars() {
 			var vars = {};
 			var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
