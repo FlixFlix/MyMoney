@@ -33,7 +33,7 @@
         vm.selectLocale = function(locale) {
             document.cookie = "mm_locale=" + locale.code + ";max-age=" + 180 * 24 * 3600 * 1000 + ";";
             setTimeout( function() {
-				window.location.replace("/");
+                window.location.replace( window.appHome.split('#')[0] );
             }, 250 )
         }
         vm.selectFlow = function(flow) {
