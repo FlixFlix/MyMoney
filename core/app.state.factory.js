@@ -514,13 +514,20 @@
 
 	  };
 
+    var localeSelector;
 
-    var cookieLocale = getCookie( 'mm_locale' );
-    if ( cookieLocale !== "" && vm.locales[cookieLocale] ) {
-      vm.locale = vm.locales[cookieLocale];
+    if ( window.locale ) {
+      localeSelector = window.locale;
+    } else {
+      localeSelector = getCookie( 'mm_locale' );
+    }
+
+    if ( vm.locales[localeSelector] ) {
+      vm.locale = vm.locales[localeSelector];
     } else {
       vm.locale = vm.locales.US;
     }
+
     document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
     document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
     if ( vm.locale.ISOCode ) {

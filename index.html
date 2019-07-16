@@ -18,12 +18,20 @@
     <!-- endinject -->
     <script>
     
-    // index.html line 19 – Nick S. added a script including the aforementioned launch function.
-    
-      function launch(b) {
-        window.open(b.dataset.href, "review", "width="+screen.width+",height="+screen.height);
-      }
-      window.appHome = window.location.href;
+	function launch( b ) {
+		window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
+	}
+
+	window.appHome = window.location.href.split('#')[0];
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
+			vars[key] = value;
+		} );
+		return vars;
+	}
+	window.locale = getUrlVars()['locale'];
+
     </script>
 </head>
 
