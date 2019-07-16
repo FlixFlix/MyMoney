@@ -94,7 +94,7 @@ angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 		'    <h1>Select Locale</h1>\n' +
 		'    <div class="scenario-selector" title="{{ locale.description }}" ng-repeat="locale in vm.locales">\n' +
 		'        <a ng-click="vm.selectLocale(locale)"> </a>\n' +
-		'        <h2 class="scenario-title">{{ locale.label }}</h2>\n' +
+		'        <h2 style="text-align: left" class="scenario-title"><img src="https://www.countryflags.io/{{locale.ISOCode}}/flat/64.png">&nbsp;&nbsp;{{ locale.label }}</h2>\n' +
 		'    </div>\n' +
 		'</div>' );
 	$templateCache.put( 'vendors/ngMask/examples/index-local.html', '<!DOCTYPE html>\n' +
