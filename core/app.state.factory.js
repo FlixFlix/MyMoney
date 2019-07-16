@@ -516,7 +516,7 @@
 
 
     var cookieLocale = getCookie( 'mm_locale' );
-    if ( cookieLocale !== "" ) {
+    if ( cookieLocale !== "" && vm.locales[cookieLocale] ) {
       vm.locale = vm.locales[cookieLocale];
     } else {
       vm.locale = vm.locales.US;
