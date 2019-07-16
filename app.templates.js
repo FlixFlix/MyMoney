@@ -75,11 +75,17 @@ angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 	$templateCache.put( 'mobile/welcome/mobile.welcome.html','<div class="scenarios">\n' +
 		'    <style>.mobileButtonContainer {display: none;}</style>\n' +
 		'    <h1>{{ vm.locale.text.chooseScenario }}</h1>\n' +
+		'    <div>\n' +
+		'        <label class="c-toggle" for="c-toggle">\n' +
+		'            <input ng-show = "vm.isDescriptionsEnabled()" ng-click="vm.toggleDescriptions()" id="c-toggle" name="c-toggle" type="checkbox">\n' +
+		'            Show Descriptions\n' +
+		'        </label>\n' +
+		'    </div>\n' +
 		'    <div ng-repeat="scenario in vm.appState.scenarios">\n' +
 		'        <div class="scenario-selector" title="{{ scenario.title }}">\n' +
 		'            <a ng-click="vm.selectFlow(scenario)"> </a>\n' +
 		'            <h2 class="scenario-title">{{ scenario.label }}</h2>\n' +
-		'            <div class="description">{{scenario.description}}</div>\n' +
+		'            <div ng-if="vm.showDescriptions" class="description">{{scenario.description}}</div>\n' +
 		'        </div>\n' +
 		'    </div>\n' +
 		'</div>' );
