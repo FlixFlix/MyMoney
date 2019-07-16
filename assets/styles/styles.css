@@ -13,6 +13,18 @@ body.locale-JP {
 	margin-left: auto;
 	cursor: pointer;
 }
+
+@media (max-width: 600px) {
+	.c-header__locale__current {
+		display: none;
+	}
+	.headerMobileBanner .c-header__locale  {
+		margin-right: 10px;
+	}
+	.headerMobileBanner .c-header__logotext {
+		font-size: 20px;
+	}
+}
 .c-header__locale .c-header__flag {
 	margin: -2px 0 0 10px;
 }
