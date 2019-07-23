@@ -49,7 +49,9 @@
         appName: 'MyMoney-US',
         label: 'US (English)',
         description: 'United States',
-		Region: 'NA',
+		region: 'NA',
+		language: 'Eng',
+		proposition: 'AO',
         code: 'US',
         ISOCode: 'US',
         persons: [
@@ -67,7 +69,7 @@
         scenarios: {
           typical: {
             label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
-            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            description: 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
           mismatch: {
@@ -76,13 +78,13 @@
             person: 2,
           },
           machine: {
-            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
             label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
-            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
@@ -143,7 +145,9 @@
         appName: 'MyMoney-UK',
         label: 'UK (English)',
         description: 'United Kingdom',
-		Region: 'UK',
+		region: 'UK',
+		language: 'Eng',
+		proposition: 'AO',
         code: 'UK',
         ISOCode: 'GB',
         persons: [
@@ -161,7 +165,7 @@
         scenarios: {
           typical: {
             label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
-            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            description: 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
           mismatch: {
@@ -170,13 +174,13 @@
             person: 2,
           },
           machine: {
-            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
-            label: 'A Crack At Identity Fraud', title: 'Step-up for identity fraud attempt',
-            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
@@ -237,7 +241,9 @@
         appName: 'MyMoney-AU',
         label: 'Australia (English)',
         description: 'Australia',
-		Region: 'APAC',       
+		region: 'APAC',
+		language: 'Eng',
+		proposition: 'AO',		
 		code: 'AU',
         ISOCode: 'AU',
         persons: [
@@ -255,7 +261,7 @@
         scenarios: {
           typical: {
             label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
-            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            description: 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
           mismatch: {
@@ -264,13 +270,13 @@
             person: 2,
           },
           machine: {
-            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
             label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
-            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
@@ -329,9 +335,11 @@
 
       IN: {
         appName: 'MyMoney-IN',
-        label: 'India (Hindu)',
+        label: 'India',
         description: 'India',
-        Region: 'APAC', 
+        region: 'APAC',
+		language: 'Eng',
+		proposition: 'AO',		
 		code: 'IN',
         ISOCode: 'IN',
         persons: [
@@ -349,7 +357,7 @@
         scenarios: {
           typical: {
             label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
-            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            description: 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
           mismatch: {
@@ -358,13 +366,13 @@
             person: 2,
           },
           machine: {
-            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
             label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
-            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
@@ -425,7 +433,9 @@
         appName: 'MyMoney-ID',
         label: 'Indonesia',
         description: 'Indonesia',
-        Region: 'APAC',
+        region: 'APAC',
+		language: 'Eng',
+		proposition: 'AO',		
 		code: 'ID',
         ISOCode: 'ID',
         persons: [
@@ -443,7 +453,7 @@
         scenarios: {
           typical: {
             label: 'Typical Applicant', title: 'Typical applicant: multiple services but no friction',
-            description: 'CrossCore strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
+            description: 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.',
             person: 1,
           },
           mismatch: {
@@ -452,13 +462,13 @@
             person: 2,
           },
           machine: {
-            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using CrossCore Decision Analytics',
-            description: 'CrossCore Decision Analytics machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
             person: 2,
           },
           fraud: {
             label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
-            description: 'CrossCore instantly identifies most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
             person: 3,
           },
           thin: {
@@ -511,6 +521,198 @@
         ]
       },
 
+      /**********************/
+      /*   Columbia         */
+      /**********************/
+
+      CO: {
+        appName: 'MyMoney-CO',
+        label: 'Columbia (Spanish)',
+        description: 'Columbia',
+		region: 'LATAM',
+		language: 'SPA',
+		proposition: 'AO',		
+        code: 'CO',
+        ISOCode: 'CO',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Olga','Jiménez','02-01-1976','36 123456','Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá','111911','+57 15433025','OlgaJiménez0276@yahoo.com'],
+		  ['Orla','Muñoz','09-04-1973','37 654321','Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia','050001','+57 12529697', 'Orla_Muñoz@gmail.com'],
+		  ['Orlando','Muñoz','09-04-1973','37 654321','Cr 7 No. 23B-31, C.P 12341','Santiago de Cali','Velle Del Cauca','760001', '+44 3125 678500','OrlandoMuñoz83@yahoo.com'],
+		  ['Jonathan','Ramírez','09-18-1999','62 121212','Cr 8 No. 16-68, C.P 66001','Patico','Bolivar','132547','+57 63331353','JonathanRamírez_007@gmail.com'],
+        ],
+		  text: {
+          chooseScenario: 'Elegir escenario',
+          approved: 'Su solicitud fue aprobada!',
+          approvedDetails: 'Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.',
+        },
+        scenarios: {
+          typical: {
+            label: 'Solicitante típico', title: 'Solicitante típico: múltiples servicios pero sin fricción.',
+            description: 'Las estrategias de Se pueden configurar fácilmente para incluir condicionalmente ciertos servicios basados en el riesgo mientras se omiten otros.',
+            person: 1,
+          },
+          mismatch: {
+            label: 'Discrepancias de identidad', title: 'Paso a paso para el consumidor con datos de identidad no coincidentes',
+            description: 'Muchos solicitantes tienen discrepancias de identidad leves que requieren una revisión manual costosa y demoras en la solicitud.',
+            person: 2,
+          },
+          machine: {
+            label: 'Aprendizaje automático', title: 'Evite avances innecesarios utilizando Decision Analytics',
+            description: 'Los modelos de aprendizaje automático de Decision Analytics están entrenados en combinaciones de datos históricos para tomar la mejor decisión posible y limitar la necesidad de avances que agreguen fricción.',
+            person: 2,
+          },
+          fraud: {
+            label: 'Una grieta en el fraude de identidad', title: 'Intensificación para intento de fraude de identidad',
+            description: 'Identifica instantáneamente la mayoría de las aplicaciones de fraude de imitación y sintéticas, lo que agrega fricción al atacante y remite el caso para su revisión manual.',
+            person: 3,
+          },
+          thin: {
+            label: 'Solicitante de archivo fino', title: 'Pasivo paso a paso para el solicitante de archivo delgado',
+            description: 'Las organizaciones pueden incorporar de manera rápida y sin problemas fuentes adicionales de inteligencia de teléfono o verificación de identidad si el solicitante no se encuentra en los datos de oficina tradicionales.',
+            person: 4,
+          }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'Nombre de pila'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Apellido'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - DD-MM-CCYY'
+          },
+          {
+            name: 'NINO',
+            placeholder: 'Número de seguro Nacional'
+          },
+          {
+            name: 'address',
+            placeholder: '123 nombre de la callee'
+          },
+          {
+            name: 'city',
+            placeholder: 'ciudad'
+          },
+          {
+            name: 'country',
+            placeholder: 'País'
+          },
+          {
+            name: 'postcode',
+            placeholder: 'código postal'
+          },
+          {
+            name: 'phone',
+            placeholder: 'número de teléfono'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
+      },
+
+
+      /**********************/
+      /*   Brazil        */
+      /**********************/
+
+      BR: {
+        appName: 'MyMoney-BR',
+        label: 'Brazil (English)',
+        description: 'Brazil',
+		region: 'LATAM',
+		language: 'POR',
+		proposition: 'AO',		
+        code: 'BR',
+        ISOCode: 'BR',
+        persons: [
+          ['', '', '', '', '', '', '', '', '', ''],
+          ['Sarah','Jamison','02-01-1976','AO 12 34 56 A','23 High Tree Road','Nottingham', 'England','NG1 3SD','+44 6175 364100','sarahlynnjamison0276@yahoo.com'],
+		  ['Lizzy','Grant','09-04-1973','AO 12 34 56 B','96 Parkfield Road','Upper Healy','Derby','DE23 1GH','+44 3125 678500','lizzy_grant@gmail.com'],
+		  ['Elizabeth','Grant','09-04-1973','AO 12 34 56 B','42 West Wellington Drive','Wygston','Leicester','LE18 6PD', '+44 3125 678500','elizabethgrant83@yahoo.com'],
+		  ['Paul','Johnson','09-18-1999','OW 07 68 52D','104 Greyfriars Road','Cardiff','England','CF1 3YQ','+44 07 0517 11863','PaulA_007@gmail.com'],
+        ],
+        text: {
+          chooseScenario: 'Elegir escenario',
+          approved: 'Su solicitud fue aprobada!',
+          approvedDetails: 'Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.',
+        },
+        scenarios: {
+          typical: {
+            label: 'Solicitante típico', title: 'Solicitante típico: múltiples servicios pero sin fricción.',
+            description: 'Las estrategias de Se pueden configurar fácilmente para incluir condicionalmente ciertos servicios basados en el riesgo mientras se omiten otros.',
+            person: 1,
+          },
+          mismatch: {
+            label: 'Discrepancias de identidad', title: 'Paso a paso para el consumidor con datos de identidad no coincidentes',
+            description: 'Muchos solicitantes tienen discrepancias de identidad leves que requieren una revisión manual costosa y demoras en la solicitud.',
+            person: 2,
+          },
+          machine: {
+            label: 'Machine Learning', title: 'Avoid unnecessary step-ups using Decision Analytics',
+            description: 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.',
+            person: 2,
+          },
+          fraud: {
+            label: 'Identity Fraud Attempt', title: 'Step-up for identity fraud attempt',
+            description: 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.',
+            person: 3,
+          },
+		 thin: {
+            label: 'Thin-file Applicant', title: 'Passive step-up for thin-file applicant',
+            description: 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.',
+            person: 4,
+          }
+        },
+        fields: [
+          {
+            name: 'firstName',
+            placeholder: 'Nombre de pila'
+          },
+          {
+            name: 'lastName',
+            placeholder: 'Apellido'
+          },
+          {
+            name: 'dob',
+            placeholder: 'DOB - DD-MM-CCYY'
+          },
+          {
+            name: 'NINO',
+            placeholder: 'Número de seguro Nacional'
+          },
+          {
+            name: 'address',
+            placeholder: '123 nombre de la callee'
+          },
+          {
+            name: 'city',
+            placeholder: 'ciudad'
+          },
+          {
+            name: 'country',
+            placeholder: 'País'
+          },
+          {
+            name: 'postcode',
+            placeholder: 'código postal'
+          },
+          {
+            name: 'phone',
+            placeholder: 'número de teléfono'
+          },
+          {
+            name: 'email',
+            placeholder: 'email@domain.com'
+          },
+        ]
+      },
 
 	  };
 
@@ -589,7 +791,7 @@
     vm.scenarios = [
       {
         name: 'typical',
-        appId: 'CC_DEMO_AO_79' + '_' + vm.locale.code,
+        appId: 'CC_DEMO_' + vm.locale.proposition + '_79_' + vm.locale.code,
         title: vm.locale.scenarios.typical.title,
         label: vm.locale.scenarios.typical.label,
         description: vm.locale.scenarios.typical.description,
@@ -604,7 +806,7 @@
       },
       {
         name: 'mismatch',
-        appId: 'CC_DEMO_AO_80' + '_' + vm.locale.code,
+        appId: 'CC_DEMO_' + vm.locale.proposition + '_80_' + vm.locale.code,
         title: vm.locale.scenarios.mismatch.title,
         label: vm.locale.scenarios.mismatch.label,
         description: vm.locale.scenarios.mismatch.description,
@@ -614,7 +816,7 @@
           'app.mobile.input',
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
-          'app.mobile.mitek.back',
+          'app.mobile.mitek.back',			  
           'app.mobile.mitek.selfie',
           'app.mobile.approved'
         ]
@@ -622,7 +824,7 @@
 
       {
         name: 'machine',
-        appId: 'CC_DEMO_AO_81' + '_' + vm.locale.code,
+        appId: 'CC_DEMO_' + vm.locale.proposition + '_81_' + vm.locale.code,
         title: vm.locale.scenarios.machine.title,
         label: vm.locale.scenarios.machine.label,
         description: vm.locale.scenarios.machine.description,
@@ -636,7 +838,7 @@
       },
       {
         name: 'fraud',
-        appId: 'CC_DEMO_AO_76' + '_' + vm.locale.code,
+        appId: 'CC_DEMO_' + vm.locale.proposition + '_76_' + vm.locale.code,
         title: vm.locale.scenarios.fraud.title,
         label: vm.locale.scenarios.fraud.label,
         description: vm.locale.scenarios.fraud.description,
@@ -646,24 +848,24 @@
           'app.mobile.input',
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
-          'app.mobile.mitek.back',
+          'app.mobile.mitek.back',			  
           'app.mobile.mitek.selfie',
           'app.mobile.input.phonemore'
         ]
       },
       {
         name: 'thin',
-        appId: 'CC_DEMO_AO_82' + '_' + vm.locale.code,
+        appId: 'CC_DEMO_' + vm.locale.proposition + '_82_' + vm.locale.code,
         title: vm.locale.scenarios.thin.title,
         label: vm.locale.scenarios.thin.label,
         description: vm.locale.scenarios.thin.description,
         form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
         assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-        states: [
+        /*          'app.mobile.mitek.back',		  */
+		states: [
           'app.mobile.input.needmore',
           'app.mobile.mitek.front',
-          'app.mobile.mitek.back',
-          'app.mobile.mitek.selfie',
+		  'app.mobile.mitek.selfie',
           'app.mobile.input',
           'app.mobile.approved'
         ]
