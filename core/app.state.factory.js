@@ -183,7 +183,6 @@
 				states: [
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
-					'app.mobile.mitek.back',
 					'app.mobile.mitek.selfie',
 					'app.mobile.input',
 					'app.mobile.approved'
