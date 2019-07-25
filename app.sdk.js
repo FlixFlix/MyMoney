@@ -1,9 +1,9 @@
 /**
  * Created by robertmartindelcampo on 5/17/17.
  */
-(function () {
-  'use strict';
+(function() {
+	'use strict';
 
-  angular
-    .module('mitek-sdk', []);
+	angular
+		.module( 'mitek-sdk', [] );
 })();

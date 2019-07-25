@@ -1,4 +1,3 @@
-
 angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 	$templateCache.put( 'index.html', '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">    \n    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">\n    <title>MyMoney</title>\n\n    <!-- bower:css -->\n    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css" />\n    <!-- endbower -->\n\n    <!-- inject:css -->\n    <link rel="stylesheet" href="assets/styles/fonts.css">\n    <link rel="stylesheet" href="assets/styles/scenarios.css">\n    <link rel="stylesheet" href="assets/styles/sliders.css">\n    <link rel="stylesheet" href="assets/styles/styles.css">\n    <!-- endinject -->\n</head>\n\n<body>\n    <div ui-view name="header"></div>\n    <div ui-view class="main-content" name="content"></div>\n    <div ui-view class="footer-content" name="footer"></div>\n\n    <!-- bower:js -->\n    <script src="vendors/angular/angular.min.js"></script>\n    <script src="vendors/jquery/dist/jquery.min.js"></script>\n    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>\n    <script src="vendors/ngMask/dist/ngMask.js"></script>\n    <script src="vendors/angular-ui-router/release/angular-ui-router.js"></script>\n    <script src="vendors/angular-animate/angular-animate.js"></script>\n    <!-- endbower -->\n\n    <!-- inject:js -->\n    <script src="app.module.js"></script>\n    <script src="app.route.js"></script>\n    <script src="app.sdk.js"></script>\n    <script src="app.templates.js"></script>\n    <script src="core/app.controller.js"></script>\n    <script src="core/app.state.factory.js"></script>\n    <script src="directives/directives.js"></script>\n    <!-- endinject -->\n</body>\n</html>\n' );
 	$templateCache.put( 'shell/desktop.header.html', '<div class="headerBanner">\n    <img src="./assets/images/logo.svg" alt="Mitek">\n</div>\n<div class="header-divider container-fluid"> </div>' );
@@ -12,7 +11,7 @@ angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 		'</div>' );
 	$templateCache.put( 'mobile/screens/admin.json.html', '<div class="screens-container">    \n    <a name="request"></a>\n    <h3>Request</h3>\n    <div class="anchor-container">\n        <a class="mobile-button" ng-click="vm.anchor(\'response\')">Response</a>\n    </div>\n    <pre>{{ vm.appState.json.request }}</pre>\n    <br />\n    <a name="response"></a>\n    <h3>Response</h3>\n    <div class="anchor-container">\n        <a class="mobile-button" ng-click="vm.anchor(\'request\')">Request</a>\n    </div>\n    <pre>{{ vm.appState.json.response }}</pre>\n</div>\n' );
 	$templateCache.put( 'mobile/screens/admin.toggles.html', '<h3>Strategy Admin</h3>\n\n<div class="crosscore-toggles">\n    <div class="form-field centerfy" ng-repeat="strategy in vm.appState.crossCoreStrategies">\n        <span class="toggle-label">{{strategy.label}}</span>\n        <label class="switch">\n            <input type="checkbox" ng-if="!strategy.toggle">\n            <input type="checkbox" ng-if="strategy.toggle" checked>\n            <span class="slider round"></span>\n        </label>              \n    </div>\n</div>' );
-	$templateCache.put( 'mobile/screens/customer.approved.html','<div class="screens-container">\n' +
+	$templateCache.put( 'mobile/screens/customer.approved.html', '<div class="screens-container">\n' +
 		'    <div class="loading-wrapper" delayed-display="hide" delay="1200">\n' +
 		'        <style> .mobileButtonContainer.dual-button { display: none; } </style>\n' +
 		'        <div class="row reviewSpinner">\n' +
@@ -72,7 +71,7 @@ angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 		'<div class="mitek-flow" ng-click="vm.next()">\n' +
 		'    <img ng-src="{{vm.appState.currentScenario.assets}}selfie.jpg" />\n' +
 		'</div>' );
-	$templateCache.put( 'mobile/welcome/mobile.welcome.html','<div class="scenarios">\n' +
+	$templateCache.put( 'mobile/welcome/mobile.welcome.html', '<div class="scenarios">\n' +
 		'    <style>.mobileButtonContainer {display: none;}</style>\n' +
 		'    <h1>{{ vm.locale.text.chooseScenario }}</h1>\n' +
 		'    <div>\n' +
@@ -89,7 +88,7 @@ angular.module( 'webApp' ).run( ['$templateCache', function( $templateCache ) {
 		'        </div>\n' +
 		'    </div>\n' +
 		'</div>' );
-	$templateCache.put( 'mobile/welcome/mobile.locale.html','<div class="scenarios">\n' +
+	$templateCache.put( 'mobile/welcome/mobile.locale.html', '<div class="scenarios">\n' +
 		'    <style>.mobileButtonContainer {display: none;}</style>\n' +
 		'    <h1>Select Locale</h1>\n' +
 		'    <div class="scenario-selector" title="{{ locale.description }}" ng-repeat="locale in vm.locales">\n' +
