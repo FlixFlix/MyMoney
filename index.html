@@ -16,21 +16,25 @@
     <link rel="stylesheet" href="assets/styles/sliders.css?_v=1556668435841">
     <link rel="stylesheet" href="assets/styles/styles.css?_v=1556668435841">
     <!-- endinject -->
-    <script>
-    
-	function launch( b ) {
-		window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
-	}
 
-	window.appHome = window.location.href.split('#')[0].split('?')[0];
-	function getUrlVars() {
-		var vars = {};
-		var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
-			vars[key] = value;
-		} );
-		return vars;
-	}
-	window.locale = getUrlVars()['locale'];
+    <script src="country-data.js"></script>
+    <script>
+
+		function launch( b ) {
+			window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
+		}
+
+		window.appHome = window.location.href.split( '#' )[0].split( '?' )[0];
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
+				vars[key] = value;
+			} );
+			return vars;
+		}
+
+		window.locale = getUrlVars()['locale'];
 
     </script>
 </head>
@@ -53,10 +57,10 @@
     <script src="app.module.js?_v=1556668435841"></script>
     <script src="app.route.js?_v=1556668435841"></script>
     <script src="app.sdk.js?_v=1556668435841"></script>
+<!--    <script src="app.templates.js?_v=1556668435841"></script>-->
     <script src="core/app.controller.js?_v=1556668435841"></script>
     <script src="core/app.state.factory.js?_v=1556668435841"></script>
     <script src="directives/directives.js?_v=1556668435841"></script>
     <!-- endinject -->
 </body>
 </html>
-

@@ -16,13 +16,16 @@
     <link rel="stylesheet" href="assets/styles/sliders.css?_v=1556668435841">
     <link rel="stylesheet" href="assets/styles/styles.css?_v=1556668435841">
     <!-- endinject -->
+
+    <script src="country-data.js"></script>
     <script>
 
 		function launch( b ) {
 			window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
 		}
 
-		window.appHome = window.location.href.split('#')[0].split('?')[0];
+		window.appHome = window.location.href.split( '#' )[0].split( '?' )[0];
+
 		function getUrlVars() {
 			var vars = {};
 			var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
@@ -30,6 +33,7 @@
 			} );
 			return vars;
 		}
+
 		window.locale = getUrlVars()['locale'];
 
     </script>
@@ -60,4 +64,3 @@
     <!-- endinject -->
 </body>
 </html>
-
