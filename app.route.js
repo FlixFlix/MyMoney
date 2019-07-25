@@ -174,7 +174,7 @@
 			} )
 
 			.state( 'app.mobile.mitek.selfie', {
-				url: '/step-2',
+				url: '/selfie',
 				views: {
 					'content@': {
 						templateUrl: 'mobile/screens/mitek.selfie.html',

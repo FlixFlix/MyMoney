@@ -13,6 +13,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'US',
 		ISOCode: 'US',
+		IDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -109,6 +110,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'UK',
 		ISOCode: 'GB',
+		IDBackside: false,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
@@ -205,6 +207,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'AU',
 		ISOCode: 'AU',
+		IDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', '165-23-9877', '16521 Morris St, Unit 123', 'Melborn', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -301,6 +304,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'IN',
 		ISOCode: 'IN',
+		IDBackside: true,
 		persons: [
 			[],
 			['Nikitha', 'Mody', '02-01-1976', '9423 3484 9843', '65, Shop, Sv Lane, Mamulpet', 'Bangalore', 'Karnataka', '560053', '+91 9008 822814', 'NikithaMody0276@yahoo.com'],
@@ -397,6 +401,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'ID',
 		ISOCode: 'ID',
+		IDBackside: true,
 		persons: [
 			[],
 			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '021 7220074', 'RatanOesman0276@yahoo.com'],
@@ -481,7 +486,7 @@ window.locales = {
 	},
 
 	/**********************/
-	/*   Columbia         */
+	/*   Colombia         */
 	/**********************/
 
 	CO: {
@@ -493,6 +498,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'CO',
 		ISOCode: 'CO',
+		IDBackside: true,
 		persons: [
 			[],
 			['Olga', 'Jiménez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '111911', '+57 15433025', 'OlgaJiménez0276@yahoo.com'],
@@ -589,6 +595,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'BR',
 		ISOCode: 'BR',
+		IDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],

@@ -122,14 +122,23 @@
 				description: vm.locale.scenarios.mismatch.description,
 				form: generateContactForm( vm.locale.code, vm.locale.scenarios.mismatch.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.mismatch.person,
-				states: [
+
+				// Different set of steps based on locale parameter
+				states: vm.locale.IDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
 					'app.mobile.mitek.back',
 					'app.mobile.mitek.selfie',
 					'app.mobile.approved'
+				] : [
+					'app.mobile.input',
+					'app.mobile.input.needmore',
+					'app.mobile.mitek.front',
+					'app.mobile.mitek.selfie',
+					'app.mobile.approved'
 				]
+
 			},
 
 			{
