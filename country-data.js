@@ -5,15 +5,17 @@ window.locales = {
 	/*   UNITED STATES   */
 	/*********************/
 	US: {
-		appName: 'MyMoney-US',
-		label: 'US (English)',
+		appName: 'MyMoney',
+		label: 'US',
 		description: 'United States',
 		region: 'NA',
 		language: 'Eng',
 		proposition: 'AO',
 		code: 'US',
 		ISOCode: 'US',
-		IDBackside: true,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
+		DrvIDBackside: true,
+		GovIDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -22,7 +24,7 @@ window.locales = {
 			['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '512-474-5171', 'jeremyv_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Select scenario',
+			chooseScenario: 'Select Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
 		},
@@ -102,15 +104,17 @@ window.locales = {
 	/**********************/
 
 	UK: {
-		appName: 'MyMoney-UK',
-		label: 'UK (English)',
+		appName: 'MyMoney',
+		label: 'UK',
 		description: 'United Kingdom',
 		region: 'UK',
 		language: 'Eng',
 		proposition: 'AO',
 		code: 'UK',
 		ISOCode: 'GB',
-		IDBackside: true,
+		DrvIDBackside: true,
+		GovIDBackside: false,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
@@ -119,7 +123,7 @@ window.locales = {
 			['Paul', 'Johnson', '09-18-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', '+44 07 0517 11863', 'PaulA_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Choose scenario',
+			chooseScenario: 'Choose Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
 		},
@@ -199,15 +203,17 @@ window.locales = {
 	/****************/
 
 	AU: {
-		appName: 'MyMoney-AU',
-		label: 'Australia (English)',
+		appName: 'MyMoney',
+		label: 'Australia',
 		description: 'Australia',
 		region: 'APAC',
 		language: 'Eng',
 		proposition: 'AO',
 		code: 'AU',
 		ISOCode: 'AU',
-		IDBackside: true,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
+		DrvIDBackside: true,
+		GovIDBackside: false,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', '165-23-9877', '16521 Morris St, Unit 123', 'Melborn', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -216,7 +222,7 @@ window.locales = {
 			['Paul', 'Johnson', '09-18-1999', '754-631-2199', '9715 Rock Maple Street', 'Melborn', 'VIC', '3201', '+1 512-474-5171', 'PaulA_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Select scenario',
+			chooseScenario: 'Select Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
 		},
@@ -296,7 +302,7 @@ window.locales = {
 	/****************/
 
 	IN: {
-		appName: 'MyMoney-IN',
+		appName: 'MyMoney',
 		label: 'India',
 		description: 'India',
 		region: 'APAC',
@@ -304,7 +310,9 @@ window.locales = {
 		proposition: 'AO',
 		code: 'IN',
 		ISOCode: 'IN',
-		IDBackside: false,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
+		DrvIDBackside: true,
+		GovIDBackside: false,
 		persons: [
 			[],
 			['Nikitha', 'Mody', '02-01-1976', '9423 3484 9843', '65, Shop, Sv Lane, Mamulpet', 'Bangalore', 'Karnataka', '560053', '+91 9008 822814', 'NikithaMody0276@yahoo.com'],
@@ -313,7 +321,7 @@ window.locales = {
 			['Arun', 'Pillai', '09-18-1999', '9453 3221 9542', '46, Himalaya House, Palton Road', 'Mumbai', 'Maharashtra', '400001', '+91 9421 892639', 'ArunPillai_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Select scenario',
+			chooseScenario: 'Select Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
 		},
@@ -393,7 +401,7 @@ window.locales = {
 	/*******************/
 
 	ID: {
-		appName: 'MyMoney-ID',
+		appName: 'MyMoney',
 		label: 'Indonesia',
 		description: 'Indonesia',
 		region: 'APAC',
@@ -401,7 +409,9 @@ window.locales = {
 		proposition: 'AO',
 		code: 'ID',
 		ISOCode: 'ID',
-		IDBackside: true,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */		
+		DrvIDBackside: true,
+		GovIDBackside: false,
 		persons: [
 			[],
 			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '021 7220074', 'RatanOesman0276@yahoo.com'],
@@ -410,7 +420,7 @@ window.locales = {
 			['Ary Bambang', 'Hardja', '09-18-1999', '27 3400 990918 1234', 'Jl HR Rasuna Said Kav 2-3 Bl X-5 Menara Kadin Indonesia Bl X-5 Lt', 'Kuningan', 'Jakarta', '400001', '021 5274547', 'AryHardja_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Select scenario',
+			chooseScenario: 'Select Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
 		},
@@ -490,15 +500,17 @@ window.locales = {
 	/**********************/
 
 	CO: {
-		appName: 'MyMoney-CO',
-		label: 'Columbia (Spanish)',
+		appName: 'MyMoney',
+		label: 'Columbia',
 		description: 'Columbia',
 		region: 'LATAM',
 		language: 'SPA',
 		proposition: 'AO',
 		code: 'CO',
 		ISOCode: 'CO',
-		IDBackside: true,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
+		DrvIDBackside: true,
+		GovIDBackside: false,
 		persons: [
 			[],
 			['Olga', 'Jiménez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '111911', '+57 15433025', 'OlgaJiménez0276@yahoo.com'],
@@ -507,7 +519,7 @@ window.locales = {
 			['Jonathan', 'Ramírez', '09-18-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '132547', '+57 63331353', 'JonathanRamírez_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Elegir escenario',
+			chooseScenario: 'Elegir Escenario',
 			approved: 'Su solicitud fue aprobada!',
 			approvedDetails: 'Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.',
 		},
@@ -583,19 +595,21 @@ window.locales = {
 	},
 
 	/**********************/
-	/*   Brazil        */
+	/*   Brazil           */
 	/**********************/
 
 	BR: {
-		appName: 'MyMoney-BR',
-		label: 'Brazil (English)',
+		appName: 'MyMoney',
+		label: 'Brazil',
 		description: 'Brazil',
 		region: 'LATAM',
 		language: 'POR',
 		proposition: 'AO',
 		code: 'BR',
 		ISOCode: 'BR',
-		IDBackside: true,
+		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
+		DrvIDBackside: true,
+		GovIDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
@@ -604,7 +618,7 @@ window.locales = {
 			['Paul', 'Johnson', '09-18-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', '+44 07 0517 11863', 'PaulA_007@gmail.com'],
 		],
 		text: {
-			chooseScenario: 'Elegir escenario',
+			chooseScenario: 'Elegir Escenario',
 			approved: 'Su solicitud fue aprobada!',
 			approvedDetails: 'Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.',
 		},
