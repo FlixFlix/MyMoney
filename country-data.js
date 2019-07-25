@@ -14,7 +14,7 @@ window.locales = {
 		code: 'US',
 		ISOCode: 'US',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
 			['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '312-567-8500', 'lizzy_grant@gmail.com'],
 			['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '312-567-8500', 'elizabethgrant83@yahoo.com'],
@@ -110,7 +110,7 @@ window.locales = {
 		code: 'UK',
 		ISOCode: 'GB',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Sarah','Jamison','02-01-1976','AO 12 34 56 A','23 High Tree Road','Nottingham', 'England','NG1 3SD','+44 6175 364100','sarahlynnjamison0276@yahoo.com'],
 			['Lizzy','Grant','09-04-1973','AO 12 34 56 B','96 Parkfield Road','Upper Healy','Derby','DE23 1GH','+44 3125 678500','lizzy_grant@gmail.com'],
 			['Elizabeth','Grant','09-04-1973','AO 12 34 56 B','42 West Wellington Drive','Wygston','Leicester','LE18 6PD', '+44 3125 678500','elizabethgrant83@yahoo.com'],
@@ -206,7 +206,7 @@ window.locales = {
 		code: 'AU',
 		ISOCode: 'AU',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Sarah','Jamison','02-01-1976','165-23-9877','16521 Morris St, Unit 123','Melborn','VIC','3205','+61 4 7536 4100','sarahlynnjamison0276@yahoo.com'],
 			['Lizzy','Grant','09-04-1973','512-43-8888','1251 Miller St, Unit 123','North Sydney','NSW','2058','+61 4 2567 8500','lizzy_grant@gmail.com'],
 			['Elizabeth','Grant','09-04-1973','512-43-8888','53 Alma Rd, Unit 5a','St Kilda','VIC','3182','+61 4 2567 8500','elizabethgrant83@yahoo.com'],
@@ -302,7 +302,7 @@ window.locales = {
 		code: 'IN',
 		ISOCode: 'IN',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Nikitha','Mody','02-01-1976','9423 3484 9843','65, Shop, Sv Lane, Mamulpet','Bangalore','Karnataka', '560053','+91 9008 822814','NikithaMody0276@yahoo.com'],
 			['Pooh','Parikh','09-04-1973','9454 2354 9765','Raj Chamber Bldg, Manchubhai Road, Malad (east)', 'Mumbai','Maharashtra','400097','+91 9405 887246','Pooh_Parikh@gmail.com'],
 			['Pooja','Parikh','09-04-1973','9454 2354 9765','83, Qutab View Apartments, Katwaria Sarai','New Delhi','Delhi', '110016','+91 9716 436788','PoojaParikh83@yahoo.com'],
@@ -398,7 +398,7 @@ window.locales = {
 		code: 'ID',
 		ISOCode: 'ID',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Ratna Utari','Oesman','02-01-1976','22 5600 760201 1234','Ged Surveyor Indonesia Lt Basement/LB 40','Kebayoran Baru','Jakarta','12110','021 7220074','RatanOesman0276@yahoo.com'],
 			['Tanu','Sasmita','09-04-1973','32 2300 790201 1234','Kompl Puri Tanjung Sari 2 50', 'Medan','Sumatera Utara','20028','061 8221782','Tanu_Sasmita@gmail.com'],
 			['Tanudisastro Bo','Sasmita','09-04-1973','32 2300 790201 1234','Jl Darmo Permai Tmr IV/18','Surabaya','Jawa Timur', '60111','031 7340468','TanudisastroSasmita83@yahoo.com'],
@@ -494,7 +494,7 @@ window.locales = {
 		code: 'CO',
 		ISOCode: 'CO',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Olga','Jiménez','02-01-1976','36 123456','Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá','111911','+57 15433025','OlgaJiménez0276@yahoo.com'],
 			['Orla','Muñoz','09-04-1973','37 654321','Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia','050001','+57 12529697', 'Orla_Muñoz@gmail.com'],
 			['Orlando','Muñoz','09-04-1973','37 654321','Cr 7 No. 23B-31, C.P 12341','Santiago de Cali','Velle Del Cauca','760001', '+44 3125 678500','OrlandoMuñoz83@yahoo.com'],
@@ -591,7 +591,7 @@ window.locales = {
 		code: 'BR',
 		ISOCode: 'BR',
 		persons: [
-			['', '', '', '', '', '', '', '', '', ''],
+			[],
 			['Sarah','Jamison','02-01-1976','AO 12 34 56 A','23 High Tree Road','Nottingham', 'England','NG1 3SD','+44 6175 364100','sarahlynnjamison0276@yahoo.com'],
 			['Lizzy','Grant','09-04-1973','AO 12 34 56 B','96 Parkfield Road','Upper Healy','Derby','DE23 1GH','+44 3125 678500','lizzy_grant@gmail.com'],
 			['Elizabeth','Grant','09-04-1973','AO 12 34 56 B','42 West Wellington Drive','Wygston','Leicester','LE18 6PD', '+44 3125 678500','elizabethgrant83@yahoo.com'],
