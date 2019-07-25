@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">    
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841"
+          rel="stylesheet">
     <title>MyMoney</title>
 
     <!-- bower:css -->
-    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css?_v=1556668435841" />
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css?_v=1556668435841"/>
     <!-- endbower -->
 
     <!-- inject:css -->
@@ -17,8 +18,43 @@
     <link rel="stylesheet" href="assets/styles/styles.css?_v=1556668435841">
     <!-- endinject -->
 
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <script src="country-data.js"></script>
     <script>
+
+		var $buoop = {
+			required: { e: -4, f: -3, o: -3, s: -1, c: -3 },
+			insecure: true,
+			unsupported: true,
+			api: 2019.07
+		};
+
+		function $buo_f() {
+			var e = document.createElement( "script" );
+			e.src = "https://browser-update.org/update.min.js";
+			document.body.appendChild( e );
+		};
+		try {
+			document.addEventListener( "DOMContentLoaded", $buo_f, false )
+		} catch ( e ) {
+			window.attachEvent( "onload", $buo_f )
+		}
+
+		function getCookie( cname ) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent( document.cookie );
+			var ca = decodedCookie.split( ';' );
+			for ( var i = 0; i < ca.length; i++ ) {
+				var c = ca[i];
+				while ( c.charAt( 0 ) == ' ' ) {
+					c = c.substring( 1 );
+				}
+				if ( c.indexOf( name ) == 0 ) {
+					return c.substring( name.length, c.length );
+				}
+			}
+			return "";
+		}
 
 		function launch( b ) {
 			window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
@@ -28,7 +64,7 @@
 
 		function getUrlVars() {
 			var vars = {};
-			var parts = window.appHome.replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
+			var parts = window.location.href.split( '#' )[0].replace( /[?&]+([^=&]+)=([^&]*)/gi, function( m, key, value ) {
 				vars[key] = value;
 			} );
 			return vars;
@@ -40,27 +76,27 @@
 </head>
 
 <body>
-    <div ui-view name="header"></div>
-    <div ui-view class="main-content" name="content"></div>
-    <div ui-view class="footer-content" name="footer"></div>
+<div ui-view name="header"></div>
+<div ui-view class="main-content" name="content"></div>
+<div ui-view class="footer-content" name="footer"></div>
 
-    <!-- bower:js -->
-    <script src="vendors/angular/angular.min.js?_v=1556668435841"></script>
-    <script src="vendors/jquery/dist/jquery.min.js?_v=1556668435841"></script>
-    <script src="vendors/bootstrap/dist/js/bootstrap.min.js?_v=1556668435841"></script>
-    <script src="vendors/ngMask/dist/ngMask.js?_v=1556668435841"></script>
-    <script src="vendors/angular-ui-router/release/angular-ui-router.js?_v=1556668435841"></script>
-    <script src="vendors/angular-animate/angular-animate.js?_v=1556668435841"></script>
-    <!-- endbower -->
+<!-- bower:js -->
+<script src="vendors/angular/angular.min.js?_v=1556668435841"></script>
+<script src="vendors/jquery/dist/jquery.min.js?_v=1556668435841"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js?_v=1556668435841"></script>
+<script src="vendors/ngMask/dist/ngMask.js?_v=1556668435841"></script>
+<script src="vendors/angular-ui-router/release/angular-ui-router.js?_v=1556668435841"></script>
+<script src="vendors/angular-animate/angular-animate.js?_v=1556668435841"></script>
+<!-- endbower -->
 
-    <!-- inject:js -->
-    <script src="app.module.js?_v=1556668435841"></script>
-    <script src="app.route.js?_v=1556668435841"></script>
-    <script src="app.sdk.js?_v=1556668435841"></script>
-    <script src="app.templates.js?_v=1556668435841"></script>
-    <script src="core/app.controller.js?_v=1556668435841"></script>
-    <script src="core/app.state.factory.js?_v=1556668435841"></script>
-    <script src="directives/directives.js?_v=1556668435841"></script>
-    <!-- endinject -->
+<!-- inject:js -->
+<script src="app.module.js?_v=1556668435841"></script>
+<script src="app.route.js?_v=1556668435841"></script>
+<script src="app.sdk.js?_v=1556668435841"></script>
+<script src="app.templates.js?_v=1556668435841"></script>
+<script src="core/app.controller.js?_v=1556668435841"></script>
+<script src="core/app.state.factory.js?_v=1556668435841"></script>
+<script src="directives/directives.js?_v=1556668435841"></script>
+<!-- endinject -->
 </body>
 </html>
