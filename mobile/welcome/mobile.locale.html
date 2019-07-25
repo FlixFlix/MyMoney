@@ -1,8 +1,11 @@
 <div class="scenarios">
-    <style>.mobileButtonContainer {display: none;}</style>
+    <style>.mobileButtonContainer {
+        display: none;
+    }</style>
     <h1>Select Locale</h1>
     <div class="scenario-selector" title="{{ locale.description }}" ng-repeat="locale in vm.locales">
         <a ng-click="vm.selectLocale(locale)"> </a>
-        <h2 style="text-align: left" class="scenario-title"><img src="https://www.countryflags.io/{{locale.ISOCode}}/flat/64.png">&nbsp;&nbsp;{{ locale.label }}</h2>
+        <h2 style="text-align: left" class="scenario-title"><img
+                src="https://www.countryflags.io/{{locale.ISOCode}}/flat/64.png">&nbsp;&nbsp;{{ locale.label }}</h2>
     </div>
 </div>

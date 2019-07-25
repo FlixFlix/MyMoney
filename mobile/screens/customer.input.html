@@ -1,18 +1,18 @@
 <div class="screens-container">
     <div class="result-passport" ng-if="vm.appState.currentScenario.showPassport">
-        <img ng-src="{{vm.appState.currentScenario.assets}}passport.jpg" />
+        <img ng-src="{{vm.appState.currentScenario.assets}}passport.jpg"/>
     </div>
     <h3 title="{{vm.appState.currentScenario.title}}">Contact Information</h3>
     <div class="form-field"
          ng-repeat="contact in vm.appState.currentScenario.form"
          ng-init="delay = [1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500]">
-        <input type="text" 
-                name="{{contact.name}}"
-                id="{{contact.name}}"
-                placeholder="{{contact.placeholder}}"
-                title="{{contact.placeholder}}"
-                val={{contact.value}}
-                delay={{delay[$index]}}
-                delayed-value />
-    </div>    
+        <input type="text"
+               name="{{contact.name}}"
+               id="{{contact.name}}"
+               placeholder="{{contact.placeholder}}"
+               title="{{contact.placeholder}}"
+               val={{contact.value}}
+               delay={{delay[$index]}}
+               delayed-value/>
+    </div>
 </div>

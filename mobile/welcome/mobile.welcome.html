@@ -1,9 +1,12 @@
 <div class="scenarios">
-    <style>.mobileButtonContainer {display: none;}</style>
+    <style>.mobileButtonContainer {
+        display: none;
+    }</style>
     <h1>{{ vm.locale.text.chooseScenario }}</h1>
     <div>
         <label class="c-toggle" for="c-toggle">
-            <input ng-show = "vm.isDescriptionsEnabled()" ng-click="vm.toggleDescriptions()" id="c-toggle" name="c-toggle" type="checkbox">
+            <input ng-show="vm.isDescriptionsEnabled()" ng-click="vm.toggleDescriptions()" id="c-toggle" name="c-toggle"
+                   type="checkbox">
             Show Descriptions
         </label>
     </div>
