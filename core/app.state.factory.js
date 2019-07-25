@@ -163,11 +163,19 @@
 				description: vm.locale.scenarios.fraud.description,
 				form: generateContactForm( vm.locale.code, vm.locale.scenarios.fraud.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.fraud.person,
-				states: [
+
+				// Different set of steps based on locale parameter
+				states: vm.locale.IDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
 					'app.mobile.mitek.back',
+					'app.mobile.mitek.selfie',
+					'app.mobile.input.phonemore'
+				] : [
+					'app.mobile.input',
+					'app.mobile.input.needmore',
+					'app.mobile.mitek.front',
 					'app.mobile.mitek.selfie',
 					'app.mobile.input.phonemore'
 				]
@@ -180,7 +188,14 @@
 				description: vm.locale.scenarios.thin.description,
 				form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-				states: [
+				states: vm.locale.IDBackside ? [
+					'app.mobile.input.needmore',
+					'app.mobile.mitek.front',
+					'app.mobile.mitek.back',
+					'app.mobile.mitek.selfie',
+					'app.mobile.input',
+					'app.mobile.approved'
+				] : [
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
 					'app.mobile.mitek.selfie',

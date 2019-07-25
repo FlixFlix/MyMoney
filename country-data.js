@@ -110,7 +110,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'UK',
 		ISOCode: 'GB',
-		IDBackside: false,
+		IDBackside: true,
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
@@ -304,7 +304,7 @@ window.locales = {
 		proposition: 'AO',
 		code: 'IN',
 		ISOCode: 'IN',
-		IDBackside: true,
+		IDBackside: false,
 		persons: [
 			[],
 			['Nikitha', 'Mody', '02-01-1976', '9423 3484 9843', '65, Shop, Sv Lane, Mamulpet', 'Bangalore', 'Karnataka', '560053', '+91 9008 822814', 'NikithaMody0276@yahoo.com'],
