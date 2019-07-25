@@ -86,14 +86,6 @@
 		 * Init
 		 */
 
-		/*
-		function getJson(mockData) {
-		  $http.get('./assets/json/' + mockData + '.json').then(function(data) {
-			vm.json[mockData] = JSON.stringify(data, null, 3);
-		  })
-		}
-		['request', 'response'].forEach(getJson);
-		*/
 
 		/**
 		 * Scripted Events
@@ -124,7 +116,9 @@
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.mismatch.person,
 
 				// Different set of steps based on locale parameter
-				states: vm.locale.IDBackside ? [
+				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */
+				
+				states: vm.locale.DrvIDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
@@ -165,7 +159,8 @@
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.fraud.person,
 
 				// Different set of steps based on locale parameter
-				states: vm.locale.IDBackside ? [
+				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */				
+				states: vm.locale.DrvIDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
@@ -188,7 +183,9 @@
 				description: vm.locale.scenarios.thin.description,
 				form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-				states: vm.locale.IDBackside ? [
+				
+				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */				
+				states: vm.locale.GovIDBackside ? [
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
 					'app.mobile.mitek.back',
