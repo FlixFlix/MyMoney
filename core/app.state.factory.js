@@ -171,10 +171,10 @@
 				description: vm.locale.scenarios.thin.description,
 				form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-				/*          'app.mobile.mitek.back',		  */
 				states: [
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',
+					'app.mobile.mitek.back',
 					'app.mobile.mitek.selfie',
 					'app.mobile.input',
 					'app.mobile.approved'
