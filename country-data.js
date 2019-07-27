@@ -2,7 +2,7 @@
 window.locales = {
 
 	/* Sort the countries in Alphabetical order */
-	
+
 	/****************/
 	/*   AUSTRALIA  */
 	/****************/
@@ -16,7 +16,6 @@ window.locales = {
 		proposition: 'AO',
 		code: 'AU',
 		ISOCode: 'AU',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -101,7 +100,6 @@ window.locales = {
 			},
 		]
 	},
-	
 
 	/**********************/
 	/*   Brazil           */
@@ -116,7 +114,6 @@ window.locales = {
 		proposition: 'AO',
 		code: 'BR',
 		ISOCode: 'BR',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		DrvIDBackside: true,
 		GovIDBackside: true,
 		persons: [
@@ -130,6 +127,13 @@ window.locales = {
 			chooseScenario: 'Elegir Escenario',
 			approved: 'Su solicitud fue aprobada!',
 			approvedDetails: 'Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.',
+			'Contact Information': 'Informações de contato',
+			'Continue': 'Continuar',
+			'Verify Your Identity': 'Verifique sua identidade',
+			'We need more information to complete your application.': 'Precisamos de mais informações para concluir sua inscrição.',
+			'Take Photo': 'Tirar fotos',
+			'Please use the following document verification service to quickly scan the front and back of your government-issued ID and take a selfie to complete the application process.':'Use o seguinte serviço de verificação de documentos para verificar rapidamente a frente e o verso de seu documento de identidade emitido pelo governo e tirar uma selfie para concluir o processo de inscrição.'
+
 		},
 		scenarios: {
 			typical: {
@@ -201,22 +205,20 @@ window.locales = {
 			},
 		]
 	},
-	
-	
+
 	/**********************/
 	/*   Colombia         */
 	/**********************/
 
 	CO: {
 		appName: 'MyMoney',
-		label: 'Columbia',
-		description: 'Columbia',
+		label: 'Colombia',
+		description: 'Colombia',
 		region: 'LATAM',
 		language: 'SPA',
 		proposition: 'AO',
 		code: 'CO',
 		ISOCode: 'CO',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -302,7 +304,6 @@ window.locales = {
 		]
 	},
 
-
 	/****************/
 	/*   INDIA      */
 	/****************/
@@ -316,7 +317,6 @@ window.locales = {
 		proposition: 'AO',
 		code: 'IN',
 		ISOCode: 'IN',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -415,7 +415,6 @@ window.locales = {
 		proposition: 'AO',
 		code: 'ID',
 		ISOCode: 'ID',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */		
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -501,7 +500,6 @@ window.locales = {
 		]
 	},
 
-
 	/**********************/
 	/*   UNITED KINGDOM   */
 	/**********************/
@@ -517,7 +515,6 @@ window.locales = {
 		ISOCode: 'GB',
 		DrvIDBackside: true,
 		GovIDBackside: false,
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
@@ -529,6 +526,7 @@ window.locales = {
 			chooseScenario: 'Choose Scenario',
 			approved: 'Your application was approved!',
 			approvedDetails: 'Application details and instructions for accessing your new account will be emailed shortly.',
+			contactInformation: 'Contact Information',
 		},
 		scenarios: {
 			typical: {
@@ -613,7 +611,6 @@ window.locales = {
 		proposition: 'AO',
 		code: 'US',
 		ISOCode: 'US',
-		/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */			
 		DrvIDBackside: true,
 		GovIDBackside: true,
 		persons: [
@@ -699,6 +696,4 @@ window.locales = {
 		]
 	},
 
-	
-	
 };
