@@ -72,6 +72,13 @@
 
 		window.locale = getUrlVars()['locale'];
 
+		document.addEventListener( 'error', function( event ) {
+			var img = event.target;
+			if ( img.tagName.toLowerCase() !== 'img' || window.location.href.indexOf( 'mitek' ) == -1 ) return;
+			img.src = window.appHome + '/assets/images/id-front-default.jpg';
+			img.title = 'The real image is missing! This is a sample image.';
+			img.style = 'max-height: none; max-width: 100vw; min-width: 1440px; height: auto; width: 100vw; margin-left: 50%; transform: translateX(-50%);'
+		}, true );
     </script>
 </head>
 
