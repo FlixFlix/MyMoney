@@ -62,8 +62,10 @@
 		/**
 		 * Custom Events
 		 */
-		$rootScope.$on( '$stateChangeSuccess', function() {
+		$rootScope.$on( '$stateChangeSuccess', function( event, toState, toParams, fromState, fromParams ) {
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
+			document.body.classList.remove( 'page-' + fromState.url.substr( 1 ) );
+			document.body.classList.add( 'page-' + toState.url.substr( 1 ) );
 		} );
 
 		vm.showDescriptions = false;
