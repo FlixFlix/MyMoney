@@ -1,11 +1,9 @@
 <div class="screens-container">
-    <h3>Verify your identity</h3>
-    <p>We need more information to complete your application.</p>
+    <h3>{{vm.__('Verify Your Identity')}}</h3>
+    <p>{{vm.__('We need more information to complete your application.')}}</p>
     <div class="lead-in" ng-click="vm.next()">
         <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
-        <span>Take Photo</span>
+        <span>{{vm.__('Take Photo')}}</span>
     </div>
-    <p>Please use the following document verification service to quickly scan
-        the front and back of your government-issued ID and
-        take a selfie to complete the application process.</p>
+    <p>{{vm.__('Please use the following document verification service to quickly scan the front and back of your government-issued ID and take a selfie to complete the application process.')}}</p>
 </div>

@@ -1,20 +1,19 @@
-<div class="scenarios">
+<div class="scenarios" ng-if="vm.appState.localeNotSet == false">
     <style>.mobileButtonContainer {
         display: none;
     }</style>
-    <h1>{{ vm.locale.text.chooseScenario }}</h1>
-    <!-- Commented out the ability to add the Descriptions - TT 7/25/19
-	<div>
+    <h1>{{ vm.__('Select Scenario') }}</h1>
+    <div ng-if="false">
         <label class="c-toggle" for="c-toggle">
             <input ng-show="vm.isDescriptionsEnabled()" ng-click="vm.toggleDescriptions()" id="c-toggle" name="c-toggle"
                    type="checkbox">
-            Show Descriptions
+            {{vm.__('Show Descriptions')}}
         </label>
-    </div> -->
+    </div>
     <div ng-repeat="scenario in vm.appState.scenarios">
-        <div class="scenario-selector" title="{{ scenario.title }}">
+        <div class="scenario-selector" title="{{ scenario.toolTip }}">
             <a ng-click="vm.selectFlow(scenario)"> </a>
-            <h2 class="scenario-title">{{ scenario.label }}</h2>
+            <h2 class="scenario-title">{{ scenario.scenarioName }}</h2>
             <div ng-if="vm.showDescriptions" class="description">{{scenario.description}}</div>
         </div>
     </div>

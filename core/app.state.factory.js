@@ -11,13 +11,13 @@
 	function AppStateFactory( $http ) {
 		var vm = this;
 
-		function generateContactForm( localeCode, person ) {
+		function generateContactForm( person ) {
 			var form = [];
-			vm.locales[localeCode].fields.forEach( function( field, index ) {
+			vm.locales[vm.locale.code].fields.forEach( function( field, index ) {
 				form.push( {
 					name: field.name,
 					placeholder: field.placeholder,
-					value: vm.locales[localeCode].persons[person][index],
+					value: vm.locales[vm.locale.code].persons[person][index],
 				} );
 			} );
 			return form;
@@ -27,26 +27,33 @@
 		vm.locales = window.locales;
 
 		var localeSelector;
+		vm.localeNotSet = false;
 
 		if ( window.locale ) {
 			localeSelector = window.locale;
 		} else {
 			localeSelector = getCookie( 'mm_locale' );
 		}
-
-		if ( vm.locales[localeSelector] ) {
-			vm.locale = vm.locales[localeSelector];
-		} else {
+		if ( typeof vm.locales[localeSelector] == 'undefined' ) {
 			vm.locale = vm.locales.US;
-		}
+			vm.localeNotSet = true;
+		} else vm.locale = vm.locales[localeSelector];
 
 		document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
 		document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
-		if ( vm.locale.ISOCode ) {
-			let flag = document.querySelector( '.c-header__locale' ).appendChild( document.createElement( 'img' ) );
-			flag.classList.add( 'c-header__flag' );
-			flag.setAttribute( 'src', 'https://www.countryflags.io/' + vm.locale.ISOCode + '/flat/32.png' );
-		}
+
+		function __ ( text ) {
+			var translation = vm.locale.customTranslations[text]
+			if ( typeof translation === 'undefined' ) { // No custom translation
+				translation = window.translations[vm.locale.language][text]
+				if ( typeof translation === 'undefined' ) { // No language string either
+					translation = text + ' ⚠'; // untranslated text plus a warning symbol
+				} else if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
+			}
+			return translation;
+		};
+
+
 		vm.currentScenario = {
 			form: {},
 			states: [],
@@ -61,12 +68,12 @@
 				toggle: true
 			},
 			{
-				label: "Risk Engine ",
+				label: "Risk Engine",
 				toggle: true
 			},
 			{
 				label: "Document Verification",
-				toggle: true
+				toggle: false
 			},
 			{
 				label: "Phone Intelligence",
@@ -86,7 +93,6 @@
 		 * Init
 		 */
 
-
 		/**
 		 * Scripted Events
 		 */
@@ -94,10 +100,10 @@
 			{
 				name: 'typical',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_79_' + vm.locale.code,
-				title: vm.locale.scenarios.typical.title,
-				label: vm.locale.scenarios.typical.label,
-				description: vm.locale.scenarios.typical.description,
-				form: generateContactForm( vm.locale.code, vm.locale.scenarios.typical.person ),
+				scenarioName: __('Typical Applicant'),
+				toolTip: __('Typical applicant: multiple services but no friction'),
+				description: __('Strategies can be easily configured to conditionally include certain services based on risk while skipping others.'),
+				form: generateContactForm( vm.locale.scenarios.typical.person ),
 
 				// Person 1 does not have assets; do not use in scenarios other than "typical"
 				assets: '' + vm.locale.scenarios.typical.person,
@@ -109,15 +115,15 @@
 			{
 				name: 'mismatch',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_80_' + vm.locale.code,
-				title: vm.locale.scenarios.mismatch.title,
-				label: vm.locale.scenarios.mismatch.label,
-				description: vm.locale.scenarios.mismatch.description,
-				form: generateContactForm( vm.locale.code, vm.locale.scenarios.mismatch.person ),
+				scenarioName: __('Mismatched Identities'),
+				toolTip: __('Step-up for consumer with mismatched identity data'),
+				description: __('Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.'),
+				form: generateContactForm( vm.locale.scenarios.mismatch.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.mismatch.person,
 
 				// Different set of steps based on locale parameter
 				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */
-				
+
 				states: vm.locale.DrvIDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
@@ -138,10 +144,10 @@
 			{
 				name: 'machine',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_81_' + vm.locale.code,
-				title: vm.locale.scenarios.machine.title,
-				label: vm.locale.scenarios.machine.label,
-				description: vm.locale.scenarios.machine.description,
-				form: generateContactForm( vm.locale.code, vm.locale.scenarios.machine.person ),
+				scenarioName: __('Machine Learning'),
+				toolTip: __('Avoid unnecessary step-ups using Decision Analytics'),
+				description: __('Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.'),
+				form: generateContactForm( vm.locale.scenarios.machine.person ),
 				assets: 'person' + vm.locale.scenarios.machine.person,
 				states: [
 					'app.mobile.toggles',
@@ -152,14 +158,14 @@
 			{
 				name: 'fraud',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_76_' + vm.locale.code,
-				title: vm.locale.scenarios.fraud.title,
-				label: vm.locale.scenarios.fraud.label,
-				description: vm.locale.scenarios.fraud.description,
-				form: generateContactForm( vm.locale.code, vm.locale.scenarios.fraud.person ),
+				scenarioName: __('Identity Fraud Attempt'),
+				toolTip: __('Step-up for identity fraud attempt'),
+				description: __('Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.'),
+				form: generateContactForm( vm.locale.scenarios.fraud.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.fraud.person,
 
 				// Different set of steps based on locale parameter
-				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */				
+				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */
 				states: vm.locale.DrvIDBackside ? [
 					'app.mobile.input',
 					'app.mobile.input.needmore',
@@ -178,13 +184,13 @@
 			{
 				name: 'thin',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_82_' + vm.locale.code,
-				title: vm.locale.scenarios.thin.title,
-				label: vm.locale.scenarios.thin.label,
-				description: vm.locale.scenarios.thin.description,
-				form: generateContactForm( vm.locale.code, vm.locale.scenarios.thin.person ),
+				scenarioName: __('Thin-file Applicant'),
+				toolTip: __('Passive step-up for thin-file applicant'),
+				description: __('Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.'),
+				form: generateContactForm( vm.locale.scenarios.thin.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
-				
-				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */				
+
+				/* There are two variables, DrvIDBackside and GovIDBackside, that way some can show both sides and others not - TT 7/25/19 */
 				states: vm.locale.GovIDBackside ? [
 					'app.mobile.input.needmore',
 					'app.mobile.mitek.front',

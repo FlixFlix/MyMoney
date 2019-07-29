@@ -3,7 +3,9 @@
 
 	angular
 		.module( 'webApp' )
-		.controller( 'AppController', AppController );
+		.controller( 'AppController', AppController )
+		.run( function( $rootScope ) {
+		} );
 
 	AppController.$inject = [
 		'$state',
@@ -23,19 +25,38 @@
 		vm.locale = AppStateFactory.locale;
 		vm.locales = AppStateFactory.locales;
 
+		vm.__ = function( text ) {
+			var translation = vm.locale.customTranslations[text]
+			if ( typeof translation === 'undefined' ) { // No custom translation
+				translation = window.translations[vm.locale.language][text]
+				if ( typeof translation === 'undefined' ) { // No language string either
+					translation = text + ' ⚠'; // untranslated text plus a warning symbol
+				} else if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
+			}
+			return translation;
+		};
+
+		if ( vm.appState.localeNotSet ) {
+			document.querySelector( '.c-header__locale' ).classList.add( 'hidden' );
+			$state.go( 'app.mobile.locale' );
+		} else {
+			document.querySelector( '.c-header__flag' ).setAttribute( 'src', 'https://www.countryflags.io/' + vm.locale.ISOCode + '/flat/48.png' );
+			document.querySelector( '.c-header__locale' ).classList.remove( 'hidden' );
+		}
+
 		/**
 		 * Template Methods
 		 */
 		vm.go = function( path ) {
 			$state.go( path );
 		};
-
 		vm.selectLocale = function( locale ) {
 			document.cookie = "mm_locale=" + locale.code + ";max-age=" + 180 * 24 * 3600 * 1000 + ";";
 			setTimeout( function() {
 				window.location.replace( window.appHome + '?locale=' + locale.code );
 			}, 250 )
 		};
+
 		vm.selectFlow = function( flow ) {
 			vm.appState.currentScenario.states = angular.copy( flow.states );
 			vm.appState.currentScenario.form = angular.copy( flow.form );
