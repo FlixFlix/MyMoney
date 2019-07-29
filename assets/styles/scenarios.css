@@ -59,7 +59,7 @@ h3 {
     width: 100%;
     position: relative;
     text-align: center;
-    
+
     /*disslay: flex;*/
     color: #fff;
     background: #6DBB17;
@@ -112,7 +112,7 @@ h3 {
 
 .form-field {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -130,20 +130,20 @@ h3 {
     margin-left: 8px;
 }
 
-.form-field .toggle-label {
-    width: 150px;
-    text-align: right;
-}
-
 .crosscore-toggles {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 5vw auto 0;
     width: 100%;
 }
+.crosscore-toggles > div {
+    display: inline-block;
+    text-align: right;
+}
 
 .form-field input {
-    border: 1px solid grey; 
+    border: 1px solid grey;
     width: 100%;
     outline: 0;
     padding: 8px;
@@ -154,7 +154,7 @@ h3 {
     animation-delay: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /* text-transform: uppercase; */
+    /* translations-transform: uppercase; */
 }
 
 @keyframes appear {
@@ -172,7 +172,7 @@ h3 {
 }
 
 input:focus {
-    border: 1px solid #6DBB17; 
+    border: 1px solid #6DBB17;
 }
 
 .lead-in {
@@ -196,7 +196,7 @@ input:focus {
 }
 .success-wrapper {
     display: none;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 
@@ -225,7 +225,7 @@ input:focus {
     justify-content: space-between;
 }
 
-.mobileButtonContainer.dual-button button, 
+.mobileButtonContainer.dual-button button,
 .mobileButtonContainer.dual-button a {
     max-width: 45%;
     font-size: 20px;
@@ -253,10 +253,10 @@ input:focus {
     transition: transform 0.3s ease;
     position: relative;
     z-index: 100;
-    /* 
+    /*
     -webkit-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
-    -moz-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);     
-    box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27); 
+    -moz-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
+    box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
     */
 }
 .main-content.ng-enter {
@@ -267,7 +267,7 @@ input:focus {
     transform: translate3d(0, 0, 0);
 }
 
-.main-content.ng-leave-active {    
+.main-content.ng-leave-active {
     transform: translate3d(0, 0, 0);
     position: absolute;
     z-index: 1;
@@ -314,14 +314,14 @@ input:focus {
 
 /**
  * For the non-flex responsive work
- * 
+ *
  */
 @media screen and (min-width: 899px) {
     /* .scenario-selector {
         width: 60%;
     } */
     .screens-container, .footer-content {
-        width: 60%;        
+        width: 60%;
     }
     .mobileButtonContainer {
         width: 70%;
