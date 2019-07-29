@@ -47,6 +47,12 @@
 						controller: 'AppController',
 						controllerAs: 'vm'
 					}
+				},
+				onEnter: function() {
+					setTimeout( function() {
+						let flag = document.querySelector( '.c-header__locale' );
+						if ( flag ) document.querySelector( '.c-header__locale' ).classList.add( 'hidden' );
+					}, 166 );
 				}
 			} )
 			// *************************************************************

@@ -13,6 +13,9 @@ body.locale-JP {
 	margin-left: auto;
 	cursor: pointer;
 }
+.page-locale .c-header__locale {
+	display: none;
+}
 
 @media (max-width: 600px) {
 	.c-header__locale__current {
