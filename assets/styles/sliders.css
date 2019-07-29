@@ -22,7 +22,9 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
+.toggle-label {
+  margin-right: 1em
+}
 .slider:before {
   position: absolute;
   content: "";

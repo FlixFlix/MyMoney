@@ -28,10 +28,15 @@
 		vm.__ = function( text ) {
 			var translation = vm.locale.customTranslations[text]
 			if ( typeof translation === 'undefined' ) { // No custom translation
-				translation = window.translations[vm.locale.language][text]
-				if ( typeof translation === 'undefined' ) { // No language string either
+				if ( typeof window.translations[vm.locale.language] === 'undefined' ) { // Check if language set exists
 					translation = text + ' ⚠'; // untranslated text plus a warning symbol
-				} else if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
+				} else {
+					translation = window.translations[vm.locale.language][text]
+					if ( typeof translation === 'undefined' ) { // No language string either
+						translation = text + ' ⚠'; // untranslated text plus a warning symbol
+					}
+				}
+				if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
 			}
 			return translation;
 		};

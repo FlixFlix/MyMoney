@@ -1,4 +1,4 @@
-// Language codes according to ISO 639-1
+// Language codes according to ISO 639-2
 window.translations = {
 	blanks: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "",
@@ -28,7 +28,7 @@ window.translations = {
 		"Your application was approved!": ""
 	},
 
-	en: {
+	eng: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Application details and instructions for accessing your new account will be emailed shortly.",
 		"Contact Information": "Contact Information",
 		"Continue": "Continue",
@@ -56,7 +56,7 @@ window.translations = {
 		"Your application was approved!": "Your application was approved!"
 	},
 
-	es: {
+	spa: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Los detalles de la solicitud y las instrucciones para acceder a su nueva cuenta se enviarán por correo electrónico en breve.",
 		"Contact Information": "Información del contacto",
 		"Continue": "Continuar",
@@ -84,7 +84,7 @@ window.translations = {
 		"Your application was approved!": "Su solicitud fue aprobada!"
 	},
 
-	pt: {
+	por: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Detalhes do aplicativo e instruções para acessar sua nova conta serão enviados em breve.",
 		"Contact Information": "Informações de contato",
 		"Continue": "Continuar",

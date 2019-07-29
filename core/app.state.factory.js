@@ -42,17 +42,21 @@
 		document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
 		document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
 
-		function __ ( text ) {
+		function __( text ) {
 			var translation = vm.locale.customTranslations[text]
 			if ( typeof translation === 'undefined' ) { // No custom translation
-				translation = window.translations[vm.locale.language][text]
-				if ( typeof translation === 'undefined' ) { // No language string either
+				if ( typeof window.translations[vm.locale.language] === 'undefined' ) { // Check if language set exists
 					translation = text + ' ⚠'; // untranslated text plus a warning symbol
-				} else if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
+				} else {
+					translation = window.translations[vm.locale.language][text]
+					if ( typeof translation === 'undefined' ) { // No language string either
+						translation = text + ' ⚠'; // untranslated text plus a warning symbol
+					}
+				}
+				if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
 			}
 			return translation;
 		};
-
 
 		vm.currentScenario = {
 			form: {},
@@ -100,9 +104,9 @@
 			{
 				name: 'typical',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_79_' + vm.locale.code,
-				scenarioName: __('Typical Applicant'),
-				toolTip: __('Typical applicant: multiple services but no friction'),
-				description: __('Strategies can be easily configured to conditionally include certain services based on risk while skipping others.'),
+				scenarioName: __( 'Typical Applicant' ),
+				toolTip: __( 'Typical applicant: multiple services but no friction' ),
+				description: __( 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.' ),
 				form: generateContactForm( vm.locale.scenarios.typical.person ),
 
 				// Person 1 does not have assets; do not use in scenarios other than "typical"
@@ -115,9 +119,9 @@
 			{
 				name: 'mismatch',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_80_' + vm.locale.code,
-				scenarioName: __('Mismatched Identities'),
-				toolTip: __('Step-up for consumer with mismatched identity data'),
-				description: __('Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.'),
+				scenarioName: __( 'Mismatched Identities' ),
+				toolTip: __( 'Step-up for consumer with mismatched identity data' ),
+				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
 				form: generateContactForm( vm.locale.scenarios.mismatch.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.mismatch.person,
 
@@ -144,9 +148,9 @@
 			{
 				name: 'machine',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_81_' + vm.locale.code,
-				scenarioName: __('Machine Learning'),
-				toolTip: __('Avoid unnecessary step-ups using Decision Analytics'),
-				description: __('Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.'),
+				scenarioName: __( 'Machine Learning' ),
+				toolTip: __( 'Avoid unnecessary step-ups using Decision Analytics' ),
+				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
 				form: generateContactForm( vm.locale.scenarios.machine.person ),
 				assets: 'person' + vm.locale.scenarios.machine.person,
 				states: [
@@ -158,9 +162,9 @@
 			{
 				name: 'fraud',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_76_' + vm.locale.code,
-				scenarioName: __('Identity Fraud Attempt'),
-				toolTip: __('Step-up for identity fraud attempt'),
-				description: __('Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.'),
+				scenarioName: __( 'Identity Fraud Attempt' ),
+				toolTip: __( 'Step-up for identity fraud attempt' ),
+				description: __( 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.' ),
 				form: generateContactForm( vm.locale.scenarios.fraud.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.fraud.person,
 
@@ -184,9 +188,9 @@
 			{
 				name: 'thin',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_82_' + vm.locale.code,
-				scenarioName: __('Thin-file Applicant'),
-				toolTip: __('Passive step-up for thin-file applicant'),
-				description: __('Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.'),
+				scenarioName: __( 'Thin-file Applicant' ),
+				toolTip: __( 'Passive step-up for thin-file applicant' ),
+				description: __( 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.' ),
 				form: generateContactForm( vm.locale.scenarios.thin.person ),
 				assets: vm.locale.code + '/person' + vm.locale.scenarios.thin.person,
 
