@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841"
-          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841" rel="stylesheet">
     <title>MyMoney</title>
 
     <!-- bower:css -->
@@ -20,6 +19,24 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <script src="country-data.js"></script>
+    <!-- bower:js -->
+    <script src="vendors/angular/angular.min.js?_v=1556668435841"></script>
+    <script src="vendors/jquery/dist/jquery.min.js?_v=1556668435841"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js?_v=1556668435841"></script>
+    <script src="vendors/ngMask/dist/ngMask.js?_v=1556668435841"></script>
+    <script src="vendors/angular-ui-router/release/angular-ui-router.js?_v=1556668435841"></script>
+    <script src="vendors/angular-animate/angular-animate.js?_v=1556668435841"></script>
+    <!-- endbower -->
+
+    <!-- inject:js -->
+    <script src="app.module.js?_v=1556668435841"></script>
+    <script src="app.route.js?_v=1556668435841"></script>
+    <script src="app.sdk.js?_v=1556668435841"></script>
+    <!--    <script src="app.templates.js?_v=1556668435841"></script>-->
+    <script src="core/app.controller.js?_v=1556668435841"></script>
+    <script src="core/app.state.factory.js?_v=1556668435841"></script>
+    <script src="directives/directives.js?_v=1556668435841"></script>
+    <!-- endinject -->
     <script>
 
 		var $buoop = {
@@ -86,24 +103,5 @@
 <div ui-view name="header"></div>
 <div ui-view class="main-content" name="content"></div>
 <div ui-view class="footer-content" name="footer"></div>
-
-<!-- bower:js -->
-<script src="vendors/angular/angular.min.js?_v=1556668435841"></script>
-<script src="vendors/jquery/dist/jquery.min.js?_v=1556668435841"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js?_v=1556668435841"></script>
-<script src="vendors/ngMask/dist/ngMask.js?_v=1556668435841"></script>
-<script src="vendors/angular-ui-router/release/angular-ui-router.js?_v=1556668435841"></script>
-<script src="vendors/angular-animate/angular-animate.js?_v=1556668435841"></script>
-<!-- endbower -->
-
-<!-- inject:js -->
-<script src="app.module.js?_v=1556668435841"></script>
-<script src="app.route.js?_v=1556668435841"></script>
-<script src="app.sdk.js?_v=1556668435841"></script>
-<!--    <script src="app.templates.js?_v=1556668435841"></script>-->
-<script src="core/app.controller.js?_v=1556668435841"></script>
-<script src="core/app.state.factory.js?_v=1556668435841"></script>
-<script src="directives/directives.js?_v=1556668435841"></script>
-<!-- endinject -->
 </body>
 </html>
