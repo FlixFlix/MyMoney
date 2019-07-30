@@ -106,10 +106,10 @@ window.locales = {
 		GovIDBackside: true,
 		persons: [
 			[],
-			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
-			['Lizzy', 'Grant', '09-04-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'Derby', 'DE23 1GH', '+44 3125 678500', 'lizzy_grant@gmail.com'],
-			['Elizabeth', 'Grant', '09-04-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Wygston', 'Leicester', 'LE18 6PD', '+44 3125 678500', 'elizabethgrant83@yahoo.com'],
-			['Paul', 'Johnson', '09-18-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', '+44 07 0517 11863', 'PaulA_007@gmail.com'],
+			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '(11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
+			['Rafi', 'Dias', '09-04-1973', '489.085.995-09', 'Rua Três 1656', 'Campinas', 'São Paulo', '13082-665', '(19) 7874-3886', 'rafi_Dias@gmail.com'],
+			['Rafael', 'Dias', '09-04-1973', '489.085.995-09', 'Travessa Araci 196', 'Duque de Caxias', 'Rio de Janeiro', '125272-440', '(21) 8299-4630', 'RafaelDias83@yahoo.com'],
+			['Vicente', 'Fontes', '09-18-1999', '489.085.995-09', 'Rua Reverendo 617', 'Belford Roxo', 'Rio de Janeiro', '26143-435', '(21) 2275-6677', 'VicenteF_007@gmail.com'],
 		],
 		customTranslations: {
 		},
@@ -144,8 +144,8 @@ window.locales = {
 				placeholder: 'DOB - DD-MM-CCYY'
 			},
 			{
-				name: 'NINO',
-				placeholder: 'Número de seguro Nacional'
+				name: 'CPF',
+				placeholder: 'Cadastro de Pessoas Físicas'
 			},
 			{
 				name: 'address',
