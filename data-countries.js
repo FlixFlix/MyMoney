@@ -191,10 +191,16 @@ window.locales = {
 		GovIDBackside: false,
 		persons: [
 			[],
+			/* Before removed postal codes
 			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '111911', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
 			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '050001', '+57 12529697', 'Juanita_García@gmail.com'],
 			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '760001', '+44 3125 678500', 'JuanaGarcía83@yahoo.com'],
 			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '132547', '+57 63331353', 'PedroMartínez_007@gmail.com'],
+			*/
+			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
+			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '+57 12529697', 'Juanita_García@gmail.com'],
+			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '+44 3125 678500', 'JuanaGarcía83@yahoo.com'],
+			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '+57 63331353', 'PedroMartínez_007@gmail.com'],		
 		],
 		customTranslations: {
 		},
@@ -233,23 +239,25 @@ window.locales = {
 				placeholder: 'Número de seguro Nacional'
 			},
 			{
-				name: 'address',
+				name: 'Dirección',
 				placeholder: '123 nombre de la callee'
 			},
 			{
-				name: 'city',
+				name: 'Ciudad',
 				placeholder: 'ciudad'
 			},
 			{
-				name: 'country',
+				name: 'departamento',
 				placeholder: 'País'
 			},
+			/*
 			{
 				name: 'postcode',
 				placeholder: 'código postal'
 			},
+			*/
 			{
-				name: 'phone',
+				name: 'Teléfono',
 				placeholder: 'número de teléfono'
 			},
 			{
