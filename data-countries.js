@@ -268,7 +268,7 @@ window.locales = {
 		label: 'India',
 		description: 'India',
 		region: 'APAC',
-		language: 'hin',
+		language: 'eng',
 		proposition: 'AO',
 		code: 'IN',
 		ISOCode: 'IN',
