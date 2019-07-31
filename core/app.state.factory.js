@@ -77,7 +77,7 @@
 			},
 			{
 				label: "Document Verification",
-				toggle: false
+				toggle: true
 			},
 			{
 				label: "Phone Intelligence",
