@@ -107,7 +107,7 @@ window.locales = {
 		persons: [
 			[],
 			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '(11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
-			['Bea', 'Almeida', '04-09-1973', '489.085.995-09', 'Rua Três 1656', 'Campinas', 'São Paulo', '13082-665', '(19) 7874-3886', 'Bea_Almeida@gmail.com'],
+			['Bea', 'Almeida', '04-09-1973', '489.085.995-09', 'Rua Três 1656', 'Belo Horizonte', 'Minas Gerais', '13082-665', '(19) 7874-3886', 'Bea_Almeida@gmail.com'],
 			['Beatriz', 'Almeida', '04-09-1973', '489.085.995-09', 'Travessa Araci 196', 'Duque de Caxias', 'Rio de Janeiro', '125272-440', '(21) 8299-4630', 'BeatrizAlmeida83@yahoo.com'],
 			['Vicente', 'Fontes', '18-09-1999', '489.085.995-09', 'Rua Reverendo 617', 'Belford Roxo', 'Rio de Janeiro', '26143-435', '(21) 2275-6677', 'VicenteF_007@gmail.com'],
 		],
