@@ -1,6 +1,6 @@
 // Language codes according to ISO 639-2
 window.translations = {
-	blanks: {
+	terms: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "",
 		"Contact Information": "",
 		"Continue": "",
@@ -12,6 +12,7 @@ window.translations = {
 		"Machine Learning": "",
 		"Mismatched Identities": "",
 		"Phone Intelligence": "",
+		"Please call +1 800 MYMONEY to speak with a My Money representative.": "",
 		"Please use the following document verification service to quickly scan the front and back of your government-issued ID and take a selfie to complete the application process.": "",
 		"Review": "",
 		"Risk Engine": "",
