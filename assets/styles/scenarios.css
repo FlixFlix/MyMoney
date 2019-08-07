@@ -16,7 +16,7 @@
     width: 80%;
 }
 @media (max-width: 600px) {
-    .main-content .scenarios, .main-content .screens-container {
+    .main-content .scenarios, .main-content .screens-container, body .footer-content {
         width: calc(100% - 40px);
     }
 }
@@ -38,6 +38,9 @@ h3 {
     margin: 15px auto;
     width: 80%;
     justify-content: center;
+}
+.footer-content {
+    width: 80%;
 }
 
 .result-passport img {
@@ -316,10 +319,11 @@ input:focus {
  * For the non-flex responsive work
  *
  */
+
 @media screen and (min-width: 899px) {
-    /* .scenario-selector {
+     .scenario-selector {
         width: 60%;
-    } */
+    }
     .screens-container, .footer-content {
         width: 60%;
     }
@@ -328,8 +332,3 @@ input:focus {
     }
 }
 
-@media screen and (min-width: 767px) {
-    .scenarios {
-        width: 50%;
-    }
-}
