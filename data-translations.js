@@ -1,6 +1,6 @@
 // Language codes according to ISO 639-2
 window.translations = {
-	terms: {
+	blanks: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "",
 		"Contact Information": "",
 		"Continue": "",
@@ -12,7 +12,6 @@ window.translations = {
 		"Machine Learning": "",
 		"Mismatched Identities": "",
 		"Phone Intelligence": "",
-		"Please call +1 800 MYMONEY to speak with a My Money representative.": "",
 		"Please use the following document verification service to quickly scan the front and back of your government-issued ID and take a selfie to complete the application process.": "",
 		"Review": "",
 		"Risk Engine": "",
@@ -60,7 +59,7 @@ window.translations = {
 
 	spa: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Los detalles e instrucciones para acceder a su nueva cuenta le será enviada a su correo en breve.",
-		"Avoid unnecessary step-ups using Decision Analytics": "Avoid unnecessary step-ups using Decision Analytics",
+		"Avoid unnecessary step-ups using Decision Analytics": "Evitar fricción innecesaria por escalamiento en el proceso de validación",
 		"Contact Information": "Información del contacto",
 		"Continue": "Continuar",
 		"Document Verification": "Verificación de documentos",
@@ -77,7 +76,7 @@ window.translations = {
 		"Mismatched Identities": "Identificación no confirmada",
 		"Step-up for consumer with mismatched identity data": "Muchas solicitudes tienen pequeñas diferencias que requieren revisiones manuales que generan retrasos y son costosas",
 		"Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.": "se podrá adicionar rápida y fácilmente información demográfica o de identificación.",
-		"Passive step-up for thin-file applicant": "Passive step-up for thin-file applicant",
+		"Passive step-up for thin-file applicant": "Escalamiento pasivo para solicitudes livianas",
 		"Phone Intelligence": "Inteligencia telefonica",
 		"Please use the following document verification service to quickly scan the front and back of your government-issued ID and take a selfie to complete the application process.": "A continuación se realizará la verificación de documentos para lo cual se va escanear rápidamente el anverso y reverso de su identificación y se le tomará una fotografía para continuar con el proceso de solicitud.",
 		"Please call +1 800 MYMONEY to speak with a My Money representative.": "Por favor llamar a +1 800 MYMONEY para hablar con un representante de servicio",
@@ -86,7 +85,7 @@ window.translations = {
 		"Select Scenario": "Selección de escenario",
 		"Selfie": "Selfie",
 		"Show Descriptions": "Ver descripciones",
-		"Step-up for identity fraud attempt": "Step-up for identity fraud attempt",
+		"Step-up for identity fraud attempt": "Escalamiento por intento de suplantación",
 		"Strategies can be easily configured to conditionally include certain services based on risk while skipping others.": "Las estrategias pueden ser configuradas fácilmente para determinar cuáles servicios son necesarios y cuáles no de acuerdo con el nivel de riesgo.",
 		"Strategy Admin": "Administrador de estrategia",
 		"Take Photo": "Tomar foto",
