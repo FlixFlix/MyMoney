@@ -103,7 +103,7 @@
 		vm.scenarios = [
 			{
 				name: 'typical',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_79_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase1 + '_' + vm.locale.code,
 				scenarioName: __( 'Typical Applicant' ),
 				toolTip: __( 'Typical applicant: multiple services but no friction' ),
 				description: __( 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.' ),
@@ -118,7 +118,7 @@
 			},
 			{
 				name: 'mismatch',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_80_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase2 + '_' + vm.locale.code,
 				scenarioName: __( 'Mismatched Identities' ),
 				toolTip: __( 'Step-up for consumer with mismatched identity data' ),
 				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
@@ -147,7 +147,7 @@
 
 			{
 				name: 'machine',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_81_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase3 + '_' + vm.locale.code,
 				scenarioName: __( 'Machine Learning' ),
 				toolTip: __( 'Avoid unnecessary step-ups using Decision Analytics' ),
 				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
@@ -161,7 +161,7 @@
 			},
 			{
 				name: 'fraud',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_76_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase4 + '_' + vm.locale.code,
 				scenarioName: __( 'Identity Fraud Attempt' ),
 				toolTip: __( 'Step-up for identity fraud attempt' ),
 				description: __( 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.' ),
@@ -187,7 +187,7 @@
 			},
 			{
 				name: 'thin',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_82_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase5 + '_' + vm.locale.code,
 				scenarioName: __( 'Thin-file Applicant' ),
 				toolTip: __( 'Passive step-up for thin-file applicant' ),
 				description: __( 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.' ),
