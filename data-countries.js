@@ -14,9 +14,16 @@ window.locales = {
 		description: 'Australia',
 		region: 'APAC',
 		language: 'eng',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'AU',
 		ISOCode: 'AU',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -99,9 +106,16 @@ window.locales = {
 		description: 'Brazil',
 		region: 'LATAM',
 		language: 'por',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'BR',
 		ISOCode: 'BR',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
 		DrvIDBackside: false,
 		GovIDBackside: false,
 		persons: [
@@ -184,9 +198,16 @@ window.locales = {
 		description: 'Colombia',
 		region: 'LATAM',
 		language: 'spa',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'CO',
 		ISOCode: 'CO',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: false,
 		GovIDBackside: false,
 		persons: [
@@ -277,9 +298,16 @@ window.locales = {
 		description: 'India',
 		region: 'APAC',
 		language: 'eng',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'IN',
 		ISOCode: 'IN',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -362,9 +390,16 @@ window.locales = {
 		description: 'Indonesia',
 		region: 'APAC',
 		language: 'ind',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'ID',
 		ISOCode: 'ID',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -447,9 +482,16 @@ window.locales = {
 		description: 'United Kingdom',
 		region: 'UK',
 		language: 'eng',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'UK',
 		ISOCode: 'GB',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
 		persons: [
@@ -531,9 +573,16 @@ window.locales = {
 		description: 'United States',
 		region: 'NA',
 		language: 'eng',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
+		propcase1: '79',
+		propcase2: '80',
+		propcase3: '81',
+		propcase4: '76',
+		propcase5: '82',
 		code: 'US',
 		ISOCode: 'US',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: true,
 		persons: [
