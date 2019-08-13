@@ -484,11 +484,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '01',
-		propcase2: '02',
+		propcase1: '06',
+		propcase2: '07',
 		propcase3: '03',
 		propcase4: '04',
-		propcase5: '05',
+		propcase5: '08',
 		code: 'UK',
 		ISOCode: 'GB',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -575,11 +575,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '01',
-		propcase2: '02',
-		propcase3: '03',
-		propcase4: '04',
-		propcase5: '05',
+		propcase1: '06',
+		propcase2: '07',
+		propcase3: '08',
+		propcase4: '11',
+		propcase5: '10',
 		code: 'US',
 		ISOCode: 'US',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
