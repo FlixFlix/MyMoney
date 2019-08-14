@@ -7,7 +7,8 @@ window.locales = {
 	/****************/
 	/*   AUSTRALIA  */
 	/****************/
-
+	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	AU: {
 		appName: 'MyMoney',
 		label: 'Australia',
@@ -99,7 +100,8 @@ window.locales = {
 	/**********************/
 	/*   Brazil           */
 	/**********************/
-
+	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	BR: {
 		appName: 'MyMoney',
 		label: 'Brazil',
@@ -191,7 +193,8 @@ window.locales = {
 	/**********************/
 	/*   Colombia         */
 	/**********************/
-
+	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	CO: {
 		appName: 'MyMoney',
 		label: 'Colombia',
@@ -291,7 +294,8 @@ window.locales = {
 	/****************/
 	/*   INDIA      */
 	/****************/
-
+	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	IN: {
 		appName: 'MyMoney',
 		label: 'India',
@@ -384,6 +388,7 @@ window.locales = {
 	/*   INDONESIA     */
 	/*******************/
 
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	ID: {
 		appName: 'MyMoney',
 		label: 'Indonesia',
@@ -472,10 +477,105 @@ window.locales = {
 		]
 	},
 
+	/*******************/
+	/*   SOUTH AFRICA  */
+	/*******************/
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+	ZA: {
+		appName: 'MyMoney',
+		label: 'South Africa',
+		description: 'South Africa',
+		region: 'EMEA',
+		language: 'eng',
+	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		proposition: 'AO',
+		propcase1: '01',
+		propcase2: '02',
+		propcase3: '03',
+		propcase4: '04',
+		propcase5: '05',
+		code: 'ZA',
+		ISOCode: 'ZA',
+	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		DrvIDBackside: false,
+		GovIDBackside: false,
+		persons: [
+			[],
+			['Pauline J', 'Curtis', '02-01-1976', '7601020123009', '337  Sandown Rd', 'Cape Town', 'Western Cape', '8003', '+27 82 263 8526', 'paulinejcurtis0276@yahoo.com'],
+			['Pattie', 'Jorgensen', '04-09-1973', '7309040321008', '2241  Rus St', 'Cape Town', 'Western Cape', '7551', '+27 82 415 6745', 'Pattie_Jorgensen@gmail.com'],
+			['Patricia', 'Jorgensen', '04-09-1973', '7309040321008', '428  Wit Rd', 'Johannesburg', 'Gauteng', '2058', '+27 84 401 9880', 'Patricia_J730904@gmail.com'],
+			['George', 'Klein', '18-09-1999', '99091806123003', '947  Market St', 'Johannesburg', 'Gauteng', '2154', '+27 84 715 3283', 'GeorgeK_007@gmail.com'],
+		],
+		customTranslations: {
+		},
+		scenarios: {
+			typical: {
+				person: 1,
+			},
+			mismatch: {
+				person: 2,
+			},
+			machine: {
+				person: 2,
+			},
+			fraud: {
+				person: 3,
+			},
+			thin: {
+				person: 4,
+			}
+		},
+		fields: [
+			{
+				name: 'firstName',
+				placeholder: 'First Name'
+			},
+			{
+				name: 'lastName',
+				placeholder: 'Last Name'
+			},
+			{
+				name: 'dob',
+				placeholder: 'DOB - MM/DD/YYYY'
+			},
+			{
+				name: 'SSSS',
+				placeholder: 'SSSS - YYMMDDSSSSCAZ'
+			},
+			{
+				name: 'address',
+				placeholder: '123 Streetname Ave'
+			},
+			{
+				name: 'city',
+				placeholder: 'City'
+			},
+			{
+				name: 'state',
+				placeholder: 'State'
+			},
+			{
+				name: 'postcode',
+				placeholder: 'Post Code'
+			},
+			{
+				name: 'phone',
+				placeholder: 'Phone Number'
+			},
+			{
+				name: 'email',
+				placeholder: 'email@domain.com'
+			},
+		]
+	},
+
+
 	/**********************/
 	/*   UNITED KINGDOM   */
 	/**********************/
 
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */		
 	UK: {
 		appName: 'MyMoney',
 		label: 'UK',
@@ -567,6 +667,8 @@ window.locales = {
 	/*********************/
 	/*   UNITED STATES   */
 	/*********************/
+	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */		
 	US: {
 		appName: 'MyMoney',
 		label: 'US',
