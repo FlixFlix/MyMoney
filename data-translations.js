@@ -2,6 +2,7 @@
 window.translations = {
 	blanks: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "",
+		"Behavioral Biometric Scoring": "Behavioral Biometric Scoring",
 		"Contact Information": "",
 		"Continue": "",
 		"Document Verification": "",
@@ -30,6 +31,7 @@ window.translations = {
 
 	eng: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Application details and instructions for accessing your new account will be emailed shortly.",
+		"Behavioral Biometric Scoring": "Behavioral Biometric Scoring",
 		"Contact Information": "Contact Information",
 		"Continue": "Continue",
 		"Document Verification": "Document Verification",
@@ -60,6 +62,7 @@ window.translations = {
 	spa: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Los detalles e instrucciones para acceder a su nueva cuenta le será enviada a su correo en breve.",
 		"Avoid unnecessary step-ups using Decision Analytics": "Evitar fricción innecesaria por escalamiento en el proceso de validación",
+		"Behavioral Biometric Scoring": "Behavioral Biometric Scoring",
 		"Contact Information": "Información del contacto",
 		"Continue": "Continuar",
 		"Document Verification": "Verificación de documentos",
@@ -103,6 +106,7 @@ window.translations = {
 	por: {
 		"Application details and instructions for accessing your new account will be emailed shortly.": "Os detalhes da aplicação e intruções para acessar sua nova conta serão enviadas para seu e-mail em breve.",
 		"Avoid unnecessary step-ups using Decision Analytics": "Evite etapas desnecessárias utilizando decisões analíticas",
+		"Behavioral Biometric Scoring": "Behavioral Biometric Scoring",
 		"Contact Information": "Informações de Contato",
 		"Continue": "Continuar",
 		"Document Verification": "Verificação de documento",
