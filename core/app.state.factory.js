@@ -89,7 +89,7 @@
 			},
 			{
 				label: "Behavioral Biometric Scoring",
-				toggle: false
+				toggle: true
 			},
 			{
 				label: "Machine Learning",
