@@ -68,7 +68,7 @@
 		vm.json = {};
 		vm.crossCoreStrategies = [
 			{
-				label: "Identity verification",
+				label: "Identity Verification",
 				toggle: true
 			},
 			{
@@ -88,7 +88,7 @@
 				toggle: true
 			},
 			{
-				label: "Behavioral Biometric Scoring",
+				label: "Behavioral Biometrics",
 				toggle: true
 			},
 			{
