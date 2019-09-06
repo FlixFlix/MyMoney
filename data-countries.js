@@ -17,11 +17,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '06',
-		propcase2: '07',
-		propcase3: '08',
-		propcase4: '09',
-		propcase5: '10',
+		propcase1: '11',
+		propcase2: '12',
+		propcase3: '13',
+		propcase4: '14',
+		propcase5: '15',
 		code: 'AU',
 		ISOCode: 'AU',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -29,9 +29,9 @@ window.locales = {
 		GovIDBackside: false,
 		persons: [
 			[],
-			['Sarah', 'Jamison', '02-01-1976', '165-239-877', '16521 Morris St, Unit 123', 'South Melbourne', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
-			['Lizzy', 'Grant', '04-09-1973', '512-438-888', '1251 Miller St, Unit 123', 'North Sydney', 'NSW', '2060', '+61 4 2567 8500', 'lizzy_grant@gmail.com'],
-			['Elizabeth', 'Grant', '04-09-1973', '512-438-888', '53 Alma Rd, Unit 5a', 'St Kilda', 'VIC', '3182', '+61 4 2567 8500', 'elizabethgrant83@yahoo.com'],
+			['Sarah', 'Jamison', '02-01-1976', '165-239-877', 'Unit 123/16521 Morris St', 'South Melbourne', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
+			['Lizzy', 'Grant', '04-09-1973', '512-438-888', 'Unit 123/1251 Miller St', 'North Sydney', 'NSW', '2060', '+61 4 2567 8500', 'lizzy_grant@gmail.com'],
+			['Elizabeth', 'Grant', '04-09-1973', '512-438-888', 'Unit 5a/53 Alma Rd', 'St Kilda', 'VIC', '3182', '+61 4 2567 8500', 'elizabethgrant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', '754-631-199', '9715 Rock Maple Street', 'Melbourne', 'VIC', '3000', '+61 3 8765 4321', 'PaulA_007@gmail.com'],
 		],
 		customTranslations: {
@@ -110,11 +110,11 @@ window.locales = {
 		language: 'por',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '06',
-		propcase2: '07',
-		propcase3: '08',
-		propcase4: '09',
-		propcase5: '10',
+		propcase1: '11',
+		propcase2: '12',
+		propcase3: '13',
+		propcase4: '14',
+		propcase5: '15',
 		code: 'BR',
 		ISOCode: 'BR',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -197,17 +197,19 @@ window.locales = {
 	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	CO: {
 		appName: 'MyMoney',
+	/*	label: 'Latinoamérica',
+		description: 'Latin America', */
 		label: 'Colombia',
-		description: 'Colombia',
+		description: 'Colombia', 		
 		region: 'LATAM',
 		language: 'spa',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'CO',
 		ISOCode: 'CO',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -217,9 +219,9 @@ window.locales = {
 			[],
 			/* Before removed postal codes
 			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '111911', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
-			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '050001', '+57 12529697', 'Juanita_García@gmail.com'],
-			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '760001', '+44 3125 678500', 'JuanaGarcía83@yahoo.com'],
-			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '132547', '+57 63331353', 'PedroMartínez_007@gmail.com'],
+			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '050001', '+57 12529697', 'Juanita_Garcia@gmail.com'],
+			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Valle Del Cauca', '760001', '+44 3125 678500', 'JuanaGarcia83@yahoo.com'],
+			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '132547', '+57 63331353', 'PedroMartinez_007@gmail.com'],
 			*/
 			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
 			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '+57 12529697', 'Juanita_García@gmail.com'],
@@ -304,22 +306,22 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '06',
-		propcase2: '07',
-		propcase3: '08',
-		propcase4: '09',
-		propcase5: '10',
+		propcase1: '11',
+		propcase2: '12',
+		propcase3: '13',
+		propcase4: '14',
+		propcase5: '15',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
-		DrvIDBackside: true,
-		GovIDBackside: false,
+		DrvIDBackside: false,
+		GovIDBackside: true,
 		persons: [
 			[],
-			['Nikitha', 'Mody', '02-01-1976', '9423 3484 9843', '65, Shop, Sv Lane, Mamulpet', 'Bangalore', 'Karnataka', '560053', '+91 9008 822814', 'NikithaMody0276@yahoo.com'],
-			['Pooh', 'Parikh', '09-04-1973', '9454 2354 9765', 'Raj Chamber Bldg, Manchubhai Road, Malad (east)', 'Mumbai', 'Maharashtra', '400097', '+91 9405 887246', 'Pooh_Parikh@gmail.com'],
-			['Pooja', 'Parikh', '09-04-1973', '9454 2354 9765', '83, Qutab View Apartments, Katwaria Sarai', 'New Delhi', 'Delhi', '110016', '+91 9716 436788', 'PoojaParikh83@yahoo.com'],
-			['Arun', 'Pillai', '09-18-1999', '9453 3221 9542', '46, Himalaya House, Palton Road', 'Mumbai', 'Maharashtra', '400001', '+91 9421 892639', 'ArunPillai_007@gmail.com'],
+			['Barsha', 'Murjani', '02-01-1976', 'MLWPM1634B', '5th Floor Tower 3 Equinox Business Park Kurla West', 'Mumbai', 'MH', '400070', '+91 22 68186900', 'barsh7690@gmail.com'],
+			['Barsha', 'Sharma', '09-04-1973', 'MLWPM1634B', '213 Shezedada tower Mulund West', 'Mumbai', 'MH', '400080', '+91 22 68186944', 'barsh7690@gmail.com'],
+			['Barsha', 'Murjani', '09-04-1973', 'MLWPM1634B', 'Antariksh Bhavan 5th floor Connaught Place', 'Delhi', 'DL', '100001', '+91 22 68186944', 'asharma_1102@yahoo.co.in'],
+			['Chandrasekhar', 'Moorthy', '09-18-1999', 'MH0420100029930', 'Kalina near Geeta Vihar Hotel', 'Mumbai', 'MH', '400063', '+91 980567234', 'cm_007@yahoo.co.in'],
 		],
 		customTranslations: {
 		},
@@ -354,8 +356,8 @@ window.locales = {
 				placeholder: 'DOB - MM/DD/YYYY'
 			},
 			{
-				name: 'UIDAI',
-				placeholder: 'UIDAI'
+				name: 'PAN Card',
+				placeholder: 'PAN Card'
 			},
 			{
 				name: 'address',
@@ -397,11 +399,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'ID',
 		ISOCode: 'ID',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -584,11 +586,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '16',
-		propcase2: '17',
-		propcase3: '18',
-		propcase4: '19',
-		propcase5: '20',
+		propcase1: '21',
+		propcase2: '22',
+		propcase3: '23',
+		propcase4: '24',
+		propcase5: '25',
 		code: 'UK',
 		ISOCode: 'GB',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -596,10 +598,16 @@ window.locales = {
 		GovIDBackside: false,
 		persons: [
 			[],
+			/* Before removed postal codes
 			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', '+44 6175 364100', 'sarahlynnjamison0276@yahoo.com'],
 			['Lizzy', 'Grant', '04-09-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'Derby', 'DE23 1GH', '+44 3125 678500', 'lizzy_grant@gmail.com'],
 			['Elizabeth', 'Grant', '04-09-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Wygston', 'Leicester', 'LE18 6PD', '+44 3125 678500', 'elizabethgrant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', '+44 07 0517 11863', 'PaulA_007@gmail.com'],
+			*/
+			['Sarah', 'Jamison', '02-01-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', 'sarahlynnjamison0276@yahoo.com'],
+			['Lizzy', 'Grant', '04-09-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'Derby', 'DE23 1GH', 'lizzy_grant@gmail.com'],
+			['Elizabeth', 'Grant', '04-09-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Wygston', 'Leicester', 'LE18 6PD', 'elizabethgrant83@yahoo.com'],
+			['Paul', 'Johnson', '18-09-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', 'PaulA_007@gmail.com'],
 		],
 		customTranslations: {
 		},
@@ -653,10 +661,12 @@ window.locales = {
 				name: 'postcode',
 				placeholder: 'Postal Code'
 			},
+			/*
 			{
 				name: 'phone',
 				placeholder: 'Phone Number'
 			},
+			*/
 			{
 				name: 'email',
 				placeholder: 'email@domain.com'
@@ -677,11 +687,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '16',
-		propcase2: '17',
-		propcase3: '18',
-		propcase4: '19',
-		propcase5: '20',
+		propcase1: '21',
+		propcase2: '22',
+		propcase3: '23',
+		propcase4: '24',
+		propcase5: '25',
 		code: 'US',
 		ISOCode: 'US',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
