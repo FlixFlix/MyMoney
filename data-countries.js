@@ -197,10 +197,10 @@ window.locales = {
 	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
 	CO: {
 		appName: 'MyMoney',
-	/*	label: 'Latinoamérica',
-		description: 'Latin America', */
-		label: 'Colombia',
-		description: 'Colombia', 		
+		label: 'Latinoamérica',
+		description: 'Latin America',
+	/*	label: 'Colombia',
+		description: 'Colombia', */		
 		region: 'LATAM',
 		language: 'spa',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
