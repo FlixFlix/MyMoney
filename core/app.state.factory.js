@@ -67,33 +67,34 @@
 		};
 		vm.json = {};
 		vm.crossCoreStrategies = [
+		/* Variables are identified in data-countries - TT 9/10/19 */
 			{
 				label: "Identity Verification",
-				toggle: true
+				toggle: vm.locale.ShowIdentityVerification
 			},
 			{
 				label: "Risk Engine",
-				toggle: true
+				toggle: vm.locale.ShowRiskEngine
 			},
 			{
 				label: "Document Verification",
-				toggle: true
+				toggle: vm.locale.ShowDocumentVerification
 			},
 			{
 				label: "Phone Intelligence",
-				toggle: true
+				toggle: vm.locale.ShowPhoneIntelligence
 			},
 			{
 				label: "Email Risk Scoring",
-				toggle: true
+				toggle: vm.locale.ShowEmailRiskScoring
 			},
 			{
 				label: "Behavioral Biometrics",
-				toggle: true
+				toggle: vm.locale.ShowBehavioralBiometrics
 			},
 			{
 				label: "Machine Learning",
-				toggle: false
+				toggle: vm.locale.ShowMachineLearning
 			}
 		];
 
