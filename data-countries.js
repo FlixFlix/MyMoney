@@ -17,16 +17,26 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'AU',
 		ISOCode: 'AU',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
 		DrvIDBackside: true,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,
+				
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02-01-1976', '165-239-877', 'Unit 123/16521 Morris St', 'South Melbourne', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -110,16 +120,26 @@ window.locales = {
 		language: 'por',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'BR',
 		ISOCode: 'BR',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
 		DrvIDBackside: false,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: false,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: true,
+		ShowMachineLearning: false,
+								
 		persons: [
 			[],
 			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '(11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
@@ -205,16 +225,26 @@ window.locales = {
 		language: 'spa',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '16',
-		propcase2: '17',
-		propcase3: '18',
-		propcase4: '19',
-		propcase5: '20',
+		propcase1: '21',
+		propcase2: '22',
+		propcase3: '23',
+		propcase4: '24',
+		propcase5: '25',
 		code: 'CO',
 		ISOCode: 'CO',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: false,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,
+				
 		persons: [
 			[],
 			/* Before removed postal codes
@@ -306,16 +336,26 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: false,
 		GovIDBackside: true,
+		
+	/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,	
+		
 		persons: [
 			[],
 			['Barsha', 'Murjani', '02-01-1976', 'MLWPM1634B', '5th Floor Tower 3 Equinox Business Park Kurla West', 'Mumbai', 'MH', '400070', '+91 22 68186900', 'barsh7690@gmail.com'],
@@ -409,6 +449,16 @@ window.locales = {
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: false,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,
+				
 		persons: [
 			[],
 			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '021 7220074', 'RatanOesman0276@yahoo.com'],
@@ -492,20 +542,30 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '11',
-		propcase2: '12',
-		propcase3: '13',
-		propcase4: '14',
-		propcase5: '15',
+		propcase1: '16',
+		propcase2: '17',
+		propcase3: '18',
+		propcase4: '19',
+		propcase5: '20',
 		code: 'ZA',
 		ISOCode: 'ZA',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: false,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,
+				
 		persons: [
 			[],
 			['Pauline J', 'Curtis', '02-01-1976', '7601020123009', '337  Sandown Rd', 'Cape Town', 'Western Cape', '8003', '+27 82 263 8526', 'paulinejcurtis0276@yahoo.com'],
-			['Pattie', 'Jorgensen', '04-09-1973', '7309040321008', '2241  Rus St', 'Cape Town', 'Western Cape', '7551', '+27 82 415 6745', 'Pattie_Jorgensen@gmail.com'],
+			['Pattie', 'Jorgensen', '04-09-1973', '7309040321008', '2241  Rus St', 'Cape Town', 'Western Cape', '7551', '+27 82 415 6745', 'paulinejcurtis0276@yahoo.com'],
 			['Patricia', 'Jorgensen', '04-09-1973', '7309040321008', '428  Wit Rd', 'Johannesburg', 'Gauteng', '2058', '+27 84 401 9880', 'Patricia_J730904@gmail.com'],
 			['George', 'Klein', '18-09-1999', '99091806123003', '947  Market St', 'Johannesburg', 'Gauteng', '2154', '+27 84 715 3283', 'GeorgeK_007@gmail.com'],
 		],
@@ -586,16 +646,26 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '21',
-		propcase2: '22',
-		propcase3: '23',
-		propcase4: '24',
-		propcase5: '25',
+		propcase1: '31',
+		propcase2: '32',
+		propcase3: '33',
+		propcase4: '34',
+		propcase5: '35',
 		code: 'UK',
 		ISOCode: 'GB',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: false,
+		
+	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: false,
+		ShowMachineLearning: false,		
+	
 		persons: [
 			[],
 			/* Before removed postal codes
@@ -687,16 +757,26 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '21',
-		propcase2: '22',
-		propcase3: '23',
-		propcase4: '24',
-		propcase5: '25',
+		propcase1: '26',
+		propcase2: '27',
+		propcase3: '28',
+		propcase4: '29',
+		propcase5: '30',
 		code: 'US',
 		ISOCode: 'US',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
 		DrvIDBackside: true,
 		GovIDBackside: true,
+		
+	/* Allow for default Toggles to be on or off depending on country      - TT 9/10/19 */	
+		ShowIdentityVerification: true,
+		ShowRiskEngine: true,
+		ShowDocumentVerification: true,
+		ShowPhoneIntelligence: true,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: true,
+		ShowMachineLearning: false,
+				
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
