@@ -21,7 +21,7 @@ window.locales = {
 		propcase2: '17',
 		propcase3: '18',
 		propcase4: '19',
-		propcase5: '20',
+		propcase5: '25',
 		code: 'AU',
 		ISOCode: 'AU',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -41,7 +41,7 @@ window.locales = {
 			[],
 			['Sarah', 'Jamison', '02-01-1976', '165-239-877', 'Unit 123/16521 Morris St', 'South Melbourne', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
 			['Lizzy', 'Grant', '04-09-1973', '512-438-888', 'Unit 123/1251 Miller St', 'North Sydney', 'NSW', '2060', '+61 4 2567 8500', 'lizzy_grant@gmail.com'],
-			['Elizabeth', 'Grant', '04-09-1973', '512-438-888', 'Unit 5a/53 Alma Rd', 'St Kilda', 'VIC', '3182', '+61 4 2567 8500', 'elizabethgrant83@yahoo.com'],
+			['Elizabeth', 'Grant', '04-09-1973', '512-438-888', 'Unit 5a/53 Alma Rd', 'St Kilda', 'VIC', '3182', '+61 4 2567 8500', 'elizabeth_grant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', '754-631-199', '9715 Rock Maple Street', 'Melbourne', 'VIC', '3000', '+61 3 8765 4321', 'PaulA_007@gmail.com'],
 		],
 		customTranslations: {
@@ -255,7 +255,7 @@ window.locales = {
 			*/
 			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
 			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '+57 12529697', 'Juanita_García@gmail.com'],
-			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '+44 3125 678500', 'JuanaGarcía83@yahoo.com'],
+			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '+57 24353647', 'JuanaGarcía83@yahoo.com'],
 			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '+57 63331353', 'PedroMartínez_007@gmail.com'],		
 		],
 		customTranslations: {
@@ -336,11 +336,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '16',
-		propcase2: '17',
-		propcase3: '18',
-		propcase4: '19',
-		propcase5: '20',
+		propcase1: '21',
+		propcase2: '22',
+		propcase3: '23',
+		propcase4: '24',
+		propcase5: '25',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -442,7 +442,7 @@ window.locales = {
 		propcase1: '16',
 		propcase2: '17',
 		propcase3: '18',
-		propcase4: '19',
+		propcase4: '24',
 		propcase5: '20',
 		code: 'ID',
 		ISOCode: 'ID',
@@ -542,11 +542,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '16',
-		propcase2: '17',
-		propcase3: '18',
-		propcase4: '19',
-		propcase5: '20',
+		propcase1: '21',
+		propcase2: '22',
+		propcase3: '23',
+		propcase4: '24',
+		propcase5: '25',
 		code: 'ZA',
 		ISOCode: 'ZA',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -564,10 +564,10 @@ window.locales = {
 				
 		persons: [
 			[],
-			['Pauline J', 'Curtis', '02-01-1976', '7601020123009', '337  Sandown Rd', 'Cape Town', 'Western Cape', '8003', '+27 82 263 8526', 'paulinejcurtis0276@yahoo.com'],
-			['Pattie', 'Jorgensen', '04-09-1973', '7309040321008', '2241  Rus St', 'Cape Town', 'Western Cape', '7551', '+27 82 415 6745', 'paulinejcurtis0276@yahoo.com'],
-			['Patricia', 'Jorgensen', '04-09-1973', '7309040321008', '428  Wit Rd', 'Johannesburg', 'Gauteng', '2058', '+27 84 401 9880', 'Patricia_J730904@gmail.com'],
-			['George', 'Klein', '18-09-1999', '99091806123003', '947  Market St', 'Johannesburg', 'Gauteng', '2154', '+27 84 715 3283', 'GeorgeK_007@gmail.com'],
+			['Pauline J', 'Curtis', '02-01-1976', 'MLWPM1634B', '337  Sandown Rd', 'Cape Town', 'Western Cape', '8003', '+27 82 263 8526', 'paulinejcurtis0276@yahoo.com'],
+			['Pattie', 'Jorgensen', '04-09-1983', 'MLWPM1634B', '2241  Rus St', 'Cape Town', 'Western Cape', '7551', '+27 82 415 6745', 'Pattie_Jorgensen@gmail.com '],
+			['Patricia', 'Jorgensen', '04-09-1983', 'MLWPM1634B', '428  Wit Rd', 'Johannesburg', 'Gauteng', '2058', '+27 84 401 9880', 'Patricia_J730904@gmail.com'],
+			['George', 'Klein', '18-09-1999', 'MH0420100029930', '947  Market St', 'Johannesburg', 'Gauteng', '2154', '+27 84 715 3283', 'GeorgeK_007@gmail.com'],
 		],
 		customTranslations: {
 		},
