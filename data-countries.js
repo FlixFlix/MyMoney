@@ -336,11 +336,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '21',
-		propcase2: '22',
-		propcase3: '23',
-		propcase4: '24',
-		propcase5: '25',
+		propcase1: '26',
+		propcase2: '27',
+		propcase3: '28',
+		propcase4: '29',
+		propcase5: '30',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
