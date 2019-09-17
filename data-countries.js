@@ -34,7 +34,7 @@ window.locales = {
 		ShowDocumentVerification: true,
 		ShowPhoneIntelligence: false,
 		ShowEmailRiskScoring: true,
-		ShowBehavioralBiometrics: false,
+		ShowBehavioralBiometrics: true,
 		ShowMachineLearning: false,
 				
 		persons: [
