@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?_v=1556668435841"
+          rel="stylesheet">
     <title>MyMoney</title>
 
     <!-- bower:css -->
@@ -76,7 +77,8 @@
 		}
 
 		function launch( b ) {
-			window.open( b.dataset.href, "review", "width=" + screen.width + ",height=" + screen.height );
+			let popup = window.open( b.dataset.href, "review", "width=" + (screen.availWidth - 0) + ",height=" + (screen.availHeight - 5) );
+			popup.moveTo( 0, 5 );
 		}
 
 		window.appHome = window.location.href.split( '#' )[0].split( '?' )[0];

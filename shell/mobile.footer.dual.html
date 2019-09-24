@@ -1,9 +1,10 @@
 <div class="mobileButtonContainer dual-button" delayed-display="show" delay="1201">
-    <a 
+    <button
         class="btn btn-default" 
         type="button"
-        href="https://00u5bcy7fvtu2oeya0x7-ccdemo-dev-fndlb.fraudnetdemo.com/fraudnet-ui/service/event/{{vm.appState.currentScenario.appId}}"
-        target="_blank"><i class="fa fa-search"></i>{{vm.__('Review')}}</a>
+        onclick="launch(this)"
+        data-href="https://00u5bcy7fvtu2oeya0x7-ccdemo-dev-fndlb.fraudnetdemo.com/fraudnet-ui/service/event/{{vm.appState.currentScenario.appId}}"
+        ><i class="fa fa-search"></i>{{vm.__('Review')}}</button>
     <a 
         class="btn btn-default" 
         type="button"
