@@ -455,8 +455,8 @@ window.locales = {
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
 		ShowPhoneIntelligence: false,
-		ShowEmailRiskScoring: false,
-		ShowBehavioralBiometrics: false,
+		ShowEmailRiskScoring: true,
+		ShowBehavioralBiometrics: true,
 		ShowMachineLearning: false,
 				
 		persons: [
