@@ -93,6 +93,11 @@
 
 		window.locale = getUrlVars()['locale'];
 
+		// Use ?reset=1 as URL parameter to delete the mm_locale cookie.
+		if(getUrlVars()['reset']) {
+			document.cookie = "mm_locale=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+        }
+
 		document.addEventListener( 'error', function( event ) {
 			var img = event.target;
 			if ( img.tagName.toLowerCase() !== 'img' || window.location.href.indexOf( 'mitek' ) == -1 ) return;
