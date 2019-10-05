@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Roboto:400,500,700&display=swap&subset=japanese');
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
 body.locale-JP {
 	font-family: 'Noto Sans JP', sans-serif;
 }
@@ -9,10 +11,20 @@ body.locale-JP {
 
 .c-header__locale {
 	display: inline-block;
-	margin-right: 2em;
+	margin-right: 1em;
+	padding: 0 10px;
 	margin-left: auto;
 	cursor: pointer;
+	transition: 200ms;
+	border-radius: 4px;
+	border: 1px solid transparent;
 }
+
+.c-header__locale:hover {
+	border-color: #337ab7;
+	text-decoration: none;
+}
+
 .page-locale .c-header__locale {
 	display: none;
 }
@@ -21,13 +33,16 @@ body.locale-JP {
 	.c-header__locale__current {
 		display: none;
 	}
-	.headerMobileBanner .c-header__locale  {
+
+	.headerMobileBanner .c-header__locale {
 		margin-right: 10px;
 	}
+
 	.headerMobileBanner .c-header__logotext {
 		font-size: 20px;
 	}
 }
+
 .c-header__locale .c-header__flag {
 	margin: -2px 0 0 10px;
 }
@@ -224,7 +239,7 @@ h1 {
 /*Global Mobile Rendering Classes*/
 /** Mobile **/
 .headerMobileBanner {
-	background: #fff;
+	background: #eee;
 	display: flex;
 	height: 54px;
 	text-align: center;
@@ -233,7 +248,7 @@ h1 {
 	width: 100%;
 	opacity: 1;
 	z-index: 900;
-	border-bottom: solid 1px #6dbb17;
+	border-bottom: solid 1px #ddd;
 	align-items: center;
 	justify-content: flex-start;
 }
@@ -243,6 +258,7 @@ h1 {
 	height: 50%;
 	flex: 0 1 50px;
 }
+
 .c-header__logotext {
 	font-weight: 500;
 	font-size: 24px;
@@ -417,8 +433,14 @@ h4 {
 	border-color: rgb(45, 72, 136) !important;
 	background-color: #fff !important;
 	color: rgb(45, 72, 136) !important;
-
+	transition: 0.2s;
 }
+
+.mobileButtonContainer button:hover,
+.mobileButtonContainer a:hover {
+	background: #eee !important;
+}
+
 .mobileButtonContainer .btn > i {
 	margin-right: 0.75em;
 }

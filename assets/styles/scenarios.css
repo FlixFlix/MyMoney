@@ -65,7 +65,6 @@ h3 {
 
     /*disslay: flex;*/
     color: #fff;
-    background: #6DBB17;
     justify-content: center;
     align-items: center;
     transition: 1s all linear;
@@ -73,11 +72,16 @@ h3 {
     /** Temp Overides **/
     color: rgb(45,72,136);
     border: 1px solid rgb(45,72,136);
-    background: #fff;
+    /*background: #f2f2f2;*/
     transition-duration: 0.25s;
 }
+
+.page-locale .scenario-selector {
+    background: #f2f2f2;
+}
+
 .scenario-selector:hover {
-    background-color: #eee;
+    background-color: #e8e8e8;
     transition-duration: 0.1s;
 }
 .scenario-selector .description {
@@ -95,7 +99,7 @@ h3 {
 .scenario-selector h2 {
     margin: 0 auto;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.4px;
 }
 
