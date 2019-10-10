@@ -443,7 +443,7 @@ window.locales = {
 		propcase2: '22',
 		propcase3: '23',
 		propcase4: '24',
-		propcase5: '25',
+		propcase5: '30',
 		code: 'ID',
 		ISOCode: 'ID',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -464,7 +464,7 @@ window.locales = {
 			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '021 7220074', 'RatanOesman0276@yahoo.com'],
 			['Tanu', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Kompl Puri Tanjung Sari 2 50', 'Medan', 'Sumatera Utara', '20028', '061 8221782', 'Tanu_Sasmita@gmail.com'],
 			['Tanudisastro Bo', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Jl Darmo Permai Tmr IV/18', 'Surabaya', 'Jawa Timur', '60111', '031 7340468', 'TanudisastroSasmita83@yahoo.com'],
-			['Ary Bambang', 'Hardja', '18-09-1999', '27 3400 990918 1234', 'Jl HR Rasuna Said Kav 2-3 Bl X-5 Menara Kadin Indonesia Bl X-5 Lt', 'Kuningan', 'Jakarta', '400001', '021 5274547', 'AryHardja_007@gmail.com'],
+			['Dita', 'Oktiawati', '18-09-1999', '32 7314 551088 0009', 'Suci Residence, Block G, No3', 'Kuningan', 'Jakarta', '10120', '+62 811-2237-088', 'ditaoktiawati@gmail.com'],
 		],
 		customTranslations: {
 		},
