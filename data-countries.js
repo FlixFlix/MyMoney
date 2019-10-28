@@ -17,11 +17,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '26',
-		propcase2: '27',
-		propcase3: '28',
-		propcase4: '29',
-		propcase5: '30',
+		propcase1: '31',
+		propcase2: '32',
+		propcase3: '33',
+		propcase4: '34',
+		propcase5: '35',
 		code: 'AU',
 		ISOCode: 'AU',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -120,11 +120,11 @@ window.locales = {
 		language: 'por',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '21',
-		propcase2: '22',
-		propcase3: '23',
-		propcase4: '24',
-		propcase5: '25',
+		propcase1: '26',
+		propcase2: '27',
+		propcase3: '28',
+		propcase4: '29',
+		propcase5: '30',
 		code: 'BR',
 		ISOCode: 'BR',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -142,10 +142,10 @@ window.locales = {
 								
 		persons: [
 			[],
-			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '(11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
-			['Bea', 'Almeida', '04-09-1973', '489.085.995-09', 'Rua Três 1656', 'Belo Horizonte', 'Minas Gerais', '13082-665', '(19) 7874-3886', 'Bea_Almeida@gmail.com'],
-			['Beatriz', 'Almeida', '04-09-1973', '489.085.995-09', 'Travessa Araci 196', 'Duque de Caxias', 'Rio de Janeiro', '125272-440', '(21) 8299-4630', 'BeatrizAlmeida83@yahoo.com'],
-			['Vicente', 'Fontes', '18-09-1999', '489.085.995-09', 'Rua Reverendo 617', 'Belford Roxo', 'Rio de Janeiro', '26143-435', '(21) 2275-6677', 'VicenteF_007@gmail.com'],
+			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '+55 (11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
+			['Bea', 'Almeida', '04-09-1973', '489.085.995-09', 'Rua Três 1656', 'Belo Horizonte', 'Minas Gerais', '13082-665', '+55 (19) 7874-3886', 'Bea_Almeida@gmail.com'],
+			['Beatriz', 'Almeida', '04-09-1973', '489.085.995-09', 'Travessa Araci 196', 'Duque de Caxias', 'Rio de Janeiro', '125272-440', '+55 (21) 8299-4630', 'BeatrizAlmeida83@yahoo.com'],
+			['Vicente', 'Fontes', '18-09-1999', '489.085.995-09', 'Rua Reverendo 617', 'Belford Roxo', 'Rio de Janeiro', '26143-435', '+55 (21) 2275-6677', 'VicenteF_007@gmail.com'],
 		],
 		customTranslations: {
 		},
@@ -225,11 +225,11 @@ window.locales = {
 		language: 'spa',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '26',
-		propcase2: '27',
-		propcase3: '28',
-		propcase4: '29',
-		propcase5: '30',
+		propcase1: '31',
+		propcase2: '32',
+		propcase3: '33',
+		propcase4: '34',
+		propcase5: '35',
 		code: 'CO',
 		ISOCode: 'CO',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -336,11 +336,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '31',
-		propcase2: '32',
-		propcase3: '33',
-		propcase4: '34',
-		propcase5: '35',
+		propcase1: '41',
+		propcase2: '42',
+		propcase3: '43',
+		propcase4: '44',
+		propcase5: '45',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -439,11 +439,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '21',
-		propcase2: '22',
-		propcase3: '23',
-		propcase4: '24',
-		propcase5: '25',
+		propcase1: '31',
+		propcase2: '32',
+		propcase3: '33',
+		propcase4: '34',
+		propcase5: '35',
 		code: 'ID',
 		ISOCode: 'ID',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -461,10 +461,10 @@ window.locales = {
 				
 		persons: [
 			[],
-			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '021 7220074', 'RatanOesman0276@yahoo.com'],
-			['Tanu', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Kompl Puri Tanjung Sari 2 50', 'Medan', 'Sumatera Utara', '20028', '061 8221782', 'Tanu_Sasmita@gmail.com'],
-			['Tanudisastro Bo', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Jl Darmo Permai Tmr IV/18', 'Surabaya', 'Jawa Timur', '60111', '031 7340468', 'TanudisastroSasmita83@yahoo.com'],
-			['Ary Bambang', 'Hardja', '18-09-1999', '27 3400 990918 1234', 'Jl HR Rasuna Said Kav 2-3 Bl X-5 Menara Kadin Indonesia Bl X-5 Lt', 'Kuningan', 'Jakarta', '400001', '021 5274547', 'AryHardja_007@gmail.com'],
+			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '+62 021 7220074', 'RatanOesman0276@yahoo.com'],
+			['Tanu', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Kompl Puri Tanjung Sari 2 50', 'Medan', 'Sumatera Utara', '20028', '+62 061 8221782', 'Tanu_Sasmita@gmail.com'],
+			['Tanudisastro Bo', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Jl Darmo Permai Tmr IV/18', 'Surabaya', 'Jawa Timur', '60111', '+62 031 7340468', 'TanudisastroSasmita83@yahoo.com'],
+			['Dita', 'Oktiawati', '18-09-1999', '32 7314 551088 0009', 'Suci Residence, Block G, No3', 'Kuningan', 'Jakarta', '10120', '+62 811 2237088', 'ditaoktiawati@gmail.com'],
 		],
 		customTranslations: {
 		},
@@ -542,11 +542,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '26',
-		propcase2: '27',
-		propcase3: '28',
-		propcase4: '29',
-		propcase5: '30',
+		propcase1: '31a',
+		propcase2: '32',
+		propcase3: '33',
+		propcase4: '34',
+		propcase5: '35',
 		code: 'ZA',
 		ISOCode: 'ZA',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -646,11 +646,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '36',
-		propcase2: '37',
-		propcase3: '38',
-		propcase4: '39',
-		propcase5: '40',
+		propcase1: '41',
+		propcase2: '42',
+		propcase3: '43',
+		propcase4: '44',
+		propcase5: '45',
 		code: 'UK',
 		ISOCode: 'GB',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -757,11 +757,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '31',
-		propcase2: '32',
-		propcase3: '33',
-		propcase4: '34',
-		propcase5: '35',
+		propcase1: '36',
+		propcase2: '37',
+		propcase3: '38',
+		propcase4: '39',
+		propcase5: '40',
 		code: 'US',
 		ISOCode: 'US',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -779,10 +779,10 @@ window.locales = {
 				
 		persons: [
 			[],
-			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
-			['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '312-567-8500', 'lizzy_grant@gmail.com'],
-			['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '312-567-8500', 'elizabethgrant83@yahoo.com'],
-			['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '512-474-5171', 'jeremyv_007@gmail.com'],
+			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '+1 617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
+			['Lizzy', 'Grant', '04/04/1983', '512-43-8888', '25301 3rd Avenue APT 184', 'San Francisco', 'CA', '94107', '+1 312-567-8500', 'lizzy_grant@gmail.com'],
+			['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '+1 312-567-8500', 'elizabethgrant83@yahoo.com'],
+			['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '+1 512-474-5171', 'jeremyv_007@gmail.com'],
 		],
 		customTranslations: {
 		},
