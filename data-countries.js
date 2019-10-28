@@ -760,7 +760,7 @@ window.locales = {
 		propcase1: '36',
 		propcase2: '37',
 		propcase3: '38',
-		propcase4: '39',
+		propcase4: '39a',
 		propcase5: '40',
 		code: 'US',
 		ISOCode: 'US',
