@@ -1,6 +1,7 @@
 <div class="headerMobileBanner">
     <img  class="c-header__logo" src="assets/images/logo.svg" alt="" ng-click="vm.go('app.mobile.welcome')">
     <span class="c-header__logotext" title="Main page" ng-click="vm.go('app.mobile.welcome')">MyMoney</span>
+    <sub ng-if="window.isDev == true" class="c-header__dev" title="Development Mode:&#10;&bull; Usage not tracked">&nbsp;DEV</sub>
     <a id="c-header__locale" class="c-header__locale hidden" title="Click to change" ng-click="vm.go('app.mobile.locale')">
         <span>{{ vm.locale.label }}</span>
         <img class="c-header__flag" src="">

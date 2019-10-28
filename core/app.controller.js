@@ -5,6 +5,10 @@
 		.module( 'webApp' )
 		.controller( 'AppController', AppController )
 		.run( function( $rootScope ) {
+			$rootScope.$on( '$stateChangeSuccess', function( e, current, pre ) {
+				track('ngStateChange');
+			} );
+
 		} );
 
 	AppController.$inject = [
@@ -23,6 +27,7 @@
 		$rootScope.pageClass = 'something-new';
 		vm.pageClass = 'something-new';
 		vm.locale = AppStateFactory.locale;
+		window.currentLocaleName = vm.locale.label;
 		vm.locales = AppStateFactory.locales;
 
 		vm.__ = function( text ) {
@@ -62,13 +67,17 @@
 			}, 250 )
 		};
 
-		vm.selectFlow = function( flow ) {
-			vm.appState.currentScenario.states = angular.copy( flow.states );
-			vm.appState.currentScenario.form = angular.copy( flow.form );
-			vm.appState.currentScenario.assets = 'assets/images/' + flow.assets + '/';
-			vm.appState.currentScenario.showPassport = (flow.assets === vm.locale.code + '/person4');
-			vm.appState.currentScenario.review = flow.name;
-			vm.appState.currentScenario.appId = flow.appId;
+		vm.selectFlow = function( scenario ) {
+			track('selectScenario');
+
+			vm.appState.currentScenario.states = angular.copy( scenario.states );
+			vm.appState.currentScenario.form = angular.copy( scenario.form );
+			vm.appState.currentScenario.assets = 'assets/images/' + scenario.assets + '/';
+			vm.appState.currentScenario.showPassport = (scenario.assets === vm.locale.code + '/person4');
+			vm.appState.currentScenario.review = scenario.name;
+			vm.appState.currentScenario.appId = scenario.appId;
+			window.lastScenario = scenario.name;
+			window.appId = scenario.appId;
 			vm.next();
 		};
 
@@ -116,4 +125,3 @@
 
 	}
 })();
-  

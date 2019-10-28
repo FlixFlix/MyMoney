@@ -265,6 +265,9 @@ h1 {
 	color: #020;
 	cursor: pointer;
 }
+.c-header__logotext + sub {
+	color: red;
+}
 
 /** Consent Page **/
 .consentContent .panel-bg {

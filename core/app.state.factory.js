@@ -42,6 +42,8 @@
 		document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
 		document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
 
+		vm.isDev = window.isDev;
+
 		function __( text ) {
 			var translation = vm.locale.customTranslations[text]
 			if ( typeof translation === 'undefined' ) { // No custom translation

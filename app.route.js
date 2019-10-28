@@ -52,6 +52,7 @@
 					setTimeout( function() {
 						let flag = document.querySelector( '.c-header__locale' );
 						if ( flag ) document.querySelector( '.c-header__locale' ).classList.add( 'hidden' );
+						track( 'localeSelection' );
 					}, 166 );
 				}
 			} )
@@ -64,6 +65,9 @@
 						controller: 'AppController',
 						controllerAs: 'vm'
 					}
+				},
+				onEnter: function() {
+					track( 'homePage' );
 				}
 			} )
 			.state( 'app.mobile.review', {
