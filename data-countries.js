@@ -17,11 +17,11 @@ window.locales = {
 		language: 'eng',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
-		propcase1: '31',
+		propcase1: '31A',
 		propcase2: '32',
 		propcase3: '33',
-		propcase4: '34',
-		propcase5: '35',
+		propcase4: '34B',
+		propcase5: '35A',
 		code: 'AU',
 		ISOCode: 'AU',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
@@ -123,7 +123,7 @@ window.locales = {
 		propcase1: '26',
 		propcase2: '27',
 		propcase3: '28',
-		propcase4: '29',
+		propcase4: '29A',
 		propcase5: '30',
 		code: 'BR',
 		ISOCode: 'BR',
@@ -228,7 +228,7 @@ window.locales = {
 		propcase1: '36',
 		propcase2: '37',
 		propcase3: '38',
-		propcase4: '39',
+		propcase4: '39A',
 		propcase5: '40',
 		code: 'CO',
 		ISOCode: 'CO',
@@ -338,9 +338,9 @@ window.locales = {
 		proposition: 'AO',
 		propcase1: '46',
 		propcase2: '47',
-		propcase3: '48',
+		propcase3: '48A',
 		propcase4: '49',
-		propcase5: '50',
+		propcase5: '50A',
 		code: 'IN',
 		ISOCode: 'IN',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
@@ -774,7 +774,7 @@ window.locales = {
 		ShowDocumentVerification: true,
 		ShowPhoneIntelligence: true,
 		ShowEmailRiskScoring: true,
-		ShowBehavioralBiometrics: true,
+		ShowBehavioralBiometrics: false,
 		ShowMachineLearning: false,
 				
 		persons: [
