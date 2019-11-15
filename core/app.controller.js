@@ -6,7 +6,7 @@
 		.controller( 'AppController', AppController )
 		.run( function( $rootScope ) {
 			$rootScope.$on( '$stateChangeSuccess', function( e, current, pre ) {
-				track('ngStateChange');
+				// track('ngStateChange');
 			} );
 
 		} );
@@ -69,6 +69,8 @@
 		};
 
 		vm.selectFlow = function( scenario ) {
+			document.querySelector( 'body' ).setAttribute( "lastScenario", window.lastScenario );
+
 			track('selectScenario');
 
 			vm.appState.currentScenario.states = angular.copy( scenario.states );
