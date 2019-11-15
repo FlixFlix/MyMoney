@@ -40,6 +40,7 @@
 		} else vm.locale = vm.locales[localeSelector];
 
 		document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
+		document.querySelector( 'body' ).setAttribute( "locale", vm.locale.code );
 		document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
 
 		vm.isDev = window.isDev;
@@ -69,7 +70,7 @@
 		};
 		vm.json = {};
 		vm.crossCoreStrategies = [
-		/* Variables are identified in data-countries - TT 9/10/19 */
+			/* Variables are identified in data-countries - TT 9/10/19 */
 			{
 				label: "Identity Verification",
 				toggle: vm.locale.ShowIdentityVerification
