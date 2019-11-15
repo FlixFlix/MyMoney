@@ -24,6 +24,7 @@
 		$animate.enabled( true );
 		var vm = this;
 		vm.appState = AppStateFactory;
+		vm.appState.currentScenario.isDev = window.isDev;
 		$rootScope.pageClass = 'something-new';
 		vm.pageClass = 'something-new';
 		vm.locale = AppStateFactory.locale;
