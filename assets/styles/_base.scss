@@ -1,0 +1,12 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	&.invision {
+		background-image: url(../images/bg.png);
+		background-position: center center;
+		background-size: auto;
+	}
+}

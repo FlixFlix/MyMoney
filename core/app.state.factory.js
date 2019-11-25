@@ -25,25 +25,33 @@
 
 		// List of locales
 		vm.locales = window.locales;
-
-		var localeSelector;
-		vm.localeNotSet = false;
-
-		if ( window.locale ) {
-			localeSelector = window.locale;
-		} else {
-			localeSelector = getCookie( 'mm_locale' );
+		const localeList = Object.keys( vm.locales );
+		for ( const localeKey of localeList ) {
+			Object.defineProperty( vm.locales[localeKey], 'getLabel', {
+				get: function() {
+					// Replace spaces with non-breaking spaces
+					return this.label.replace( ' ', String.fromCharCode( 160 ) );
+				}
+			} )
 		}
-		if ( typeof vm.locales[localeSelector] == 'undefined' ) {
-			vm.locale = vm.locales.US;
-			vm.localeNotSet = true;
-		} else vm.locale = vm.locales[localeSelector];
 
-		document.querySelector( 'body' ).classList.add( "locale-" + vm.locale.code );
-		document.querySelector( 'body' ).setAttribute( "locale", vm.locale.code );
+		vm.localeNotSet = window.localeNotSet;
+		vm.locale = vm.locales[window.locale];
+
+		vm.isDev = isDev;
+		vm.isInvision = isInVision;
+
+		var $body = document.querySelector( 'body' );
+		$body.classList.add( "locale-" + vm.locale.code );
+		$body.setAttribute( "locale", vm.locale.code );
+		$body.setAttribute( "invision", window.isInVision );
+		if ( window.isInVision ) {
+			$body.classList.add( "invision" );
+			document.querySelector( '.c-header__logo-wrapper' ).setAttribute( 'title', 'Vision2020 Preview Mode.\n\nMake sure you are LOGGED IN TO INVISION!\n\nTo exit, use ?novision.' )
+		} else {
+			$body.classList.remove( "invision" );
+		}
 		document.querySelector( '.c-header__logotext' ).innerHTML = vm.locale.appName;
-
-		vm.isDev = window.isDev;
 
 		function __( text ) {
 			var translation = vm.locale.customTranslations[text]
@@ -59,7 +67,7 @@
 				if ( !translation ) translation = text;  // translation key exists but it's empty (e.g. US english)
 			}
 			return translation;
-		};
+		}
 
 		vm.currentScenario = {
 			form: {},
@@ -108,10 +116,14 @@
 		/**
 		 * Scripted Events
 		 */
+
 		vm.scenarios = [
 			{
 				name: 'typical',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase1 + '_' + vm.locale.code,
+				get reviewUrl() {
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase1 : FRAUDNET_DEMO_URL_BASE + this.appId
+				},
 				scenarioName: __( 'Typical Applicant' ),
 				toolTip: __( 'Typical applicant: multiple services but no friction' ),
 				description: __( 'Strategies can be easily configured to conditionally include certain services based on risk while skipping others.' ),
@@ -127,6 +139,9 @@
 			{
 				name: 'mismatch',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase2 + '_' + vm.locale.code,
+				get reviewUrl() {
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase2 : FRAUDNET_DEMO_URL_BASE + this.appId
+				},
 				scenarioName: __( 'Mismatched Identities' ),
 				toolTip: __( 'Step-up for consumer with mismatched identity data' ),
 				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
@@ -156,6 +171,9 @@
 			{
 				name: 'machine',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase3 + '_' + vm.locale.code,
+				get reviewUrl() {
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase3 : FRAUDNET_DEMO_URL_BASE + this.appId
+				},
 				scenarioName: __( 'Machine Learning' ),
 				toolTip: __( 'Avoid unnecessary step-ups using Decision Analytics' ),
 				description: __( 'Machine learning models are trained on combinations of historical data to make the best possible decision and limit the need for step-ups that add friction.' ),
@@ -170,6 +188,9 @@
 			{
 				name: 'fraud',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase4 + '_' + vm.locale.code,
+				get reviewUrl() {
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase4 : FRAUDNET_DEMO_URL_BASE + this.appId
+				},
 				scenarioName: __( 'Identity Fraud Attempt' ),
 				toolTip: __( 'Step-up for identity fraud attempt' ),
 				description: __( 'Instantly identify most synthetic and impersonation fraud applications, adding friction to the attacker and referring the case for manual review.' ),
@@ -196,6 +217,9 @@
 			{
 				name: 'thin',
 				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase5 + '_' + vm.locale.code,
+				get reviewUrl() {
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase5 : FRAUDNET_DEMO_URL_BASE + this.appId
+				},
 				scenarioName: __( 'Thin-file Applicant' ),
 				toolTip: __( 'Passive step-up for thin-file applicant' ),
 				description: __( 'Organizations can quickly and seamlessly incorporate additional phone intelligence or identity verification sources if the applicant was not found in traditional bureau data.' ),
@@ -219,7 +243,6 @@
 				]
 			}
 		];
-
 		return vm;
 	}
 })();

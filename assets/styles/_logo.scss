@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'HirukoProAlternate-Book';
+	src: url('../fonts/HirukoProAlternate-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$banner-height: 54px;
+$color-wordmark: #26478d;
+$colors-logo: #6DBB17, #6DBB17, #6DBB17, #C4EC9B;
+
+$colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
+
+.c-header__logo-wrapper {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+@keyframes a-spin {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(-1444deg);
+	}
+}
+@keyframes a-slide-in {
+	from {
+		//opacity: 0;
+		transform: translateX(100px);
+	}
+	to {
+		//opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.c-header__logomark {
+	$lt-size: $banner-height / 1.6875;
+	$lt-gap: floor($lt-size * 0.1);
+	$lt-block-size: ceil($lt-size / 2 - $lt-gap / 2);
+	display: grid;
+	margin: 0 0 0 $lt-size / 2;
+	grid-template-columns: auto auto;
+	grid-gap: $lt-gap;
+	width: $lt-size;
+	height: $lt-size;
+
+	.invision & {
+		animation: a-slide-in 1s, a-spin 1.5s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+
+		.logo-block {
+			border-radius: 25%;
+		}
+	}
+
+	.logo-block {
+		width: $lt-block-size;
+		height: $lt-block-size;
+		@for $i from 1 through length($colors-logo) {
+			&:nth-child(#{$i}) {
+				background-color: nth($colors-logo, $i);
+
+				.invision & {
+					background-color: nth($colors-logo--invision, $i);
+				}
+			}
+
+		}
+	}
+}
+
+.c-header__logotext {
+	margin-left: 15px;
+	font-weight: 500;
+	font-size: 24px;
+	color: #020;
+
+
+	.invision & {
+		margin-top: -6px;
+		font-family: HirukoProAlternate-Book, sans-serif;
+		text-transform: lowercase;
+		color: $color-wordmark;
+		font-weight: normal;
+		font-size: 28px;
+	}
+}
+.c-header__dev {
+	align-self: flex-start;
+	margin-left: 3px;
+	color: #8e1bc0;
+}

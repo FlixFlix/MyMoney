@@ -1,0 +1,394 @@
+/**
+ * CSS File to manage the different Scripted Scenarios
+ */
+
+/**
+* App Globals/Utils
+*/
+
+.c-icon-scenario {
+	display: none;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	opacity: 0.66;
+
+	.invision & {
+		// display: inline;
+	}
+}
+
+
+.welcomeText {
+	margin-top: 15px;
+}
+
+.scenarios {
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto 0;
+	width: 80%;
+}
+
+@media (max-width: 600px) {
+	.main-content {
+		.scenarios, .screens-container {
+			width: calc(100% - 40px);
+		}
+	}
+
+	body .footer-content {
+		width: calc(100% - 40px);
+	}
+}
+
+h3 {
+	margin-bottom: 20px;
+}
+
+.app-text {
+	font-size: 18px;
+}
+
+.headerMobileBanner img {
+	cursor: pointer;
+}
+
+.screens-container {
+	display: flex;
+	flex-direction: column;
+	margin: 15px auto;
+	width: 80%;
+	justify-content: center;
+}
+
+.footer-content {
+	width: 80%;
+}
+
+.result-passport img {
+	display: block;
+	max-width: 600px;
+	margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+	.main-content .result-passport img {
+		max-width: 100%;
+	}
+}
+
+.scenario-selector {
+	border-radius: 8px;
+	margin: 15px auto;
+	padding: 16px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+	justify-content: center;
+	align-items: center;
+	transition: 1s all linear;
+
+	/** Temp Overides **/
+	color: rgb(45, 72, 136);
+	border: 1px solid rgb(45, 72, 136);
+
+	background: #f2f2f2;
+	transition-duration: 0.25s;
+
+	.invision & {
+		text-align: left;
+		box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+	}
+}
+
+.page-locale .scenario-selector {
+	background: #f2f2f2;
+}
+
+.scenario-selector {
+	&:hover {
+		background-color: #e8e8e8;
+		transition-duration: 0.1s;
+	}
+
+	.description {
+		max-width: 500px;
+		margin: 15px auto 0;
+
+		/*display: none;*/
+	}
+}
+
+.c-toggle {
+	font-weight: 500;
+	padding: 10px;
+	margin-left: -10px;
+	cursor: pointer;
+}
+
+.scenario-selector {
+	.invision & {
+		display: flex;
+		//height: 72px;
+
+		h2 {
+			display: flex;
+			margin: 0 auto 0 15px;
+			align-items: center;
+		}
+	}
+
+	h2 {
+		margin: 0 auto;
+		font-size: 22px;
+		font-weight: 400;
+		letter-spacing: 0.4px;
+	}
+
+	a {
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.1;
+	}
+}
+
+/**
+ * Form Field / Input Styling
+ */
+
+.form-field {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 15px;
+	width: 100%;
+
+	&.col {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&.centerfy {
+		align-items: center;
+	}
+
+	> label {
+		margin-bottom: 0;
+		margin-left: 8px;
+	}
+}
+
+.crosscore-toggles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5vw auto 0;
+	width: 100%;
+
+	> div {
+		display: inline-block;
+		text-align: right;
+	}
+}
+
+.form-field input {
+	border: 1px solid grey;
+	width: 100%;
+	outline: 0;
+	padding: 8px;
+	font-weight: 500;
+
+	/*color: transparent;*/
+	/*animation-name: appear;*/
+	animation-duration: 0.33s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	/* translations-transform: uppercase; */
+}
+
+@keyframes appear {
+	from {
+		color: transparent;
+	}
+
+	to {
+		color: #333;
+	}
+}
+
+::placeholder {
+	font-weight: normal;
+}
+
+input:focus {
+	border: 1px solid #6DBB17;
+}
+
+.lead-in {
+	display: flex;
+	border: 1px solid rgb(45, 72, 136);
+	border-radius: 5px;
+	flex-direction: column;
+	color: rgb(45, 72, 136);
+	text-align: center;
+	margin: 10px auto 20px;
+	width: 100%;
+	padding: 10px 0;
+
+	span {
+		font-size: 20px;
+	}
+}
+
+.loading-wrapper {
+	margin-top: 30%;
+
+	.invision & {
+		margin-top: 10%;
+	}
+}
+
+.success-wrapper {
+	display: none;
+	flex-direction: column;
+	padding-top: 75px;
+}
+
+/**
+ * Footer Buttons
+ * 1 - Continue
+ * 2 - Review | Continue
+ */
+
+.mobileButtonContainer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.check-mark {
+	color: #6DBB17;
+	font-size: 22px;
+	margin: 10px auto 20px;
+	text-align: center;
+
+	.invision & {
+		color: nth($colors-logo--invision, 3);
+	}
+}
+
+.mobileButtonContainer.dual-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	button, a {
+		max-width: 45%;
+		font-size: 20px;
+	}
+}
+
+.mitek-flow {
+	background-color: #fff;
+	height: 100vh;
+	margin: -54px auto 0;
+
+	img {
+		height: 100vh;
+		max-height: 100vh;
+		max-width: 100%;
+	}
+}
+
+/**
+ * Animation
+ *
+ */
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease;
+	position: relative;
+	z-index: 100;
+
+	/*
+	-webkit-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
+	-moz-box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
+	box-shadow: -15px -8px 10px -6px rgba(0,0,0,0.27);
+	*/
+
+	&.ng-enter {
+		transform: translate3d(100%, 0, 0);
+	}
+
+	&.ng-enter-active {
+		transform: translate3d(0, 0, 0);
+	}
+
+	&.ng-leave-active {
+		transform: translate3d(0, 0, 0);
+		position: absolute;
+		z-index: 1;
+	}
+
+	&.ng-leave {
+		position: absolute;
+		transform: translate3d(-100%, 0, 0);
+		z-index: 1;
+	}
+}
+
+.footer-content {
+	/* transition: all 10ms ease-in; */
+	opacity: 1;
+	margin: 0 auto;
+}
+
+.anchor-container {
+	display: flex;
+	width: 60%;
+	max-width: 200px;
+	margin: 10px auto;
+}
+
+.mobile-button {
+	color: rgb(45, 72, 136);
+	cursor: pointer;
+	border: 1px solid rgb(45, 72, 136);
+	background: #fff;
+	text-align: center;
+	font-size: 22px;
+	padding: 6px 14px;
+	height: 60px;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 46px;
+	width: 100%;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/**
+ * For the non-flex responsive work
+ *
+ */
+
+@media screen and (min-width: 899px) {
+	.scenario-selector, .screens-container, .footer-content {
+		width: 60%;
+	}
+
+	.mobileButtonContainer {
+		width: 70%;
+	}
+}

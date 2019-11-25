@@ -444,6 +444,13 @@ window.locales = {
 		propcase3: '33',
 		propcase4: '34',
 		propcase5: '35',
+		invision: {
+			propcase1: 'AFUUELGMXBC#/392863584_Indonesia_-_Typical_Applicant_-_CrossCore_Results',
+			propcase2: 'AFUUELGMXBC#/392880593_Indonesia_-_Mismatched_IDs_-_CrossCore_Results',
+			propcase3: 'AFUUELGMXBC#/392890191_Indonesia_-_Machine_Learning_-_CrossCore_Results',
+			propcase4: 'AFUUELGMXBC#/392896617_Indonesia_-_Identity_Fraud_Attempt_-_CrossCore_Result',
+			propcase5: 'AFUUELGMXBC#/392899076_Indonesia_-_Thin_File_Attempt_-_CrossCore_Result',
+		},
 		code: 'ID',
 		ISOCode: 'ID',
 	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			

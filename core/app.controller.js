@@ -25,8 +25,7 @@
 		var vm = this;
 		vm.appState = AppStateFactory;
 		vm.appState.currentScenario.isDev = window.isDev;
-		$rootScope.pageClass = 'something-new';
-		vm.pageClass = 'something-new';
+		vm.isInVision = window.isInVision;
 		vm.locale = AppStateFactory.locale;
 		window.currentLocaleName = vm.locale.label;
 		vm.locales = AppStateFactory.locales;
@@ -46,7 +45,7 @@
 			}
 			return translation;
 		};
-
+		vm.appState.localeNotSet = window.localeNotSet;
 		if ( vm.appState.localeNotSet ) {
 			document.querySelector( '.c-header__locale' ).classList.add( 'hidden' );
 			$state.go( 'app.mobile.locale' );
@@ -61,17 +60,15 @@
 		vm.go = function( path ) {
 			$state.go( path );
 		};
-		vm.selectLocale = function( locale ) {
-			document.cookie = "mm_locale=" + locale.code + ";max-age=" + 180 * 24 * 3600 * 1000 + ";";
-			setTimeout( function() {
-				window.location.replace( window.appHome + '?locale=' + locale.code );
-			}, 250 )
+		vm.selectedLocale = function( locale ) {
+			setCookie( 'mm_locale', locale.code );
+			window.location.replace( appHome + '?locale=' + locale.code );
 		};
 
 		vm.selectFlow = function( scenario ) {
 			document.querySelector( 'body' ).setAttribute( "lastScenario", window.lastScenario );
 
-			track('selectScenario');
+			track( 'selectScenario' );
 
 			vm.appState.currentScenario.states = angular.copy( scenario.states );
 			vm.appState.currentScenario.form = angular.copy( scenario.form );
@@ -79,8 +76,9 @@
 			vm.appState.currentScenario.showPassport = (scenario.assets === vm.locale.code + '/person4');
 			vm.appState.currentScenario.review = scenario.name;
 			vm.appState.currentScenario.appId = scenario.appId;
+			vm.appState.currentScenario.reviewUrl = scenario.reviewUrl;
+
 			window.lastScenario = scenario.name;
-			window.appId = scenario.appId;
 			vm.next();
 		};
 

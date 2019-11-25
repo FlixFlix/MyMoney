@@ -13,7 +13,7 @@
     <div ng-repeat="scenario in vm.appState.scenarios">
         <div class="scenario-selector" title="{{ scenario.toolTip }}">
             <a id="scenario-{{scenario.name}}" ng-click="vm.selectFlow(scenario)"> </a>
-            <h2 class="scenario-title">{{ scenario.scenarioName }}</h2>
+            <h2 class="scenario-title"><img class="c-icon-scenario" src="assets/images/icon-machine-learning.png">{{ scenario.scenarioName }}</h2>
             <div ng-if="vm.showDescriptions" class="description">{{scenario.description}}</div>
         </div>
     </div>

@@ -1,0 +1,59 @@
+// Colors
+$color-checkmark: #bb2b7e;
+
+// Misc
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+.c-checkmark-wrapper {
+	padding: 28px;
+}
+
+.c-checkmark {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	display: block;
+	stroke-width: 4;
+	stroke: white;
+	stroke-miterlimit: 10;
+	box-shadow: inset 0px 0px 0px $color-checkmark;
+	animation: fill .4s ease-in-out .4s forwards, scale .25s ease-in-out .9s both;
+}
+
+.checkmark__circle {
+	stroke-dasharray: 166;
+	stroke-dashoffset: 166;
+	stroke-width: 2;
+	stroke-miterlimit: 10;
+	stroke: $color-checkmark;
+	fill: none;
+	animation: stroke .6s $curve forwards;
+}
+
+.checkmark__check {
+	transform-origin: 50% 50%;
+	stroke-dasharray: 48;
+	stroke-dashoffset: 48;
+	animation: stroke .3s $curve .8s forwards;
+}
+
+@keyframes stroke {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes scale {
+	0%, 100% {
+		transform: scale3d(2, 2, 1);
+	}
+	50% {
+		transform: scale3d(2.33, 2.33, 1);
+	}
+}
+
+@keyframes fill {
+	100% {
+		box-shadow: inset 0px 0px 0px 30px $color-checkmark;
+	}
+}

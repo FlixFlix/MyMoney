@@ -1,0 +1,34 @@
+#c-config {
+	//position: absolute;
+	margin-top: 50px;
+	float: right;
+	bottom: $t-site-margin;
+	right: $t-site-margin;
+	//background: $color--purple-1;
+	cursor: pointer;
+	i {
+		font-size: 20px;
+		color: #ccc;
+	}
+
+	padding: 5px 20px;
+	//border-radius: 50%;
+}
+.jquery-modal {
+	&.blocker {
+		z-index: 32767;
+	}
+	.modal {
+		a.close-modal{
+			top: 5px;
+			right: 5px;
+		}
+	}
+
+	h4 {
+		font-size: 22px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ccc;
+	}
+
+}
