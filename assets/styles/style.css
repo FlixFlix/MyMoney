@@ -33,7 +33,7 @@ body {
   from {
     transform: rotateZ(0deg); }
   to {
-    transform: rotateZ(-1444deg); } }
+    transform: rotateZ(-1084deg); } }
 @keyframes a-slide-in {
   from {
     transform: translateX(100px); }
@@ -51,26 +51,26 @@ body {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; }
     .invision .c-header__logomark .logo-block {
-      border-radius: 25%; }
+      border-radius: 10%; }
   .c-header__logomark .logo-block {
     width: 15px;
     height: 15px; }
     .c-header__logomark .logo-block:nth-child(1) {
       background-color: #6DBB17; }
       .invision .c-header__logomark .logo-block:nth-child(1) {
-        background-color: #3e6eb4; }
+        background-color: #6DBB17; }
     .c-header__logomark .logo-block:nth-child(2) {
       background-color: #6DBB17; }
       .invision .c-header__logomark .logo-block:nth-child(2) {
-        background-color: #632179; }
+        background-color: #6DBB17; }
     .c-header__logomark .logo-block:nth-child(3) {
       background-color: #6DBB17; }
       .invision .c-header__logomark .logo-block:nth-child(3) {
-        background-color: #bb2b7e; }
+        background-color: #6DBB17; }
     .c-header__logomark .logo-block:nth-child(4) {
       background-color: #C4EC9B; }
       .invision .c-header__logomark .logo-block:nth-child(4) {
-        background-color: #992382; }
+        background-color: #C4EC9B; }
 
 .c-header__logotext {
   margin-left: 15px;
@@ -79,8 +79,7 @@ body {
   color: #020; }
   .invision .c-header__logotext {
     margin-top: -6px;
-    font-family: HirukoProAlternate-Book, sans-serif;
-    text-transform: lowercase;
+    font-family: "Aktiv Grotesk", sans-serif;
     color: #26478d;
     font-weight: normal;
     font-size: 28px; }
@@ -291,7 +290,7 @@ input:focus {
   margin: 10px auto 20px;
   text-align: center; }
   .invision .check-mark {
-    color: #bb2b7e; }
+    color: #6DBB17; }
 
 .mobileButtonContainer.dual-button {
   display: flex;
@@ -1157,7 +1156,7 @@ div.reviewPic:nth-child(4) {
   stroke-width: 4;
   stroke: white;
   stroke-miterlimit: 10;
-  box-shadow: inset 0px 0px 0px #bb2b7e;
+  box-shadow: inset 0px 0px 0px #6DBB17;
   animation: fill .4s ease-in-out .4s forwards, scale .25s ease-in-out .9s both; }
 
 .checkmark__circle {
@@ -1165,7 +1164,7 @@ div.reviewPic:nth-child(4) {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #bb2b7e;
+  stroke: #6DBB17;
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
 
@@ -1185,7 +1184,7 @@ div.reviewPic:nth-child(4) {
     transform: scale3d(2.33, 2.33, 1); } }
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #bb2b7e; } }
+    box-shadow: inset 0px 0px 0px 30px #6DBB17; } }
 #c-config {
   margin-top: 50px;
   float: right;

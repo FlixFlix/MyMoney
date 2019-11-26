@@ -141,6 +141,7 @@ if ( !locales[window.locale] ) {
 if ( isInVision ) {
 	// Update browser favicon to highlight InVision Mode
 	setTimeout( function() {
+		return;
 		var link = document.querySelector( "link[rel*='icon']" ) || document.createElement( 'link' );
 		link.rel = 'icon';
 		link.type = 'image/png';

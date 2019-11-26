@@ -9,7 +9,8 @@ $banner-height: 54px;
 $color-wordmark: #26478d;
 $colors-logo: #6DBB17, #6DBB17, #6DBB17, #C4EC9B;
 
-$colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
+//$colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
+$colors-logo--invision: #6DBB17, #6DBB17, #6DBB17, #C4EC9B;
 
 .c-header__logo-wrapper {
 	display: flex;
@@ -22,7 +23,7 @@ $colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
 		transform: rotateZ(0deg);
 	}
 	to {
-		transform: rotateZ(-1444deg);
+		transform: rotateZ(-1084deg);
 	}
 }
 @keyframes a-slide-in {
@@ -53,7 +54,8 @@ $colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
 		animation-fill-mode: forwards;
 
 		.logo-block {
-			border-radius: 25%;
+			//border-radius: 25%;
+			border-radius: 10%;
 		}
 	}
 
@@ -82,8 +84,9 @@ $colors-logo--invision: #3e6eb4, #632179, #bb2b7e, #992382;
 
 	.invision & {
 		margin-top: -6px;
-		font-family: HirukoProAlternate-Book, sans-serif;
-		text-transform: lowercase;
+		//font-family: HirukoProAlternate-Book, sans-serif;
+		font-family: "Aktiv Grotesk", sans-serif;
+		//text-transform: lowercase;
 		color: $color-wordmark;
 		font-weight: normal;
 		font-size: 28px;
