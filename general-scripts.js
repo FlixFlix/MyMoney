@@ -108,7 +108,7 @@ function isProduction() {
 	}
 })();
 
-if ( !isDev ) addGTM();
+// if ( !isDev ) addGTM();
 
 // Check if URL locale is set and valid
 window.locale = getUrlVar( 'locale' );
@@ -190,7 +190,7 @@ document.addEventListener( 'error', function( event ) {
 
 // Custom event tracker
 function track( eventName, more ) {
-	if ( !window.isDev ) {
+	if ( !isDev && (window.dataLayer != null ) ) {
 		let objectToPush = {
 			event: eventName,
 			attributes: {
