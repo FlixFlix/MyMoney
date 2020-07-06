@@ -120,9 +120,9 @@
 		vm.scenarios = [
 			{
 				name: 'typical',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase1 + '_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.typical + '_' + vm.locale.code,
 				get reviewUrl() {
-					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase1 : FRAUDNET_DEMO_URL_BASE + this.appId
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.typical : FRAUDNET_DEMO_URL_BASE + this.appId
 				},
 				scenarioName: __( 'Typical Applicant' ),
 				toolTip: __( 'Typical applicant: multiple services but no friction' ),
@@ -138,9 +138,9 @@
 			},
 			{
 				name: 'mismatch',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase2 + '_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.mismatch + '_' + vm.locale.code,
 				get reviewUrl() {
-					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase2 : FRAUDNET_DEMO_URL_BASE + this.appId
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.mismatch : FRAUDNET_DEMO_URL_BASE + this.appId
 				},
 				scenarioName: __( 'Mismatched Identities' ),
 				toolTip: __( 'Step-up for consumer with mismatched identity data' ),
@@ -170,9 +170,9 @@
 
 			{
 				name: 'machine',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase3 + '_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.machine + '_' + vm.locale.code,
 				get reviewUrl() {
-					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase3 : FRAUDNET_DEMO_URL_BASE + this.appId
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.machine : FRAUDNET_DEMO_URL_BASE + this.appId
 				},
 				scenarioName: __( 'Machine Learning' ),
 				toolTip: __( 'Avoid unnecessary step-ups using Decision Analytics' ),
@@ -187,9 +187,9 @@
 			},
 			{
 				name: 'fraud',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase4 + '_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.fraud + '_' + vm.locale.code,
 				get reviewUrl() {
-					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase4 : FRAUDNET_DEMO_URL_BASE + this.appId
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.fraud : FRAUDNET_DEMO_URL_BASE + this.appId
 				},
 				scenarioName: __( 'Identity Fraud Attempt' ),
 				toolTip: __( 'Step-up for identity fraud attempt' ),
@@ -216,9 +216,9 @@
 			},
 			{
 				name: 'thin',
-				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.propcase5 + '_' + vm.locale.code,
+				appId: 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale.thin + '_' + vm.locale.code,
 				get reviewUrl() {
-					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.propcase5 : FRAUDNET_DEMO_URL_BASE + this.appId
+					return vm.isInvision && vm.locale.invision ? INVISION_DEMO_URL_BASE + vm.locale.invision.thin : FRAUDNET_DEMO_URL_BASE + this.appId
 				},
 				scenarioName: __( 'Thin-file Applicant' ),
 				toolTip: __( 'Passive step-up for thin-file applicant' ),
