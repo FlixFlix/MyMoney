@@ -50,8 +50,8 @@
         <div ui-view class="footer-content" name="footer"></div>
         <div id="ex1" class="modal">
             <h4>Configuration</h4>
-            <p><a href="/?vision2020">Enable updated styles and InVision demo</a></p>
-            <p><a href="/?novision">Disable InVision</a></p>
+            <p><a href="/?vision2020">Enable updated styles</a></p>
+            <p><a href="/?novision">Disable InVision demos</a></p>
             <p><a href="/?dev">Enable development/test mode (no tracking)</a></p>
             <p><a href="/?nodev">Disable development/test mode</a></p>
             <p><a href="/?reset">Reset settings (except dev mode)</a></p>

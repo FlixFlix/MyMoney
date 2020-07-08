@@ -1,5 +1,3 @@
-const FRAUDNET_DEMO_URL_BASE = 'https://00u5bcy7fvtu2oeya0x7-ccdemo-dev-fndlb.fraudnetdemo.com/fraudnet-ui/service/event/';
-const INVISION_DEMO_URL_BASE = 'https://experian.invisionapp.com/share/';
 var locale = '',
 	currentLocaleName = '',
 	localeNotSet = false,

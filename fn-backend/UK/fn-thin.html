@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>FraudNet Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <div class="main">
+          <div class="col">
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">CROSSCORE DECISION ANALYTICS</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                </tr>
+                <tr>
+                  <td>MachineLearning</td>
+                  <td>FinalDecision</td>
+                  <td>Approve</td>
+                </tr>
+                <tr class="odd">
+                  <td>MachineLearning</td>
+                  <td>FinalScore</td>
+                  <td>450</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td>DOCUMENT VERIFICATION</td>
+                </tr>
+                <tr class="no-results">
+                  <td>No results were found for your query</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">IDENTITY VERIFICATION</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>FinalDecision</td>
+                  <td>REFER</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="2">FRAUD RISK ENGINE</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>FraudNet Response</td>
+                  <td>Score</td>
+                </tr>
+                <tr class="odd">
+                  <td>APPROVE</td>
+                  <td>0</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>Hunter Response</td>
+                  <td>Score</td>
+                </tr>
+                <tr class="odd">
+                  <td>Clear</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">EMAIL VALIDATION</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>EARiskBand</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td>PHONE INTELLIGENCE</td>
+                </tr>
+                <tr class="no-results">
+                  <td>No results were found for your query.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="main">
+          <div class="col">
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td>RISK ENGINE AUDIT TRAIL</td>
+                </tr>
+                <tr class="no-results">
+                  <td>No rules fired for this event</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="main">
+          <div class="col">
+            <table class="has-desc-col">
+              <tbody>
+                <tr class="header">
+                  <td colspan="2">APPLICANT DETAIL</td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>Paul Johnson</td>
+                </tr>
+                <tr>
+                  <td>Street Address</td>
+                  <td>104 Greyfriars Road</td>
+                </tr>
+                <tr>
+                  <td>Street Address 2</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>City</td>
+                  <td>Cardiff</td>
+                </tr>
+                <tr>
+                  <td>State</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Postal Code</td>
+                  <td>CF1 3YQ</td>
+                </tr>
+                <tr>
+                  <td>Country</td>
+                  <td>England</td>
+                </tr>
+                <tr>
+                  <td>Phone Stripped</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mobile Phone Exchange/State</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>PaulA_007@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="4">EMAIL VALIDATION DETAIL</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                  <td>REASON</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>EARiskBand</td>
+                  <td>1</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>domain Exists</td>
+                  <td>Yes</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>domainrlsklevellD</td>
+                  <td>4</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>email Exists</td>
+                  <td>Yes</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>email_creatlon_days</td>
+                  <td>1250</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>fraudRlsk</td>
+                  <td>50</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>lp_reputatlon</td>
+                  <td>Good</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>lp_risklevelld</td>
+                  <td>5</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td>Emailage</td>
+                  <td>lpcountrymatch</td>
+                  <td>Yes</td>
+                  <td><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="4">CROSSCORE DECISION ANALYTICS DETAIL</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                  <td>REASON</td>
+                </tr>
+                <tr>
+                  <td>MachineLearning</td>
+                  <td>FinalDecision</td>
+                  <td>Approve</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>MachineLearning</td>
+                  <td>FinalScore</td>
+                  <td>450</td>
+                  <td><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table class="has-arrows has-desc-col">
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">DEVICE INTELLIGENCE</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>DI Print</td>
+                  <td>41EADBDF85E97BF9D052727E0742680F307C079E</td>
+                </tr>
+                <tr class="odd">
+                  <td><br>
+                  </td>
+                  <td>TDL Seconds</td>
+                  <td>-18000</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>Device timestamp</td>
+                  <td>2019-04-21 04:24:01</td>
+                </tr>
+                <tr class="odd">
+                  <td><br>
+                  </td>
+                  <td>Referer</td>
+                  <td>https//www.mymoneybank.com/apply/goJsp</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>User Agent</td>
+                  <td>Mozilla/5.0 (!Phone; CPU !Phone OS 12_0 like Mac OS X)
+                    AppleWebKiV537.Sl.1 (KHTML, like Gecko) Mobile/11A4449a</td>
+                </tr>
+                <tr class="odd">
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>User Agent OS</td>
+                  <td>Mac</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>User Agent Type</td>
+                  <td>Gecko</td>
+                </tr>
+                <tr class="odd">
+                  <td><br>
+                  </td>
+                  <td>IP Country</td>
+                  <td>United Kingdom</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>Accept Language</td>
+                  <td>en-GB</td>
+                </tr>
+                <tr class="odd">
+                  <td><br>
+                  </td>
+                  <td>Browser Language</td>
+                  <td>English (United Kingdom)</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="4">IDENTITY VERIFICATION DETAIL</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                  <td>REASON</td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>finalDecision</td>
+                  <td>REFER</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>Identity Authenticate</td>
+                  <td>fpdScore</td>
+                  <td>0</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>pmAddressVerificationResult1</td>
+                  <td>G1</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>Identity Authenticate</td>
+                  <td>pmConsumerlDVerificationResult</td>
+                  <td>V</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>pmDateOfBlrthMatchResult</td>
+                  <td>3</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>Identity Authenticate</td>
+                  <td>pmDriverLlcenseVerificationResult</td>
+                  <td>N</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>pmPhoneVerificationResult1</td>
+                  <td>NX</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>Identity Authenticate</td>
+                  <td>preciselDScore</td>
+                  <td>480</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>preciseMatchScore</td>
+                  <td>175</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Identity Authenticate</td>
+                  <td>validationScore</td>
+                  <td>200</td>
+                  <td><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td>PHONE INTELLIGENCE DETAIL</td>
+                </tr>
+                <tr class="no-results">
+                  <td>No results were found for your query.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div class="col">
+            <table class="has-arrows has-desc-col">
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">IP DATA</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>IP Address</td>
+                  <td>162.89.8.12</td>
+                </tr>
+                <tr class="odd">
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>IP ISO Name</td>
+                  <td>United Kingdom</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>IP City</td>
+                  <td>Cardiff</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="has-arrows has-desc-col">
+              <tbody>
+                <tr class="header">
+                  <td colspan="3">TIME DETAILS</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>Server Timestamp</td>
+                  <td> 2019-04-29 09:24:26</td>
+                </tr>
+                <tr class="odd">
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>Device Timestamp</td>
+                  <td> 2019-04-29 04:24:26</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>TDLHours</td>
+                  <td>-5</td>
+                </tr>
+                <tr class="odd">
+                  <td><br>
+                  </td>
+                  <td>TDL Minutes</td>
+                  <td>-300</td>
+                </tr>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td>TDL Seconds</td>
+                  <td>-18000</td>
+                </tr>
+                <tr class="odd">
+                  <td><i class="fas fa-chevron-right"></i><br>
+                  </td>
+                  <td>Device Time Zone</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="4">DOCUMENT VERIFICATION DETAIL</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>SERVICE_NAME</td>
+                  <td>ELEMENT</td>
+                  <td>VALUE</td>
+                  <td>REASON</td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DateFleldFontConslstency</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DateOfBirthComparison</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DocumentDataComparison</td>
+                  <td>Undetermined</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DocumentVerification</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DocumentVerlflcationScore</td>
+                  <td>500</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>Drivers License Back</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>DriversllcenseFront</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>HumanFacePresence</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>PostalCodeComparlson</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>RoundedCornerPresence</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>SurnameComparison</td>
+                  <td>Authentic</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mitek</td>
+                  <td>Processing Status</td>
+                  <td>Successful</td>
+                  <td><br>
+                  </td>
+                </tr>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr class="header">
+                  <td colspan="5">FRAUD RISK ENGINE DETAIL</td>
+                </tr>
+                <tr class="sub-header">
+                  <td>Model</td>
+                  <td>Rule Action</td>
+                  <td>Rule Action Date</td>
+                  <td>Score</td>
+                  <td>System Response</td>
+                </tr>
+                <tr>
+                  <td>AO</td>
+                  <td>No Action</td>
+                  <td>2019-04-30 21:05:02</td>
+                  <td>0</td>
+                  <td>APPROVE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../fraudnet_ss_scripts.js"></script>
+  </body>
+</html>

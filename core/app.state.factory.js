@@ -122,7 +122,12 @@
 				return 'CC_DEMO_' + vm.locale.proposition + '_' + vm.locale[this.name] + '_' + vm.locale.code
 			},
 			get reviewUrl() {
-				if ( vm.isInvision && vm.locale.invision ) return INVISION_DEMO_URL_BASE + vm.locale.invision[this.name];
+				if ( vm.locale.useMockupFn )
+					return encodeURI(FRAUDNET_MOCKUP_URL_BASE + vm.locale.code + '/fn-' + this.name + '.html'
+						+ '?locale=' + vm.locale.code
+						+ '&scenario=' + this.name
+						+ '&title=' + __( 'FraudNet Demo' ) + ' (' + vm.locale.code + ') - ' + this.scenarioName + ' - ' + this.toolTip);
+				else if ( vm.isInvision && vm.locale.invision ) return INVISION_DEMO_URL_BASE + vm.locale.invision[this.name];
 				else return FRAUDNET_DEMO_URL_BASE + this.appId;
 			}
 		};

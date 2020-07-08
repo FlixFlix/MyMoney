@@ -684,8 +684,8 @@ window.locales = {
 			['Paul', 'Johnson', '18-09-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', '+44 07 0517 11863', 'PaulA_007@gmail.com'],
 			*/
 			['Sarah', 'Jamison', '01-02-1976', 'AO 12 34 56 A', '23 High Tree Road', 'Nottingham', 'England', 'NG1 3SD', 'sarahlynnjamison0276@yahoo.com'],
-			['Lizzy', 'Grant', '09-04-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'Derby', 'DE23 1GH', 'lizzy_grant@gmail.com'],
-			['Elizabeth', 'Grant', '04-09-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Wygston', 'Leicester', 'LE18 6PD', 'elizabethgrant83@yahoo.com'],
+			['Lizzy', 'Grant', '09-04-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'England', 'DE23 1GH', 'lizzy_grant@gmail.com'],
+			['Elizabeth', 'Grant', '04-09-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Leicester', 'England', 'LE18 6PD', 'elizabethgrant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', 'PaulA_007@gmail.com'],
 		],
 		customTranslations: {
