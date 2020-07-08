@@ -61,8 +61,26 @@
 			$state.go( path );
 		};
 		vm.selectedLocale = function( locale ) {
-			setCookie( 'mm_locale', locale.code );
-			window.location.replace( appHome + '?locale=' + locale.code );
+			let exitUrl = appHome;
+			if ( locale.password ) {
+				let authorizedRegions = {}
+				let regionAuthCookie = getCookie( 'mm_regionAuth' );
+				if ( regionAuthCookie ) authorizedRegions = JSON.parse( getCookie( 'mm_regionAuth' ) );
+				let isAuthorizedForRegion = authorizedRegions[locale.code];
+				let tryPassword = true;
+				while ( tryPassword && !isAuthorizedForRegion ) {
+					let pass = prompt( `Enter the password for ${locale.label} to select this region` );
+					if ( !(pass === null) && (pass.toLowerCase() === locale.password) ) isAuthorizedForRegion = true;
+					else tryPassword = confirm( `Incorrect passphrase for ${locale.label}. Try again?` );
+				}
+				if ( isAuthorizedForRegion ) {
+					authorizedRegions[locale.code] = true;
+					setCookie( 'mm_regionAuth', JSON.stringify( authorizedRegions ) );
+					setCookie( 'mm_locale', locale.code );
+					exitUrl = appHome + '?locale=' + locale.code;
+				}
+			} else exitUrl = appHome + '?locale=' + locale.code;
+			window.location.replace( exitUrl );
 		};
 
 		vm.selectFlow = function( scenario ) {

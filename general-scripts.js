@@ -8,6 +8,11 @@ var locale = '',
 	isInVision = getCookie( 'mm_invision' ),
 	isDev = getCookie( 'mm_devtest' );
 
+const FRAUDNET_DEMO_URL_BASE = 'https://00u5bcy7fvtu2oeya0x7-ccdemo-dev-fndlb.fraudnetdemo.com/fraudnet-ui/service/event/';
+const INVISION_DEMO_URL_BASE = 'https://experian.invisionapp.com/share/';
+const FRAUDNET_MOCKUP_URL_BASE = window.appHome + 'fn-backend/';
+const HIGHLY_SECURE_ADMIN_PASSWORD = 'ok';
+
 function addGTM() {
 	// Google Tag Manager
 	(function( w, d, s, l, i ) {
@@ -60,6 +65,7 @@ function deleteCookie( name ) {
 
 function setCookie( name, value, expiration = 365 * 24 * 3600 ) {
 	document.cookie = name + "=" + value + ";max-age=" + expiration + ";";
+	return value;
 }
 
 function reloadApp( params = '' ) {
@@ -79,7 +85,9 @@ function isProduction() {
 	for ( const [key, value] of searchParams ) {
 		switch ( key ) {
 			case 'reset':
+				deleteCookie( 'mm_isAdmin' );
 				deleteCookie( 'mm_locale' );
+				deleteCookie( 'mm_regionAuth' );
 				reloadApp();
 				break;
 			case 'dev':
@@ -190,7 +198,7 @@ document.addEventListener( 'error', function( event ) {
 
 // Custom event tracker
 function track( eventName, more ) {
-	if ( !isDev && (window.dataLayer != null ) ) {
+	if ( !isDev && (window.dataLayer != null) ) {
 		let objectToPush = {
 			event: eventName,
 			attributes: {
@@ -205,8 +213,18 @@ function track( eventName, more ) {
 
 (function() {
 	document.querySelector( '#c-config' ).addEventListener( 'click', function( e ) {
-		let pass = prompt( 'Enter passphrase to access settings' );
-		if ( pass.toLowerCase() == 'ok' ) $( '#c-config-trigger' ).click();
+		let cancel = false;
+		isAdmin = getCookie( 'mm_isAdmin' );
+		while ( !isAdmin && !cancel ) {
+			let pass = prompt( 'Enter passphrase to access settings' );
+			if ( pass === null )
+				cancel = true; // Cancel pressed
+			else if ( pass.toLowerCase() === HIGHLY_SECURE_ADMIN_PASSWORD )
+				isAdmin = setCookie( 'mm_isAdmin', 1 )
+			else
+				cancel = !confirm( "Incorrect admin passphrase. Try again?" );
+		}
+		if ( isAdmin ) $( '#c-config-trigger' ).click();
 	} );
 
 })();

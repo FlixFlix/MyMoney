@@ -651,7 +651,9 @@ window.locales = {
 		description: 'United Kingdom',
 		region: 'UK',
 		language: 'eng',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		password: 'crosscore2020',
+		useMockupFn: true,
+	/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '41',
 		mismatch: '42',
@@ -762,6 +764,8 @@ window.locales = {
 		description: 'United States',
 		region: 'NA',
 		language: 'eng',
+		useMockupFn: true,
+		password: 'murica',
 	/* JSON Seeded information could have different numbers for each country as updates will occur */		
 		proposition: 'AO',
 		typical: '36',
