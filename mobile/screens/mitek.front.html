@@ -1,6 +1,6 @@
 <style> .headerMobileBanner, .mobileButtonContainer {
     display: none;
 } </style>
-<div class="mitek-flow" ng-click="vm.next()">
+<div class="mitek-flow front {{vm.appState.currentScenario.name}}" ng-click="vm.next()">
     <img ng-src="{{vm.appState.currentScenario.assets}}front.jpg"/>
 </div>

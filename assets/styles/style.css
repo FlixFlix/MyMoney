@@ -242,6 +242,24 @@ h3 {
   animation-fill-mode: forwards;
   /* translations-transform: uppercase; */ }
 
+#time_at_address_checked {
+  animation: 2600ms fadeIn;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-left: -16px; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(2.5); }
+  89% {
+    opacity: 0; }
+  90% {
+    opacity: 0.8;
+    transform: scale(3); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 @keyframes appear {
   from {
     color: transparent; }
@@ -1206,5 +1224,17 @@ div.reviewPic:nth-child(4) {
   font-size: 22px;
   margin-bottom: 15px;
   border-bottom: 1px solid #ccc; }
+
+.gdc-DISABLE.mitek-flow.front img {
+  max-height: none;
+  max-width: 100vw;
+  min-width: 1440px;
+  height: auto;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
+.page-step-1 {
+  background: #ddd; }
 
 /*# sourceMappingURL=style.css.map */

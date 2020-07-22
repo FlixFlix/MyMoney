@@ -70,7 +70,9 @@
 				let tryPassword = true;
 				while ( tryPassword && !isAuthorizedForRegion ) {
 					let pass = prompt( `Enter the password for ${locale.label} to select this region` );
-					if ( !(pass === null) && (pass.toLowerCase() === locale.password) ) isAuthorizedForRegion = true;
+					console.log(pass);
+					if(pass===null) tryPassword = false;
+					else if ( pass.toLowerCase() === locale.password) isAuthorizedForRegion = true;
 					else tryPassword = confirm( `Incorrect passphrase for ${locale.label}. Try again?` );
 				}
 				if ( isAuthorizedForRegion ) {
@@ -89,7 +91,10 @@
 			track( 'selectScenario' );
 
 			vm.appState.currentScenario.states = angular.copy( scenario.states );
+			vm.appState.currentScenario.name = angular.copy( scenario.name );
 			vm.appState.currentScenario.form = angular.copy( scenario.form );
+			vm.appState.currentScenario.form2 = angular.copy( scenario.form2 );
+			vm.appState.currentScenario.hasGDC = angular.copy( scenario.hasGDC );
 			vm.appState.currentScenario.assets = 'assets/images/' + scenario.assets + '/';
 			vm.appState.currentScenario.showPassport = (scenario.assets === vm.locale.code + '/person4');
 			vm.appState.currentScenario.review = scenario.name;

@@ -90,6 +90,16 @@
 					}
 				}
 			} )
+			.state( 'app.mobile.input_address2', {
+				url: '/input',
+				views: {
+					'content@': {
+						templateUrl: 'mobile/screens/customer.input_address2.html',
+						controller: 'AppController',
+						controllerAs: 'vm'
+					}
+				}
+			} )
 			.state( 'app.mobile.input.needmore', {
 				url: '/needmore',
 				views: {

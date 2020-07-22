@@ -13,6 +13,19 @@
                title="{{contact.placeholder}}"
                val={{contact.value}}
                delay={{delay[$index]}}
-               delayed-value/>
+               delayed-value>
     </div>
+    <div ng-if="vm.appState.currentScenario.hasGDC">
+        <input type="checkbox"
+               name="time_at_address"
+               id="time_at_address"
+               title="Check this box if you lived less than 3 years at this address">
+        <input type="checkbox"
+               name="time_at_address"
+               id="time_at_address_checked"
+               title="Check this box if you lived less than 3 years at this address"
+               checked>
+        <label for="time_at_address">&nbsp;Less than 3 years at this address?</label>
+    </div>
+
 </div>
