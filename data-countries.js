@@ -7,15 +7,15 @@ window.locales = {
 	/****************/
 	/*   AUSTRALIA  */
 	/****************/
-	
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	AU: {
 		appName: 'MyMoney',
 		label: 'Australia',
 		description: 'Australia',
 		region: 'APAC',
 		language: 'eng',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '31A',
 		mismatch: '32',
@@ -24,11 +24,11 @@ window.locales = {
 		thin: '35A',
 		code: 'AU',
 		ISOCode: 'AU',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: true,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
@@ -36,7 +36,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: true,
 		ShowMachineLearning: false,
-				
+
 		persons: [
 			[],
 			['Sarah', 'Jamison', '01-02-1976', '165-239-877', 'Unit 123/16521 Morris St', 'South Melbourne', 'VIC', '3205', '+61 4 7536 4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -44,8 +44,7 @@ window.locales = {
 			['Elizabeth', 'Grant', '04-07-1973', '512-438-888', 'Unit 5a/53 Alma Rd', 'St Kilda', 'VIC', '3182', '+61 4 2567 8500', 'elizabeth_grant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', '754-631-199', '9715 Rock Maple Street', 'Melbourne', 'VIC', '3000', '+61 3 8765 4321', 'PaulA_007@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -110,15 +109,15 @@ window.locales = {
 	/**********************/
 	/*   Brazil           */
 	/**********************/
-	
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	BR: {
 		appName: 'MyMoney',
 		label: 'Brazil',
 		description: 'Brazil',
 		region: 'LATAM',
 		language: 'por',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '26',
 		mismatch: '27',
@@ -127,11 +126,11 @@ window.locales = {
 		thin: '30',
 		code: 'BR',
 		ISOCode: 'BR',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */	
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: false,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */
+
+		/* Allow for default Toggles to be on or off depending on country          - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: false,
@@ -139,7 +138,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: true,
 		ShowMachineLearning: false,
-								
+
 		persons: [
 			[],
 			['Mariana', 'Gomes', '02-01-1976', '342.665.382-60', 'Rua Pernambucana 146', 'Osasco', 'São Paulo', '06140-040', '+55 (11) 4223-4095', 'MarianaGomes0276@yahoo.com'],
@@ -147,8 +146,7 @@ window.locales = {
 			['Beatriz', 'Almeida', '04-09-1973', '489.085.995-09', 'Travessa Araci 196', 'Duque de Caxias', 'Rio de Janeiro', '125272-440', '+55 (21) 8299-4630', 'BeatrizAlmeida83@yahoo.com'],
 			['Vicente', 'Fontes', '18-09-1999', '489.085.995-09', 'Rua Reverendo 617', 'Belford Roxo', 'Rio de Janeiro', '26143-435', '+55 (21) 2275-6677', 'VicenteF_007@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -213,17 +211,17 @@ window.locales = {
 	/**********************/
 	/*   Colombia         */
 	/**********************/
-	
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	CO: {
 		appName: 'MyMoney',
 		label: 'Latinoamérica',
 		description: 'Latin America',
-	/*	label: 'Colombia',
-		description: 'Colombia', */		
+		/*	label: 'Colombia',
+			description: 'Colombia', */
 		region: 'LATAM',
 		language: 'spa',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '36',
 		mismatch: '37',
@@ -232,11 +230,11 @@ window.locales = {
 		thin: '40',
 		code: 'CO',
 		ISOCode: 'CO',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: false,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */
+
+		/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
@@ -244,7 +242,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: false,
 		ShowMachineLearning: false,
-				
+
 		persons: [
 			[],
 			/* Before removed postal codes
@@ -256,10 +254,9 @@ window.locales = {
 			['Natalia', 'Ramírez', '02-01-1976', '36 123456', 'Cr 108 No. 23B-50, C.P 11001', 'Bogotá', 'Bogotá', '+57 15433025', 'NataliaRamirez0276@yahoo.com'],
 			['Juanita', 'García', '04-09-1973', '37 654321', 'Cr 72 No. 74B-39, C.P 11001', 'Medellin', 'Antioquia', '+57 12529697', 'Juanita_García@gmail.com'],
 			['Juana', 'García', '04-09-1973', '37 654321', 'Cr 7 No. 23B-31, C.P 12341', 'Santiago de Cali', 'Velle Del Cauca', '+57 24353647', 'JuanaGarcía83@yahoo.com'],
-			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '+57 63331353', 'PedroMartínez_007@gmail.com'],		
+			['Pedro', 'Martínez', '18-09-1999', '62 121212', 'Cr 8 No. 16-68, C.P 66001', 'Patico', 'Bolivar', '+57 63331353', 'PedroMartínez_007@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -326,15 +323,15 @@ window.locales = {
 	/****************/
 	/*   INDIA      */
 	/****************/
-	
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	IN: {
 		appName: 'MyMoney',
 		label: 'India',
 		description: 'India',
 		region: 'APAC',
 		language: 'eng',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '46',
 		mismatch: '47',
@@ -343,19 +340,19 @@ window.locales = {
 		thin: '50A',
 		code: 'IN',
 		ISOCode: 'IN',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: false,
 		GovIDBackside: true,
-		
-	/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
 		ShowPhoneIntelligence: false,
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: false,
-		ShowMachineLearning: false,	
-		
+		ShowMachineLearning: false,
+
 		persons: [
 			[],
 			['Barsha', 'Murjani', '02-01-1976', 'MLWPM1634B', '5th Floor Tower 3 Equinox Business Park Kurla West', 'Mumbai', 'MH', '400070', '+91 22 68186900', 'barsh7690@gmail.com'],
@@ -363,8 +360,7 @@ window.locales = {
 			['Barsha', 'Murjani', '09-04-1973', 'MLWPM1634B', 'Antariksh Bhavan 5th floor Connaught Place', 'Delhi', 'DL', '100001', '+91 22 68186944', 'asharma_1102@yahoo.co.in'],
 			['Chandrasekhar', 'Moorthy', '09-18-1999', 'MH0420100029930', 'Kalina near Geeta Vihar Hotel', 'Mumbai', 'MH', '400063', '+91 980567234', 'cm_007@yahoo.co.in'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -430,14 +426,14 @@ window.locales = {
 	/*   INDONESIA     */
 	/*******************/
 
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	ID: {
 		appName: 'MyMoney',
 		label: 'Indonesia',
 		description: 'Indonesia',
 		region: 'APAC',
 		language: 'eng',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '31',
 		mismatch: '32',
@@ -453,11 +449,11 @@ window.locales = {
 		},
 		code: 'ID',
 		ISOCode: 'ID',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: true,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country        - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
@@ -465,7 +461,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: true,
 		ShowMachineLearning: false,
-				
+
 		persons: [
 			[],
 			['Ratna Utari', 'Oesman', '02-01-1976', '22 5600 760201 1234', 'Ged Surveyor Indonesia Lt Basement/LB 40', 'Kebayoran Baru', 'Jakarta', '12110', '+62 021 7220074', 'RatanOesman0276@yahoo.com'],
@@ -473,8 +469,7 @@ window.locales = {
 			['Tanudisastro Bo', 'Sasmita', '04-09-1973', '32 2300 790201 1234', 'Jl Darmo Permai Tmr IV/18', 'Surabaya', 'Jawa Timur', '60111', '+62 031 7340468', 'TanudisastroSasmita83@yahoo.com'],
 			['Dita', 'Oktiawati', '18-09-1999', '32 7314 551088 0009', 'Suci Residence, Block G, No3', 'Kuningan', 'Jakarta', '10120', '+62 811 2237088', 'ditaoktiawati@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -540,14 +535,14 @@ window.locales = {
 	/*   SOUTH AFRICA  */
 	/*******************/
 
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */	
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	ZA: {
 		appName: 'MyMoney',
 		label: 'South Africa',
 		description: 'South Africa',
 		region: 'EMEA',
 		language: 'eng',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '31a',
 		mismatch: '32',
@@ -556,11 +551,11 @@ window.locales = {
 		thin: '35',
 		code: 'ZA',
 		ISOCode: 'ZA',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: false,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
@@ -568,7 +563,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: false,
 		ShowMachineLearning: false,
-				
+
 		persons: [
 			[],
 			['Pauline J', 'Curtis', '02-01-1976', 'MLWPM1634B', '337  Sandown Rd', 'Cape Town', 'Western Cape', '8003', '+27 82 263 8526', 'paulinejcurtis0276@yahoo.com'],
@@ -576,8 +571,7 @@ window.locales = {
 			['Patricia', 'Jorgensen', '04-09-1983', 'MLWPM1634B', '428  Wit Rd', 'Johannesburg', 'Gauteng', '2058', '+27 84 401 9880', 'Patricia_J730904@gmail.com'],
 			['George', 'Klein', '18-09-1999', 'MH0420100029930', '947  Market St', 'Johannesburg', 'Gauteng', '2154', '+27 84 715 3283', 'GeorgeK_007@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -639,12 +633,11 @@ window.locales = {
 		]
 	},
 
-
 	/**********************/
 	/*   UNITED KINGDOM   */
 	/**********************/
 
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */		
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	UK: {
 		appName: 'MyMoney',
 		label: 'UK',
@@ -652,8 +645,9 @@ window.locales = {
 		region: 'UK',
 		language: 'eng',
 		password: 'crosscore2020',
-		useMockupFn: true,
-	/* JSON Seeded information could have different numbers for each country as updates will occur */
+		useMockupFN: true,
+		hasGDC: true,
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '41',
 		mismatch: '42',
@@ -662,19 +656,19 @@ window.locales = {
 		thin: '45',
 		code: 'UK',
 		ISOCode: 'GB',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: true,
 		GovIDBackside: false,
-		
-	/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country         - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
 		ShowPhoneIntelligence: false,
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: false,
-		ShowMachineLearning: false,		
-	
+		ShowMachineLearning: false,
+
 		persons: [
 			[],
 			/* Before removed postal codes
@@ -687,9 +681,9 @@ window.locales = {
 			['Lizzy', 'Grant', '09-04-1973', 'AO 12 34 56 B', '96 Parkfield Road', 'Upper Healy', 'England', 'DE23 1GH', 'lizzy_grant@gmail.com'],
 			['Elizabeth', 'Grant', '04-09-1973', 'AO 12 34 56 B', '42 West Wellington Drive', 'Leicester', 'England', 'LE18 6PD', 'elizabethgrant83@yahoo.com'],
 			['Paul', 'Johnson', '18-09-1999', 'OW 07 68 52D', '104 Greyfriars Road', 'Cardiff', 'England', 'CF1 3YQ', 'PaulA_007@gmail.com'],
+			['Catherine', 'L\'Esperance', '02-03-1989', 'SK 30 71 05 D', '96 Roman Rd', 'Leeds', 'England', 'LS1 4NG', 'c_lesperance@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
@@ -705,6 +699,29 @@ window.locales = {
 			},
 			thin: {
 				person: 4,
+			},
+			gdc: {
+				person: 5,
+				address2_fields: [
+					{
+						name: 'address',
+						placeholder: '123 Streetname Ave',
+					},
+					{
+						name: 'city',
+						placeholder: 'City'
+					},
+					{
+						name: 'country',
+						placeholder: 'Country'
+					},
+					{
+						name: 'postcode',
+						placeholder: 'Postal Code'
+					},
+				],
+				address2_values: ['30 Rue Beauvau', 'Marseille', 'France', '13003'],
+
 			}
 		},
 		fields: [
@@ -749,24 +766,23 @@ window.locales = {
 			{
 				name: 'email',
 				placeholder: 'email@domain.com'
-			},
-		]
+			}],
 	},
 
 	/*********************/
 	/*   UNITED STATES   */
 	/*********************/
-	
-	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */		
+
+	/* When add a new country, make sure you change here.  if not, will show on selection menu, but will not run use cases */
 	US: {
 		appName: 'MyMoney',
 		label: 'US',
 		description: 'United States',
 		region: 'NA',
 		language: 'eng',
-		useMockupFn: true,
+		useMockupFN: true,
 		password: 'murica',
-	/* JSON Seeded information could have different numbers for each country as updates will occur */		
+		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '36',
 		mismatch: '37',
@@ -775,11 +791,11 @@ window.locales = {
 		thin: '40',
 		code: 'US',
 		ISOCode: 'US',
-	/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */			
+		/* ID may or may not have backsides,  this variable allows to add or not add picture of backside of ID */
 		DrvIDBackside: true,
 		GovIDBackside: true,
-		
-	/* Allow for default Toggles to be on or off depending on country      - TT 9/10/19 */	
+
+		/* Allow for default Toggles to be on or off depending on country      - TT 9/10/19 */
 		ShowIdentityVerification: true,
 		ShowRiskEngine: true,
 		ShowDocumentVerification: true,
@@ -787,7 +803,7 @@ window.locales = {
 		ShowEmailRiskScoring: true,
 		ShowBehavioralBiometrics: false,
 		ShowMachineLearning: false,
-				
+
 		persons: [
 			[],
 			['Sarah', 'Jamison', '02/01/1976', '165-23-9877', '17123 Peachtree Court', 'Boston', 'MA', '02196', '+1 617-536-4100', 'sarahlynnjamison0276@yahoo.com'],
@@ -795,8 +811,7 @@ window.locales = {
 			['Elizabeth', 'Grant', '07/04/1983', '512-43-8888', '7146 S Apostle Avenue #8160', 'Chicago', 'IL', '60652', '+1 312-567-8500', 'elizabethgrant83@yahoo.com'],
 			['Jeremy', 'Vasquez', '09/18/1999', '754-63-2199', '9715 Rock Maple Street', 'Austin', 'TX', '78759', '+1 512-474-5171', 'jeremyv_007@gmail.com'],
 		],
-		customTranslations: {
-		},
+		customTranslations: {},
 		scenarios: {
 			typical: {
 				person: 1,
