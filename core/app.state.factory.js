@@ -265,7 +265,7 @@
 			vm.scenarios.push(
 				Object.assign( Object.create( vm.scenario ), {
 					name: 'gdc',
-					scenarioName: __( 'Global Data Consortium' ),
+					scenarioName: __( 'International Identity Verification' ),
 					toolTip: __( 'Application facilitated by GDC data ' ),
 					description: __( 'This particular example illustrates a former French resident applying for credit in the UK' ),
 					assets: '' + vm.locale.code + '/person' + vm.locale.scenarios.gdc.person,
