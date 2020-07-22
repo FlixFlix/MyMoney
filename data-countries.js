@@ -719,8 +719,12 @@ window.locales = {
 						name: 'postcode',
 						placeholder: 'Postal Code'
 					},
+					{
+						name: 'time',
+						placeholder: 'Time at this address'
+					}
 				],
-				address2_values: ['30 Rue Beauvau', 'Marseille', 'France', '13003'],
+				address2_values: ['30 Rue Beauvau', 'Marseille', 'France', '13003', '5 years'],
 
 			}
 		},
