@@ -128,7 +128,7 @@
 				else return [];
 			},
 			get hasGDC() {
-				return this.name === 'gdc'
+				return ['gdc', 'iidv2'].includes( this.name )
 			},
 		};
 
@@ -261,13 +261,26 @@
 				]
 			} ),
 		];
-		if ( vm.locale.hasGDC )
+		if ( vm.locale.hasGDC ) {
 			vm.scenarios.push(
 				Object.assign( Object.create( vm.scenario ), {
 					name: 'gdc',
 					scenarioName: __( 'International Identity Verification' ),
-					toolTip: __( 'Application facilitated by GDC data ' ),
-					description: __( 'This particular example illustrates a former French resident applying for credit in the UK' ),
+					toolTip: __( 'Frictionless application facilitated by GDC data' ),
+					description: __( 'This particular example illustrates a former French resident applying for credit in the UK and being approved automatically' ),
+					assets: '' + vm.locale.code + '/person' + vm.locale.scenarios.gdc.person,
+					states: [
+						'app.mobile.input',
+						'app.mobile.input_address2',
+						'app.mobile.approved'
+					]
+				} ) );
+			vm.scenarios.push(
+				Object.assign( Object.create( vm.scenario ), {
+					name: 'iidv2',
+					scenarioName: __( 'International Identity Verification with Step-Up' ),
+					toolTip: __( 'Less frictionless application facilitated by GDC data ' ),
+					description: __( 'This particular example illustrates a former French resident applying for credit in the UK and being approved after providing additional documentation' ),
 					assets: '' + vm.locale.code + '/person' + vm.locale.scenarios.gdc.person,
 					states: [
 						'app.mobile.input',
@@ -277,9 +290,8 @@
 						'app.mobile.mitek.selfie',
 						'app.mobile.approved'
 					]
-				} )
-			);
-
+				} ) );
+		}
 		return vm;
 	}
 })();

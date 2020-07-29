@@ -301,15 +301,6 @@ input:focus {
     max-width: 45%;
     font-size: 20px; }
 
-.mitek-flow {
-  background-color: #fff;
-  height: 100vh;
-  margin: -54px auto 0; }
-  .mitek-flow img {
-    height: 100vh;
-    max-height: 100vh;
-    max-width: 100%; }
-
 /**
  * Animation
  *
@@ -1207,16 +1198,6 @@ div.reviewPic:nth-child(4) {
   margin-bottom: 15px;
   border-bottom: 1px solid #ccc; }
 
-*.mitek-flow {
-  background: transparent;
-  width: 100%;
-  height: auto;
-  text-align: center; }
-  *.mitek-flow img {
-    width: 95%;
-    max-height: none;
-    height: auto; }
-
 .page-step-1 {
   background: #ddd; }
 
@@ -1248,5 +1229,22 @@ div.reviewPic:nth-child(4) {
   100% {
     opacity: 1;
     transform: scale(1); } }
+.mitek-flow {
+  background: transparent;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .mitek-flow img {
+    display: inline-block;
+    max-width: 100%; }
+    .aspect-landscape .mitek-flow img {
+      height: 100vh;
+      width: auto; }
+    .aspect-portrait .mitek-flow img {
+      height: auto;
+      width: 100vw; }
+
+.mitek-flow {
+  margin: -54px auto 0; }
 
 /*# sourceMappingURL=style.css.map */

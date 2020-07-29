@@ -125,6 +125,8 @@
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
 			document.body.classList.remove( 'page-' + fromState.url.substr( 1 ) );
 			document.body.classList.add( 'page-' + toState.url.substr( 1 ) );
+			var aspectClass = ($(window).innerWidth() > $(window).innerHeight()) ? 'landscape' : 'portrait';
+			document.body.classList.add( 'aspect-' + aspectClass );
 		} );
 
 		vm.showDescriptions = false;

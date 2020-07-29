@@ -1,0 +1,24 @@
+.mitek-flow {
+	background: transparent;
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+		.aspect-landscape & {
+			height: 100vh;
+			width: auto;
+		}
+		.aspect-portrait & {
+			height: auto;
+			width: 100vw;
+		}
+	}
+}
+
+.mitek-flow {
+	margin: -54px auto 0;
+
+}

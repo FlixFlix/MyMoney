@@ -93,6 +93,12 @@ table {
 	border-spacing: 0;
 	transition: border-color 0.2s;
 
+	&.max-width-col-4 {
+		td {
+			//width: 25%;
+		}
+	}
+
 	&:hover {
 		transition: border-color 0.2s;
 		border-color: darken(#cbe1f3, 50%);

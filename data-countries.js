@@ -725,7 +725,32 @@ window.locales = {
 					}
 				],
 				address2_values: ['30 Rue Beauvau', 'Marseille', 'France', '13003', '5 years'],
-
+			},
+			iidv2: {
+				person: 5,
+				address2_fields: [
+					{
+						name: 'address',
+						placeholder: '123 Streetname Ave',
+					},
+					{
+						name: 'city',
+						placeholder: 'City'
+					},
+					{
+						name: 'country',
+						placeholder: 'Country'
+					},
+					{
+						name: 'postcode',
+						placeholder: 'Postal Code'
+					},
+					{
+						name: 'time',
+						placeholder: 'Time at this address'
+					}
+				],
+				address2_values: ['30 Rue Beauvau', 'Marseille', 'France', '13003', '5 years'],
 			}
 		},
 		fields: [

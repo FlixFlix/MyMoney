@@ -8,4 +8,13 @@ window.history.replaceState( {}, document.title, cleanUrl );
 $( 'tbody' ).each( function() {
 	$( this ).find( '> tr' ).not( '.header, .sub-header' ).odd().addClass( 'odd' )
 } );
-$( '.highlight' ).wrapInner( '<span></span>' )
+$( '.highlight' ).wrapInner( '<span></span>' );
+// let colSize = $( '.wrapper' ).innerWidth() / 3;
+// $( 'tr' ).find('td').each( function() {
+// 	$( this ).attr( 'title', $( this ).text() )
+// } );
+// $( '.max-width-col-4' ).find( 'td' ).each( function() {
+// 	$( this ).width( colSize / 4 );
+// 	// let text = $( this ).text().substr( 0, 30 );
+// 	$( this ).text( text )
+// } )
