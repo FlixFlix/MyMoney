@@ -810,7 +810,7 @@ window.locales = {
 		region: 'NA',
 		language: 'eng',
 		useMockupFN: true,
-		password: 'murica',
+		password: 'crosscore2020',
 		/* JSON Seeded information could have different numbers for each country as updates will occur */
 		proposition: 'AO',
 		typical: '36',
